@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz à choix multiple</title>
+    <script>
+        function validateForm() {
+            const fieldsets = document.querySelectorAll('fieldset');
+
+            for (const fieldset of fieldsets) {
+                const inputs = fieldset.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+                let answered = false;
+
+                for (const input of inputs) {
+                    if (input.checked) {
+                        answered = true;
+                        break;
+                    }
+                }
+
+                if (!answered) {
+                    alert("Toutes les questions n'ont pas été répondues.");
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Quiz à choix multiple</h1>
+    <form action="/result" method="POST" onsubmit="return validateForm();">
+        {% for i, question in questions %}
+        <fieldset>
+            <legend>Question {{ i+1}}</legend>
+            <p>{{question['question']}}</p>
+            {% for reponse in question['reponses'] %}
+            
+            <input type={{radio[i]}} name="question_{{ i }}" value="{{ loop.index0 }}"> {{ reponse }}<br>
+            {% endfor %}
+        </fieldset>
+        {% endfor %}
+        <input type="submit" value="Soumettre">
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,794 @@
+Question1
+Your organization has decided to adopt "infrastructure as code" with AWS CloudFormation for new infrastructure launched into your AWS accounts. Which pillar of the Well-Architected Framework is this recommendation included in?
+A. Operational Excellence
+B. Security@
+C. Fault Tolerance
+D. Cost Optimization
+Question2
+Your company is moving a self-managed database over to AWS, and it will be running on EC2 for at least 3 years. They want to avoid any large expenses up-front but want to reduce the monthly cost as much as possible. What EC2 pricing model should you recommend?
+A. Dedicated Host
+B. Reserved - 3 year - No Upfront@
+C. On-Demand Instance
+D. Reserved - 3 year - Partial Upfront
+Question3
+What is the least costly support plan that provides 24/7 access to documentation, whitepapers, and support forums?
+A. Business
+B. Developer
+C. Basic@
+D. Enterprise
+Question4
+You want to launch multiple EC2 instances that all have the same operating system customizations. What would you need to create so that each of these instances included those customizations?
+A. Amazon S3 Bucket
+B. Custom Amazon Machine Image (AMI)@
+C. Amazon Virtual Private Cloud (VPC)
+D. Amazon Elastic File System (EFS)
+Question5
+Which managed service could provide distribution of incoming traffic across multiple Amazon EC2 instances?
+A. Amazon Elasticsearch
+B. AWS Elastic Beanstalk
+C. Elastic Load Balancing@
+D. AWS Auto Scaling
+Question6
+Your organization has decided to experiment with Machine Learning for a specific business problem. Later the same day, the team has a Machine Learning environment up and running in AWS to begin experimentation. Which cloud benefit is illustrated in this scenario?
+A. Loose coupling
+B. Agility@
+C. Design for failure
+D. Elasticity
+Question7
+Which of the following are pillars of the AWS Well-Architected Framework? (select three)
+A. Fault Tolerance
+B. Operational Excellence@
+C. Security@
+D. AWS Auto Scaling@
+E. High Availability
+Question8
+Which element of AWS Global infrastructure consists of multiple Availability Zones?
+A. Edge Location
+B. Region@
+C. Point of Presence
+D. Data Center
+Question9
+What feature of a Virtual Private Cloud (VPC) works like a virtual firewall for the network?
+A. Subnets
+B. Virtual Private Gateways
+C. Security Groups
+D. Internet Gateways
+Question10
+Which AWS service enables organizations to create a private link between their data center and an AWS region that doesn't travel over the public Internet?
+A. AWS Direct Connect@
+B. AWS Site to Site Connect
+C. AWS Cloud VPN
+D. Amazon Direct Cloud
+Question11
+Which service provides nearly limitless object storage with multiple storage classes covering use cases from frequent access to archive storage?
+A. Amazon S3@
+B. AWS CloudStorage
+C. Amazon EFS@
+D. Amazon EBS
+Question12
+Which service can give you a secure and encrypted connection to a Virtual Private Cloud (VPC) on AWS over the public Internet?
+A. AWS Direct Connect@
+B. AWS GuardDuty
+C. AWS Virtual Private Network (VPN)
+D. AWS Key Management Service
+Question13
+Your organization frequently deploys a standard web application stack for new applications. What AWS service would enable them to define this common infrastructure in code and also detect any drift to the stack configuration of a deployed application?
+A. AWS CloudFormation@
+B. AWS Resource Manager
+C. AWS CodeCommit
+D. AWS CodeDeploy
+Question14
+Which pricing factors are considered when using AWS Lambda? (choose two)
+A. Duration (based on the memory allocated)@
+B. Number of instances
+C. Maximum concurrent instances
+D. Number of requests@
+E. Instance size
+Question15
+Which architectural principle is illustrated in the following statement: "Isolate the behavior of a component from other components that depend on it, increasing resiliency and agility."
+A. Least privilege access
+B. High availability
+C. Tight coupling
+D. Loose coupling@
+Question16
+Which tool can be used to automate the creation and management of multiple account AWS environments?
+A. AWS Cost Explorer
+B. Identity and Access Management
+C. AWS Directory Service
+D. AWS Control Tower@
+Question17
+Which AWS service allows you to manage multiple AWS accounts, simplify billing for all accounts, and apply policies for governance of those accounts?
+A. AWS Directory Service
+B. AWS Accounts
+C. AWS CloudFormation
+D. AWS Organizations@
+Question18
+Which AWS managed service provides the ability to setup and manage relational databases for the most common database engines?
+A. AWS Database Migration Tool
+B. Amazon Relational Database Service (RDS)@
+C. Amazon SimpleDB
+D. Amazon DynamoDB
+Question19
+What AWS service can be leveraged in the deployment of your custom software to Amazon EC2 and AWS Fargate?
+A. AWS CodeCommit
+B. AWS CodeDeploy@
+C. AWS CodeGuru
+D. AWS CodeArtifact
+Question20
+Which service provides a NoSQL cloud database with single-digit millisecond latency that operates as a key-value and document store?
+A. Amazon SimpleDB
+B. Amazon Aurora
+C. Amazon DynamoDB@
+D. Amazon EBS
+Question21
+Which of the following would not be factored into a TCO comparison analysis of switching to the cloud from a traditional data center?
+A. Cost of purchasing data storage hardware
+B. Custom software development@
+C. Utility costs for data center
+D. Cost of purchasing servers
+Question22
+Within the Shared Responsibility Model, which areas would be the responsibility of the customer? (choose three)
+A. Management of Edge Locations
+B. Encryption of data in transit@
+C. User access management@
+D. Data center network connectivity
+E. Encryption of data at rest@
+Question23
+Which disaster recovery approach would result in the lowest cost?
+A. Backup and Restore@
+B. Warm Standby
+C. Multi-site
+D. Pilot Light
+Question24
+How will implementing elasticity in your cloud application reduce your TCO over implementing it in your traditional data center?
+A. Increasing compute capability
+B. Increasing unused capacity
+C. Reducing unused capacity@
+D. Increasing speed of data transfer
+Question25
+Which fully managed AWS service uses machine learning to both detect and protect your data that is stored in AWS?
+A. AWS CloudFormation
+B. AWS GuardDuty
+C. Network Access Control Lists (ACL's)
+D. Amazon Macie@
+Question26
+You are looking to move a new web application into the cloud. Your organization has asked for a cost estimate on this application. What tool could you use to estimate costs for this new cloud workload?
+A. AWS Cost Explorer
+B. AWS Trusted Advisor
+C. AWS Pricing Calculator@
+D. Cost and Usage Reports (CUR)
+Question27
+Which of the following services is a highly-available managed domain name system (DNS) service?
+A. Amazon Domain Name Service
+B. Amazon Route 53@
+C. AWS Elastic Beanstalk
+D. AWS Elastic Routing
+Question28
+Your organization is working on an incident management and investigation policy now that they have moved a pilot application onto the cloud with AWS. Which pillar of the AWS Well-Architected Framework recommends the creation of this policy?
+A. Performance Efficiency
+B. Security@
+C. Reliability
+D. Cost Optimization
+Question29
+According to the concept of least privilege access, what should you setup when adding permissions for an IAM user?
+A. Grant a user admin permissions on a separate AWS account that is a part of your AWS Organization
+B. Grant the user permissions to access all services in the environment
+C. Grant the user has permissions for only the items needed by that user to perform a task@
+D. Grant the user permissions for what they will need along with commonly used services to avoid repeated modification to policies
+Question30
+You are looking to launch a static website with minimal configuration. Which of the following AWS services provides this feature?
+A. Amazon CloudWatch
+B. Amazon Redshift
+C. AWS CodeDeploy
+D. Amazon S3@
+Question31
+Which online tool provides guidance in following AWS best practices by providing personalized recommendations for your cloud workloads?
+A. AWS Trusted Advisor@
+B. AWS Personal Health Dashboard
+C. AWS Well-Architected Framework
+D. Amazon CloudWatch
+Question32
+Your organization is looking to review best practices for AWS prior to implementing their first cloud application. What resource would best meet this need?
+A. AWS Trusted Advisor@
+B. AWS CloudFormation
+C. AWS Well-Architected Framework@
+D. Amazon Marketplace
+Question33
+What is the minimum AWS support plan that provides the complete set of AWS Trusted Advisor checks?
+A. Developer
+B. Business@
+C. Enterprise
+D. Basic
+Question34
+Which AWS service enables you to protect your web application by using a rule-based system to detect traffic and actions that should be blocked?
+A. Amazon CloudWatch
+B. Amazon Macie@
+C. AWS Web Application Firewall (WAF)@
+D. AWS GuardDuty
+Question35
+Your US-based team wants to expand an internal application to your office in Singapore. They are able to take the application and spin up a version in the ap-southeast-1 region. Which benefit of cloud computing is best illustrated with this scenario?
+A. Stop guessing capacity
+B. Go global in minutes@
+C. Stop spending money running and maintaining data centers
+D. Trade capital expense for variable expense
+Question36
+Within the Shared Responsibility Model, what area would be the responsibility of the customer?
+A. Patching data center network routers
+B. Patching the OS for RDS instances
+C. Data center security
+D. Patching the OS on EC2 instances@
+Question37
+What will IAM users use to authenticate themselves when using the AWS CLI?
+A. Group credentials
+B. Access keys per IAM user@
+C. Username and password
+D. Access keys for the root user
+Question38
+What AWS service enables auditing of your AWS account by logging actions taken on your AWS resources?
+A. AWS CloudHSM
+B. AWS CloudFormation
+C. AWS GuardDuty
+D. AWS CloudTrail@
+Question39
+How can you configure the same permissions for multiple IAM users?
+A. Have multiple users leverage the same IAM user to reduce maintenance
+B. Create an IAM group, assign permissions to the group, and add IAM users to the group@
+C. Create an IAM role, assign permissions to the role
+D. Copy and paste the same policy JSON to a unique policy for each user
+Question40
+Which AWS service enables you to use your own keys to encrypt data on AWS using a hardware security module (HSM)?
+A. AWS Key Management Service (KMS)
+B. AWS CloudHSM@
+C. AWS Identity and Access Management (IAM)
+D. Amazon Macie
+Question41
+Your organization is adopting a hybrid approach for storage and wants to leverage the cloud as a backup while having low latency access to data on its local network. Which AWS service could be leveraged for this?
+A. AWS Storage Gateway@
+B. Amazon Elastic Block Store (EBS)
+C. Amazon S3 Glacier
+D. Amazon S3
+Question42
+Which service provides an in-memory data store that supports both Redis and Memcached?
+A. Amazon Elasticache@
+B. Amazon EFS
+C. Amazon RDS
+D. Amazon DynamoDB
+Question43
+When deploying an application across multiple availability zones, which design concept are you implementing?
+A. Elasticity
+B. Agility
+C. Design for failure@
+D. Cost Optimization
+Question44
+Which AWS concept is the definition of the information required to launch an EC2 instance including the contents of the root volume, launch permissions, and block device mapping?
+A. Amazon Machine Image (AMI)@
+B. Amazon Elastic Block Store (EBS)
+C. Amazon Elastic Filesystem (EFS)
+D. Amazon EC2 Instance Image (EII)
+Question45
+Your organization is looking to test a new web application concept. The team setup an AWS account and infrastructure within a day on which they will build a prototype for this application. Which cloud computing benefit does this illustrate?
+A. Go global in minutes
+B. Stop guessing capacity
+C. Increase speed and agility@
+D. Hybrid cloud
+Question46
+Which element of the AWS Global Infrastructure is made up of one or more data centers connected by a low latency network with redundant power, networking, and connectivity within an AWS Region?
+A. Edge Location
+B. Regional Edge Cache
+C. Point of Presence
+D. Availability Zone@
+Question47
+How can you improve the security of your IAM user account?
+A. Setup Amazon Shield for your account
+B. Implement AWS VPN when using the AWS Console
+C. Enable multi-factor authentication@
+D. Setup Amazon Macie for your account
+Question48
+Your company is looking to perform batch data analysis using an EC2 instance. There is a flexible start and stop time for this workload, and it can stop and restart as needed. What would be the most cost effective EC2 pricing model given these requirements?
+A. Spot Instance@
+B. On-Demand Instance
+C. Dedicated Host
+D. Reserved Instance
+Question49
+Your company is using the AWS Customer Carbon Footprint tool to determine the environmental impact of their current cloud workloads. They are planning to use this information to optimize future workloads. Which pillar of the Well-Architected Framework would this activity fit into?
+A. Sustainability@
+B. Operational Excellence
+C. Performance Efficiency
+D. Environmental Impact
+Question50
+When you deploy your application across multiple AWS availability zones, which architectural principle are you implementing?
+A. Loose coupling
+B. Cross-region reliability
+C. Tight coupling
+D. High availability@
+Question51
+Your company needs to launch a MySQL database in the cloud for a web application. They will need to have access to the underlying operating system to install OS-level optimizations. What solution would meet these requirements?
+A. Utilize DynamoDB
+B. Utilize Amazon Aurora on Amazon RDS
+C. Utilize MySQL on Amazon EC2@
+D. Utilize Amazon SimpleDB
+Question52
+Your company is migrating to the cloud. You have multiple licenses for server software that is licensed per server. Which EC2 pricing model should you choose for the instances when you launch them in AWS?
+A. Consolidated Instance
+B. Dedicated Host@
+C. Spot Instance
+D. Reserved Instance
+Question53
+Which tool enables you to visualize current AWS costs and predict future costs based on current usage?
+A. AWS Pricing Calculator
+B. AWS Trusted Advisor
+C. Cost and Usage Reports (CUR)
+D. AWS Cost Explorer@
+Question54
+Which AWS service would enable you to share reserved instances across multiple accounts that your company manages?
+A. AWS Organizations@
+B. Amazon CloudWatch
+C. AWS CloudFormation
+D. AWS Direct Connect
+Question55
+You want to have email support within business hours from AWS for an application you are building. What is the minimum support plan that provides this?
+A. Basic
+B. Enterprise
+C. Business
+D. Developer@
+Question56
+Which service provides a highly-available and elastic NFS file system for both cloud-based and on-premise servers?
+A. Amazon S3 Glacier
+B. Amazon S3
+C. Amazon Elastic File System (EFS)@
+D. Amazon Elastic Block Store (EBS)
+Question57
+If you wanted to engage AWS resources for a paid engagement to assist in a cloud migration, which team would you leverage?
+A. AWS Professional Services@
+B. AWS Marketplace
+C. AWS Service Gateway
+D. AWS Partner Network Consulting Partners
+Question58
+Your company is moving their data storage from their data center into the cloud. They are evaluating different approaches for data warehousing. What AWS service provides a managed data warehousing solution that supports columnar storage up to a petabyte scale?
+A. AWS Database Migration Service
+B. Amazon DynamoDB
+C. Amazon SimpleDB
+D. Amazon Redshift@
+Question59
+Within the Shared Responsibility Model, what responsibility is shared by both the customer and AWS?
+A. Customer Data
+B. Data Center Physical Security
+C. Configuration Management@
+D. Edge Location Management
+Question60
+Which of the following is an economic benefit of migrating to the cloud?
+A. Eliminating Operational Expenditures (opex)
+B. Increased Capitalized Expenditures (capex)
+C. Increased Operational Expenditures (opex)
+D. Reduced Total Cost of Ownership (TCO)@
+Question61
+Which AWS service provides the ability to assess and audit configuration of the AWS resources you have deployed in your account?
+A. Amazon CloudWatch
+B. AWS Config@
+C. AWS Identity and Access Management (IAM)
+D. AWS GuardDuty
+Question62
+Your company has deployed a new web application across multiple availability zones for high availability. What pillar of the Well-Architected Framework recommends this approach?
+A. Operational Excellence
+B. Fault Tolerance
+C. Reliability@
+D. Cost Optimizations
+Question63
+Which of the following services could assist in migrating your data from your on-premise data center into AWS?
+A. AWS CloudFormation
+B. Amazon CloudWatch
+C. AWS Snowball@
+D. AWS Cloud Migrate
+Question64
+When your team moved an application into the cloud, they implemented elasticity so that the application could scale to meet the current user demand. Which cloud computing benefit is best illustrated with this scenario?
+A. Stop spending money running and maintaining data centers
+B. Go global in minutes
+C. Trade capital expense for variable expense
+D. Stop guessing capacity@
+Question65
+Your organization is looking to leverage both their traditional data center and the public cloud. What type of cloud architecture does this describe?
+A. Isolated cloud
+B. Private cloud
+C. Public cloud
+D. Hybrid cloud@
+Question1
+Which of the following services would be considered services to leverage in a serverless architecture? (select three)
+A. Amazon EC2
+B. AWS Lambda@
+C. Amazon SQS@
+D. Amazon Elasticache
+E. Amazon DynamoDB@
+Question2
+Which of the following is an economic benefit of utilizing the cloud?
+A. No up front capitalized expenditures (capex)@
+B. No operational expenditures (opex)
+C. Cost is unrelated to usage
+D. Increased TCO
+Question3
+You will be testing the migration of an on-premise web server to the cloud. You plan to have this instance up for a few weeks while you verify its performance. Which EC2 pricing model should you use?
+A. Reserved Instance
+B. Dedicated Instance
+C. On-Demand Instance@
+D. Spot Instance
+Question4
+Your company is launching a new EC2 web server that will be running consistently for at least a year. The company wants to find maximum cost savings for this instance. What pricing model should they choose?
+A. Spot Instance
+B. Reserved Instance - 1 year - No Upfront
+C. Reserved Instance - 1 year - All Upfront@
+D. Dedicated Instance
+Question5
+Your organization is looking to develop a single tool to manage deployments both on-premise and in the cloud. Which of the following AWS services could be leveraged for this?
+A. AWS OpsWorks@
+B. Amazon S3
+C. AWS CodeBuild
+D. AWS CodePipeline
+Question6
+Which EC2 pricing model provides the potential for the most cost savings if your workload is flexible?
+A. Spot Instance@
+B. Reserved Instance
+C. On-Demand Instance
+D. Dedicated Host
+Question7
+Which services can be leveraged to support a hybrid cloud approach? (select two)
+A. AWS Lightsail
+B. AWS Lambda
+C. AWS Cloud9
+D. Amazon Route 53@
+E. AWS Storage Gateway@
+Question8
+Which of the following is true in relation to operational expenses (opex) and total cost of ownership (TCO) when moving into the cloud?
+A. Both Opex and TCO will decrease@
+B. Opex will increase and TCO will decrease
+C. Opex will decrease and TCO will increase
+D. Opex will increase and TCO will remain unchanged
+Question9
+Which AWS service enables you to implement "infrastructure as code" for your AWS environments?
+A. AWS EC2
+B. AWS RDS
+C. AWS CodeCommit
+D. AWS CloudFormation@
+Question10
+Which of the following are pillars of the AWS Well-Architected Framework? (select three)
+A. Cost Optimization@
+B. Infrastructure as Code
+C. Operational Excellence@
+D. Loose Coupling
+E. Performance Efficiency@
+Question11
+Which of the following are categories of recommendations provided by AWS Trusted Advisor? (choose three)
+A. Cost Optimization@
+B. Fault Tolerance@
+C. Performance@
+D. Least Privilege Access
+E. High Availability
+Question12
+Which element of AWS global infrastructure enables caching of assets in a global content delivery network to reduce latency for end users?
+A. Local Zone
+B. Availability Zone
+C. Edge location@
+D. Region
+Question13
+Your organization has launched multiple EC2 instances into a vpc. You need a secure way to access these servers over the public Internet. What would be one approach that you could take that would align with security best practices?
+A. Use AWS Direct Connect
+B. Open up the needed ports to all IP addresses
+C. Remove all restrictions from the Network ACL's
+D. Setup AWS VPN for the VPC@
+Question14
+Your organization is moving a web application that leverages MySQL into the cloud. Which approach would enable you to minimize the management tasks for this database without modifying the database interactions?
+A. Utilize the AWS Database Migration Service
+B. Utilize DynamoDB
+C. Utilize MariaDB on Amazon RDS
+D. Utilize Amazon Aurora on Amazon RDS@
+Question15
+Which resource provided by AWS provides a collection of best practices for building applications and solutions in the cloud across five pillars?
+A. AWS Marketplace
+B. AWS Well-Architected Framework@
+C. AWS SaaS Factory
+D. AWS Forums
+Question16
+Which of the following are economic benefits of switching to the cloud from a traditional data center? (choose three)
+A. Reduced Total Cost of Ownership (TCO)@
+B. Lower variable Operational Expenditures (opex)@
+C. Eliminating Operational Expenditures (opex)
+D. Increased Operational Expenditures (opex)
+E. No need for up front Capitalized Expenditures (capex)@
+Question17
+Your organization needs to store roughly 2 TB of data for two years to meet compliance requirements. This data will rarely need to be accessed, but in the event of an audit, it will need to be recovered within a few days. What would be the most cost effective solution for this use case?
+A. Amazon S3 Infrequent Access
+B. Amazon EFS
+C. Amazon EBS
+D. Amazon S3 Glacier@
+Question18
+What feature of AWS Organizations enables you to receive a single bill for all member accounts?
+A. Cost Explorer
+B. Cost and Usage Report
+C. Reserved Billing
+D. Consolidated Billing@
+Question19
+Which disaster recovery approach would result in the least downtime during a disaster recovery event?
+A. Backup and Restore
+B. Pilot Light
+C. Warm Standby
+D. Multi-site@
+Question20
+What AWS service can be leveraged to fully automate your build, test, and deploy pipeline for your custom software projects?
+A. AWS CodeArtifact
+B. AWS CodeCommit
+C. AWS X-Ray
+D. AWS CodePipeline@
+Question21
+Which AWS service enables you to view, analyze, and alert on logs, metrics, and events from your infrastructure deployed on AWS?
+A. Amazon Logs
+B. Amazon Elastic Block Store (EBS)
+C. Amazon CloudWatch@
+D. AWS Identity and Access Management (IAM)
+Question22
+Your company utilizes resource tags to properly attribute expenses to specific applications and departments. This data then allows your organization to analyze all AWS spending by these categories. Which pillar of the AWS Well-Architected Framework recommends this approach?
+A. Cost Optimization@
+B. Security
+C. Reliability
+D. Operational Efficiency
+Question23
+What features of Virtual Private Clouds (VPC's) enable you to limit access to your network? (select two)
+A. Network Load Balancers
+B. AWS CloudFormation
+C. Security Groups@
+D. Network Access Control Lists (ACL's)@
+E. Amazon EBS Volumes
+Question24
+Which service provides a global content delivery network (CDN) that leverages the edge locations in the AWS Global Infrastructure to enable reduced latency when sending content to end users?
+A. AWS Content Delivery
+B. Amazon CloudFormation
+C. Amazon Content Network
+D. Amazon CloudFront@
+Question25
+Which tool would enable you to check if you are following AWS best practices for cost optimization on your current workloads?
+A. AWS Trusted Advisor@
+B. AWS Pricing Calculator or Simple Monthly Calculator
+C. Cost and Usage Reports (CUR)
+D. AWS Cost Explorer
+Question26
+Your organization is two months into a cloud transition, and a majority of systems have been migrated. Based on your current workload, you want to visualize current spend by AWS service as well as predicting future costs for this workload. What tool should you leverage?
+A. TCO Calculator
+B. AWS Cost Explorer@
+C. AWS Pricing Calculator
+D. Cost and Usage Reports (CUR)
+Question27
+Which of the following is an economic benefit of leveraging the cloud?
+A. Elimination of variable operational expenditures (opex)
+B. Variable operational expenditures (opex) are tied to usage@
+C. Increased up front capitalized expenditures (capex)
+D. Variable operational expenditures (opex) costs are unrelated to usage
+Question28
+Which managed AWS service enables you to leverage your own encryption keys for your data with AWS services?
+A. AWS GuardDuty
+B. AWS Identity and Access Management (IAM)
+C. AWS Key Management Service (KMS)@
+D. Amazon Macie
+Question29
+Where can organizations find pre-configured software from independent software vendors to run in their AWS environments?
+A. AWS Marketplace@
+B. AWS CloudFormation
+C. Amazon CloudFront
+D. AWS SaaS Factory
+Question30
+Which of the following services is considered global (and not region-specific)?
+A. AWS Direct Connect
+B. Amazon Route 53@
+C. AWS CloudFormation
+D. Amazon S3
+Question31
+Your organization has adopted a serverless approach for new applications. By doing this, you have decreased the amount you need to build and maintain. What pillar of the Well-Architected Framework recommends this approach?
+A. Fault Tolerance
+B. Performance Efficiency@
+C. Reliability
+D. Cost Optimization
+Question32
+Which billing tool provides detailed usage and costs data in an Amazon S3 bucket?
+A. S3 Billing Report (SBR)
+B. Cost and Usage Reports (CUR)@
+C. AWS Trusted Advisor
+D. AWS Cost Explorer
+Question33
+Within the Shared Responsibility Model, what area would be the responsibility of the customer? (select two)
+A. Providing least-privilege access to AWS resources@
+B. Data center employee training
+C. Client-side data encryption@
+D. Physical data center access controls
+E. Patching data center network routers
+Question34
+With the AWS Shared Responsibility Model, what would be the responsibility of AWS? (choose two)
+A. Managing network connectivity for data centers@
+B. Implementing server-side data encryption
+C. Training data center employees@
+D. Patching the OS of EC2 instances
+E. Controlling application network access
+Question35
+Which of the following is a best practice to follow when creating a new AWS account?
+A. Copy the root user access keys and always use those with the AWS CLI
+B. Verify that multi-factor authentication is disabled for the account
+C. Create a new IAM user that you will use instead of the root user@
+D. Make sure that all senior team members have access to the root credentials
+Question36
+You have multiple web servers deployed across multiple availability zones. What service would provide the ability to route incoming requests between these servers?
+A. AWS Elastic Beanstalk
+B. Amazon Kinesis
+C. Amazon CloudFormation
+D. Elastic Load Balancing@
+Question37
+During an audit, you learn that you will need to provide documentation for SOC 1 compliance for an application deployed on AWS. Where will you go to get the AWS compliance report for this certification?
+A. Your AWS Technical Account Manager (TAM)
+B. AWS Marketplace
+C. AWS Compliance Hub
+D. AWS Artifact@
+Question38
+After research, you determine that for a specific cloud workload it is cheaper to run it on AWS than in your own data center when factoring in hardware costs, setup labor, and maintenance. What cloud computing benefit is best illustrated with this use case?
+A. Benefit from massive economies of scale@
+B. Go global in minutes
+C. Increase speed and agility
+D. Stop guessing capacity
+Question39
+Which of the following services could assist in migrating your data from your on-premise data center into AWS?
+A. Amazon Relational Database Service (RDS)
+B. Amazon Elastic Block Store (EBS)
+C. AWS Database Migration Service (DMS)@
+D. AWS Migration Gateway
+Question40
+You have enabled AWS CloudTrail to keep an audit log of all actions taken on your company's AWS accounts. Which pillar of the AWS Well-Architected framework is followed with this implementation?
+A. Reliability
+B. Operational Excellence
+C. Security@
+D. Compliance
+Question41
+You have chosen to break up a large application into smaller components that utilize SQS queues between each step. Which architectural principle is illustrated by this approach?
+A. Least privilege access
+B. Elastic computing
+C. Loose coupling@
+D. Tight coupling
+Question42
+Where would you go to access resources to help deploy popular technologies into AWS following best practices including step-by-step deployment instructions?
+A. Amazon S3
+B. Github
+C. AWS CloudFormation
+D. AWS Quick Starts@
+Question43
+Which element of the AWS Global Infrastructure includes multiple availability zones, enabling you to create fault tolerant applications in the cloud that span multiple availability zones?
+A. Regional Edge Caches
+B. Region@
+C. Outposts
+D. Edge Location
+Question44
+Which program could you leverage to find trusted third-party consultants that can assist with your AWS workloads?
+A. AWS Marketplace
+B. AWS Partner Network Consulting Partners@
+C. AWS Partner Network Technology Partners
+D. AWS Directory Service
+Question45
+For auditing purposes your organization requires that all actions performed on AWS infrastructure is logged for at least one year. What AWS service could you use to implement this auditing requirement?
+A. AWS CloudTrail@
+B. AWS CloudFormation
+C. Amazon CloudWatch
+D. Amazon Macie
+Question46
+Which of the following are features of Amazon S3? (select three)
+A. Static website hosting@
+B. Ability to be mounted as an NFS filesystem
+C. Block storage that can be attached to Amazon EC2 instances
+D. Multiple storage classes to support different access needs@
+E. Lifecycle rules to transition objects between storage classes@
+Question47
+What free AWS service enables you to configure specific policies dictating what actions a user, group, or role can perform within your account?
+A. Amazon Macie
+B. A AWS Identity and Access Management (IAM)@
+C. AWS Security Hub
+D. AWS GuardDuty
+Question48
+Within the Shared Responsibility Model, what responsibility is shared by both the customer and AWS?
+A. Decommissioning Data Center Storage Hardware
+B. Patch Management@
+C. Networking Traffic Protection
+D. Client-side Data Encryption
+Question49
+Which of the following could improve the security of your organization's IAM user accounts?
+A. Setup AWS CloudTrail for your account
+B. Setup the AWS Web Application Firewall (WAF)
+C. Setup a password policy@
+D. Disable multi-factor authentication for each account
+Question50
+Your organization is currently leveraging MySQL on Amazon RDS for a web application. What AWS service could enable you to cache common queries to reduce the load on the MySQL server?
+A. Amazon CloudFront
+B. Security Groups
+C. Amazon Elasticache@
+D. Amazon Direct Connect
+Question51
+Which factors should be considered when doing a TCO comparison analysis between a traditional data center and the cloud? (select three)
+A. Custom software development
+B. Cost of servers@
+C. Cost of data storage@
+D. Project management
+E. Utility costs for data center@
+Question52
+Your architecture team requires auditing of all resource configuration changes in your AWS account. What AWS service could you leverage to meet this requirement?
+A. Amazon Macie
+B. AWS Config@
+C. Amazon S3
+D. AWS GuardDuty
+Question53
+Your company is looking to implement a new web application that will be used by millions of your customers. You are concerned with the scalability of the company's current relational database for this application, so you are looking for a managed NoSQL database for this project. Which AWS service provides this capability?
+A. Amazon RDS with Microsoft SQL Server
+B. Amazon DynamoDB@
+C. Amazon Aurora
+D. Amazon Redshift
+Question54
+Which AWS service provides a managed data warehouse that can operate at a petabyte scale?
+A. AWS Lake Formation
+B. Amazon DynamoDB
+C. Amazon RDS
+D. Amazon Redshift@
+Question55
+Which managed AWS service provides a safeguard against Distributed Denial of Service (DDoS) attacks?
+A. AWS Config
+B. AWS GuardDuty
+C. AWS Shield@
+D. Amazon Macie
+Question56
+Which AWS service provides block storage for use with Amazon EC2 instances?
+A. Amazon Elastic Block Store (EBS)@
+B. Amazon S3
+C. Amazon Elastic File System (EFS)
+D. AWS Storage Gateway
+Question57
+Which service of AWS enables you to take advantage of volume discounts and usage tier discounts across multiple AWS accounts that your company manages?
+A. AWS Cost Explorer
+B. Amazon CloudWatch
+C. AWS CloudFormation
+D. AWS Organizations@
+Question58
+What is the minimum AWS support plan that provides a dedicated Technical Account Manager (TAM)?
+A. Enterprise@
+B. Business
+C. Basic
+D. Developer
+Question59
+Your company wants to isolate specific applications to their own AWS account, however, they want to have a single bill that provides a clear breakdown of cost by account. What service would you recommend they use to meet these requirements?
+A. AWS CloudFormation
+B. AWS Lake Formation
+C. AWS Organizations@
+D. Amazon CloudWatch
+Question60
+Given regulations in some countries that your company operates in, there is a policy to ensure that your application runs on physically isolated virtual machines. What EC2 pricing model should you choose to support this requirement?
+A. On-Demand Instance
+B. Spot Instance
+C. Dedicated Host@
+D. Reserved Instance
+Question61
+Your organization has refactored an application that was migrated from your data center to the cloud. The application can now automatically allocate new resources to meet user demand. What benefit of the cloud is illustrated in this scenario?
+A. Fault Tolerance
+B. Elasticity@
+C. Agility
+D. High Availability
+Question62
+Which AWS service enables you to create a logically isolated virtual network that you can define and configure?
+A. Amazon Virtual Private Cloud (VPC)@
+B. AWS Elastic Beanstalk
+C. Amazon CloudWatch
+D. Amazon Elastic Network
+Question63
+Recently your organization launched a new database using Amazon RDS. You chose to deploy the database across multiple availability zones to ensure the database could still function even if an availability zone went down. Which architectural principle does this illustrate?
+A. Loose coupling
+B. Tight coupling
+C. Cost optimization
+D. High availability@
+Question64
+Which of the following are benefits of Amazon RDS? (select three)
+A. Provides access to the operating system through SSHCost of servers
+B. Enables you to easily install customized versions of the database engine
+C. Automatically patches database engine based on configured settings@
+D. Can enable high-availability by leveraging multiple availability zones@
+E. Provides the ability to implement read replicas for most database engines@
+Question65
+Your company wants to ensure that they have phone, chat, and email access to AWS support with a response within 1 hour when a production system is down. What is the minimum level of support that would meet this criteria?
+A. Business@
+B. Enterprise
+C. Basic
+D. Developer

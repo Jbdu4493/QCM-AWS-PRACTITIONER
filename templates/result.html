@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultat du Quiz</title>
+    <style>
+        .incorrect {
+            color: red;
+        }
+        .correct {
+            color: green;
+        }
+        .normal {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Résultat du Quiz</h1>
+    <p>Votre poucentage de réussite est de ({{ percentage }} %). <a href="http://127.0.0.1:5000/">Refaire à nouveaux un test</a> </p>
+    {% for i, question in questions %}
+        <fieldset>
+            <legend>Question {{ i+1 }}</legend>
+            <p>{{question['question']}}</p>
+            {% for reponse in question['reponses'] %}
+            <label class="{{all_colors[i][loop.index0 ] }}">
+            <input type={{radio[i]}}
+            name="question_{{ i }}"
+            value="{{ loop.index }}"
+            {% if user_reponses[i][loop.index0]== 1 %}
+                checked
+            {% endif %}
+            disabled
+            > {{ reponse }}<br>
+            {% endfor %}
+        </fieldset>
+        {% endfor %}
+</body>
+</html>
