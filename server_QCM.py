@@ -21,7 +21,7 @@ def decompose(qr):
     result["valid"] = valid
     return result
 def create_questions():
-    f = open("/Users/jonathanbizet/Documents/Formation_IA/QGM/Reponses.txt",'r')
+    f = open("./Reponses.txt",'r')
     lines = f.read().split('\n')
     text = "".join(lines)
     question = re.split('Question\d?\d',text)
