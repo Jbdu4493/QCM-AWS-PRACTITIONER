@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request
+import sys
 import json
 import random
 app = Flask(__name__)
 import re
 import webbrowser
-
+nb_question = int(sys.argv[1])
 def decompose(qr):
     result = dict()
     result["question"]=qr[0]
@@ -20,21 +21,21 @@ def decompose(qr):
     result['reponses'] = reponse
     result["valid"] = valid
     return result
-def create_questions():
+def create_questions(nb_question = 20):
     f = open("./Reponses.txt",'r')
     lines = f.read().split('\n')
     text = "".join(lines)
     question = re.split('Question\d?\d',text)
-    list_question_reponse = list(map(lambda x :re.split('[A-Z]\. ',x),question))[1:]        
+    list_question_reponse = list(map(lambda x :re.split('[A-E]\. ',x),question))[1:]        
     questions = list(map(decompose,list_question_reponse))
-    questions = random.sample(questions, 20)
+    questions = random.sample(questions, nb_question)
     return questions
-questions = create_questions()
+questions = create_questions(nb_question)
 # Page d'accueil
 @app.route('/')
 def index():
     global questions
-    questions = create_questions()
+    questions = create_questions(nb_question)
     radio = [ "radio" if sum(q['valid']) == 1 else "checkbox" for q in questions ]
     return render_template('index.html', questions=enumerate(questions),radio = radio )
 
@@ -71,12 +72,11 @@ def result():
                            user_reponses = user_reponses,
                            all_colors=all_colors,
                            radio = radio)  # Envoyez les réponses valides
-import webbrowser
-import asyncio
-import time
 
-    
+
 if __name__ == '__main__':
+    if len(sys.argv) < 2 :
+        sys.exit()
     app.run(debug=True)
     
 

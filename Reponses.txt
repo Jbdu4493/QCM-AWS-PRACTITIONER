@@ -188,7 +188,7 @@ B. AWS Personal Health Dashboard
 C. AWS Well-Architected Framework
 D. Amazon CloudWatch
 Question32
-Your organization is looking to review best practices for AWS prior to implementing their first cloud application. What resource would best meet this need?
+Your organization is looking to review best practices for AWS prior to implementing their first cloud application. What resource would best meet this need?(Select two)
 A. AWS Trusted Advisor@
 B. AWS CloudFormation
 C. AWS Well-Architected Framework@
@@ -202,7 +202,7 @@ D. Basic
 Question34
 Which AWS service enables you to protect your web application by using a rule-based system to detect traffic and actions that should be blocked?(choose three)
 A. Amazon CloudWatch
-B. Amazon Macie@
+B. Amazon Macie
 C. AWS Web Application Firewall (WAF)@
 D. AWS GuardDuty
 Question35
@@ -819,7 +819,7 @@ C. Eliminated Operational Expenditures (opex)
 D. Increased Operational Expenditures (opex)
 E. No need for upfront Capitalized Expenditures (capex)@
 Question5
-What features of Virtual Private Cloud (VPC'S) enable you to limit access to your network?
+What features of Virtual Private Cloud (VPC'S) enable you to limit access to your network? (Select two)
 A. Network Load Balancers
 B. AWS CloudFormation
 C. Security Groups@
