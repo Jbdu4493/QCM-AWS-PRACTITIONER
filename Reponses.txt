@@ -792,3 +792,36 @@ A. Business@
 B. Enterprise
 C. Basic
 D. Developer
+Question1
+Which of the following services would be considered services to leverage in a serverless architecture? (Select three)
+A. Amazon EC2
+B. AWS Lambda@
+C. Amazon SQS@
+D. Amazon Elasticache
+E. Amazon DynamoDB@
+Question2
+Which of the following is an economic benefit of utilizing the cloud?
+A. No up front capitalized expenditures (capex)@
+B. No operational expenditures (opex)
+C. Cost is unrelated to usage
+D. Increased TCO
+Question3
+Your organization is looking to develop a single tool to manage deployments both on-premise and in the cloud. Which of the following AWS services could be leveraged for this?
+A. AWS OpsWorks@
+B. Amazon S3
+C. AWS CodeBuild
+D. AWs CodePipeline
+Question4
+Which of the following are the economic benefits of switching to the cloud from a traditional data center? (Select three)
+A. Reduced Total Cost of Ownership(TCO)@
+B. Lower variable Operation Expenditures (opex)@
+C. Eliminated Operational Expenditures (opex)
+D. Increased Operational Expenditures (opex)
+E. No need for upfront Capitalized Expenditures (capex)@
+Question5
+What features of Virtual Private Cloud (VPC'S) enable you to limit access to your network?
+A. Network Load Balancers
+B. AWS CloudFormation
+C. Security Groups@
+D. Network Access Control List (ACL's)@
+E. Amazon EBS Volumes
