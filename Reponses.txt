@@ -164,7 +164,7 @@ B. Amazon Route 53@
 C. AWS Elastic Beanstalk
 D. AWS Elastic Routing
 Question28
-Your organization is working on an incident management and investigation policy now that they have moved a pilot application onto the cloud with AWS. Which pillar of the AWS Well-Architected Framework recommends the creation of this policy?
+Your organization is working on an incident management and investigation policy now that they have moved a pilot application onto the cloud with aws. Which pillar of the AWS Well-Architected Framework recommends the creation of this policy?
 A. Performance Efficiency
 B. Security@
 C. Reliability
