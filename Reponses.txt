@@ -200,7 +200,7 @@ B. Business@
 C. Enterprise
 D. Basic
 Question34
-Which AWS service enables you to protect your web application by using a rule-based system to detect traffic and actions that should be blocked?
+Which AWS service enables you to protect your web application by using a rule-based system to detect traffic and actions that should be blocked?(choose three)
 A. Amazon CloudWatch
 B. Amazon Macie@
 C. AWS Web Application Firewall (WAF)@
