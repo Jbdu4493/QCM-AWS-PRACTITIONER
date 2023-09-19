@@ -51,7 +51,7 @@ Question9
 What feature of a Virtual Private Cloud (VPC) works like a virtual firewall for the network?
 A. Subnets
 B. Virtual Private Gateways
-C. Security Groups
+C. Security Groups@
 D. Internet Gateways
 Question10
 Which AWS service enables organizations to create a private link between their data center and an AWS region that doesn't travel over the public Internet?
