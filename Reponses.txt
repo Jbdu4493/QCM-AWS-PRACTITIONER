@@ -35,11 +35,11 @@ B. Agility@
 C. Design for failure
 D. Elasticity
 Question7
-Which of the following are pillars of the AWS Well-Architected Framework? (select three)
+Which of the following are pillars of the AWS Well-Architected Framework? (select two)
 A. Fault Tolerance
 B. Operational Excellence@
 C. Security@
-D. AWS Auto Scaling@
+D. AWS Auto Scaling
 E. High Availability
 Question8
 Which element of AWS Global infrastructure consists of multiple Availability Zones?
@@ -63,7 +63,7 @@ Question11
 Which service provides nearly limitless object storage with multiple storage classes covering use cases from frequent access to archive storage?
 A. Amazon S3@
 B. AWS CloudStorage
-C. Amazon EFS@
+C. Amazon EFS
 D. Amazon EBS
 Question12
 Which service can give you a secure and encrypted connection to a Virtual Private Cloud (VPC) on AWS over the public Internet?
