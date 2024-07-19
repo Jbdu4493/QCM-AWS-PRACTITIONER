@@ -20,16 +20,20 @@ div.stButton > button:first-child {
 </style>
 """, unsafe_allow_html=True)
 
+nb_question=20
+
 # Initialize session variables if they do not exist
 default_values = {'current_index': 0, 'current_question': 0, 'score': 0, 'selected_option': None, 'answer_submitted': False}
 for key, value in default_values.items():
     st.session_state.setdefault(key, value)
 
 # Load quiz data
+
 if "quiz_data" not in  st.session_state:
     with open('./quizz_question.json', 'r', encoding='utf-8') as f:
         quiz_data = json.load(f)
         st.session_state.quiz_data = random.choices(quiz_data,k=nb_quest)
+
 
 def restart_quiz():
     st.session_state.current_index = 0
