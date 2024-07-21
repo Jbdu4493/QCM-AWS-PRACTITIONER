@@ -1,5 +1,135 @@
 [
   {
+    "question": "As a Solutions Architect, a startup company asked you for help as they are working on an architecture for a social media website where users can be friends with each other, and like each other's posts. The company plan on performing some complicated queries such as \"What are the number of likes on the posts that have been posted by the friends of Mike?\", Which database do you recommend?",
+    "options": [
+      "Amazon RDS",
+      "Amazon QLDB",
+      "Amazon Neptune",
+      "Amazon OpenSearch"
+    ],
+    "answer": "Amazon Neptune",
+    "theme": "DATABASE",
+    "embedding": null,
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.15.30.png"
+  },
+  {
+    "question": "A startup is working on developing a new project to reduce forest fires due to climate change. The startup is developing sensors that will be spread across the entire forest to make some readings such as temperature, humidity, and pressures which will help detect the forest fires before it happens. They are going to have thousands of sensors that are going to store a lot of readings each second. There is a requirement to store those readings and do fast analytics so they can predict if there is a fire. Which AWS service can they use to store those readings?",
+    "options": [
+      "Amazon Timestream",
+      "Amazon Neptune",
+      "Amazon S3",
+      "Amazon ElastiCache"
+    ],
+    "answer": "Amazon Timestream",
+    "theme": "DATABASE",
+    "embedding": null,
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.19.25.png"
+  },
+  {
+    "question": "A company using a self-hosted on-premises Apache Cassandra database which they want to migrate to AWS. Which AWS service can they use which provides them with a fully managed, highly available, and scalable Apache Cassandra database?",
+    "options": [
+      "Amazon DocumentDB",
+      "Amazon DynamoDB",
+      "Amazon Timestream",
+      "Amazon Keyspaces"
+    ],
+    "answer": "Amazon Keyspaces",
+    "theme": "DATABASE",
+    "embedding": null,
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.17.32.png"
+  },
+  {
+    "question": "Which database helps you store relational datasets, with SQL language compatibility and the capability of processing transactions such as insert, update, and delete?",
+    "options": [
+      "Amazon DocumentDB",
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache"
+    ],
+    "answer": "Amazon RDS",
+    "theme": "DATABASE",
+    "embedding": null,
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.13.32.png"
+  },
+  {
+    "question": "Which AWS service provides you with caching capability that is compatible with Redis API?",
+    "options": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache",
+      "Amazon OpenSearch"
+    ],
+    "answer": "Amazon ElastiCache",
+    "theme": "DATABASE",
+    "embedding": null,
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.14.04.png"
+  },
+  {
+    "question": "You want to migrate an on-premises MongoDB NoSQL database to AWS. You don't want to manage any database servers, so you want to use a managed NoSQL Serverless database, that provides you with high availability, durability, and reliability, and the capability to take your database global. Which database should you choose?",
+    "options": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon DocumentDB",
+      "Amazon Aurora"
+    ],
+    "answer": "Amazon DynamoDB",
+    "theme": "DATABASE",
+    "embedding": null,
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.14.38.png"
+  },
+  {
+    "question": "You have a set of files, 100MB each, that you want to store in a reliable and durable key-value store. Which AWS service do you recommend?",
+    "options": [
+      "Amazon Aurora",
+      "Amazon s3",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache"
+    ],
+    "answer": "Amazon s3",
+    "theme": "DATABASE",
+    "embedding": null,
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.15.56.png"
+  },
+  {
+    "question": "A company has an on-premises website that uses ReactJS as its frontend, NodeJS as its backend, and MongoDB for the database. There are some issues with the self-hosted MongoDB database as there is a lot of maintenance required and they don\u2019t have and can\u2019t afford the resources or experience to handle those issues. So, a decision was made to migrate the website to AWS. They have decided to host the frontend ReactJS application in an S3 bucket and the NodeJS backend on a set of EC2 instances. Which AWS service can they use to migrate the MongoDB database that provides them with high scalability and availability without making any code changes?",
+    "options": [
+      "Amazon ElastiCache",
+      "Amazon DocumentDB",
+      "Amazon RDS for MongoDB",
+      "Amazon Neptune"
+    ],
+    "answer": "Amazon DocumentDB",
+    "theme": "DATABASE",
+    "embedding": null,
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.16.37.png"
+  },
+  {
+    "question": "You are looking to perform Online Transaction Processing (OLTP). You would like to use a database that has built-in auto-scaling capabilities and provides you with the maximum number of replicas for its underlying storage. What AWS service do you recommend?",
+    "options": [
+      "Amazon ElastiCache",
+      "Amazon Neptune",
+      "Amazon Aurora",
+      "Amazon RDS"
+    ],
+    "answer": "Amazon Aurora",
+    "theme": "DATABASE",
+    "embedding": null,
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.14.57.png"
+  },
+  {
+    "question": "An online payment company is using AWS to host its infrastructure. Due to the application's nature, they have a strict requirement to store an accurate record of financial transactions such as credit and debit transactions. Those transactions must be stored in secured, immutable, encrypted storage which can be cryptographically verified. Which AWS service is best suited for this use case?",
+    "options": [
+      "Amazon DocumentDB",
+      "Amazon Aurora",
+      "Amazon QLDB",
+      "Amazon Neptune"
+    ],
+    "answer": "Amazon QLDB",
+    "theme": "DATABASE",
+    "embedding": null,
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.19.01.png"
+  },
+  {
     "question": "You have enabled versioning in your S3 bucket which already contains a lot of files. Which version will the existing files have?",
     "options": [
       "1",
@@ -126,9 +256,9 @@
   {
     "question": "You have 3 different applications that you'd like to send them the same message. All 3 applications are using SQS. What is the best approach would you choose?",
     "options": [
-      "Use SOS Replication Feature",
+      "Use SQS Replication Feature",
       "Use SNS + SQS Fan Out Pattern",
-      "Send messages individually to 3 SAS queues"
+      "Send messages individually to 3 SQS queues"
     ],
     "answer": "Use SNS + SQS Fan Out Pattern",
     "theme": "SNS-SQS-KENESIS",
@@ -190,7 +320,7 @@
     "options": [
       "Add more Shards",
       "Enable Kinesis Replication",
-      "Use SOS as a buffer to Kinesis"
+      "Use SNS as a buffer to Kinesis"
     ],
     "answer": "Add more Shards",
     "theme": "SNS-SQS-KENESIS",
@@ -323,7 +453,7 @@
   {
     "question": "You are developing a new web and mobile application that will be hosted on AWS and currently, you are working on developing the login and signup page. The application backend is serverless and you are using Lambda, DynamoDB, and API Gateway. Which of the following is the best and easiest approach to configure the authentication for your backend?",
     "options": [
-      "Store users\u2019 credentials ina DynamoDB table encrypted using KMS",
+      "Store users\u2019 credentials in a DynamoDB table encrypted using KMS",
       "Store users\u2019 credentials in an S3 bucket encrypted using KMS",
       "Use Cognito User Pools",
       "Store users\u2019 credentials in AWS Secrets Manager"
@@ -496,6 +626,201 @@
     "theme": "SERVERLESS",
     "embedding": null,
     "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.33.40@2x.png"
+  },
+  {
+    "question": "How would you monitor your EC2 instance memory usage in CloudWatch?",
+    "options": [
+      "Enable EC2 Detailed Monitoring",
+      "By default, the EC2 instance pushes memory usage to CloudWatch",
+      "Use the Unified CloudWatch Agent to push memory usage as a custom metric to CloudWatch"
+    ],
+    "answer": "Use the Unified CloudWatch Agent to push memory usage as a custom metric to CloudWatch",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 16.56.19@2x.png"
+  },
+  {
+    "question": "Someone changed the configuration of a resource and made it non-compliant. Which AWS service is responsible for logging who made modifications to resources?",
+    "options": [
+      "Amazon CloudWatch",
+      "AWS CloudTrail",
+      "AWS Config"
+    ],
+    "answer": "AWS CloudTrail",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.11.38@2x.png"
+  },
+  {
+    "question": "A company is developing a Serverless application on AWS using Lambda, DynamoDB, and Cognito. A junior developer joined a few weeks ago and accidentally deleted one of the DynamoDB tables in the dev AWS account which contained important data. The CTO asks you to prevent this from happening again and there must be a notification system to monitor if there is an attempt to make such deletion actions for the DynamoDB tables. What would you do?",
+    "options": [
+      "Assign developers to a certain IAM group which prevents deletion of DynamoDB tables. Configure EventBridge to capture any DeleteTable API calls through S3 and send a notification using KMS",
+      "Assign developers to a certain IAM group which prevents deletion of DynamoDB tables. Configure EventBridge to capture any DeleteTable API calls through CloudTrail and send a notification using SNS",
+      "Assign developers to a certain IAM group which prevents deletion of DynamoDB tables. Configure EventBridge to capture any DeleteTable API calls through CloudTrail and send a notification using KMS"
+    ],
+    "answer": "Assign developers to a certain IAM group which prevents deletion of DynamoDB tables. Configure EventBridge to capture any DeleteTable API calls through CloudTrail and send a notification using SNS",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.16.53@2x.png"
+  },
+  {
+    "question": ".............. is a CloudWatch feature that allows you to send CloudWatch metrics in near real-time to S3 bucket (through Kinesis Data Firehose) and 3rd party destinations (e.g., Splunk, Datadog, ...).",
+    "options": [
+      "CloudWatch Metric Stream",
+      "CloudWatch Log Stream",
+      "CloudWatch Metric Filter",
+      "CloudWatch Log Group"
+    ],
+    "answer": "CloudWatch Metric Stream",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.15.46@2x.png"
+  },
+  {
+    "question": "One of your teammates terminated an EC2 instance 4 months ago which has critical data. You don't know who made this so you are going to review all API calls within this period using CloudTrail. You already have CloudTrail set up and configured to send logs to the S3 bucket. What should you do to find out who made this?",
+    "options": [
+      "Use CloudTrail Event History in CloudTrail Console",
+      "Analyze CloudTrail logs in S3 bucket using Amazon Athena"
+    ],
+    "answer": "Analyze CloudTrail logs in S3 bucket using Amazon Athena",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.08.49@2x.png"
+  },
+  {
+    "question": "You have enabled AWS Config to monitor Security Groups if there's unrestricted SSH access to any of your EC2 instances. Which AWS Config feature can you use to automatically re-configure your Security Groups to their correct state?",
+    "options": [
+      "AWS Config Remediations",
+      "AWS Config Rules",
+      "AWS Config Notifications"
+    ],
+    "answer": "AWS Config Remediations",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.12.25@2x.png"
+  },
+  {
+    "question": "A DevOps engineer is working for a company and managing its infrastructure and resources on AWS. There was a sudden spike in traffic for the main application for the company which was not normal in this period of the year. The application is hosted on a couple of EC2 instances in private subnets and is fronted by an Application Load Balancer in a public subnet. To detect if this is normal traffic or an attack, the DevOps engineer enabled the VPC Flow Logs for the subnets and stored those logs in CloudWatch Log Group. The DevOps wants to analyze those logs and find out the top IP addresses making requests against the website to check if there is an attack. Which of the following can help the DevOps engineer to analyze those logs?",
+    "options": [
+      "CloudWatch Metric Stream",
+      "CloudWatch Alarm",
+      "CloudWatch Contributor Insights",
+      "CloudWatch Metric Filter"
+    ],
+    "answer": "CloudWatch Contributor Insights",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.16.05@2x.png"
+  },
+  {
+    "question": "You have an application hosted on a fleet of EC2 instances managed by an Auto Scaling Group that you configured its minimum capacity to 2. Also, you have created a CloudWatch Alarm that is configured to scale in your ASG when CPU Utilization is below 60%. Currently, your application runs on 2 EC2 instances and has low traffic and the CloudWatch Alarm is in the ALARM state. What will happen?",
+    "options": [
+      "One EC2 instance will be terminated and the ASG desired and minimum capacity will go to 1",
+      "The CloudWatch Alarm will remain in ALARM state but never decrease the number of EC2 instances in the ASG",
+      "The CloudWatch Alarm will be detached from my ASG",
+      "The CloudWatch Alarm will go in OK state"
+    ],
+    "answer": "The CloudWatch Alarm will remain in ALARM state but never decrease the number of EC2 instances in the ASG",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 16.55.54@2x.png"
+  },
+  {
+    "question": "A company has a running Serverless application on AWS which uses EventBridge as an inter-communication channel between different services within the application. There is a requirement to use the events in the prod environment in the dev environment to make some tests. The tests will be done every 6 months, so the events need to be stored and used later on. What is the most efficient and cost-effective way to store EventBridge events and use them later?",
+    "options": [
+      "Use EventBridge Archive and Replay feature",
+      "Create a Lambda function to store the EventBridge events in an S3 bucket for later usage",
+      "Configure EventBridge to store events in a DynamoDB table"
+    ],
+    "answer": "Use EventBridge Archive and Replay feature",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.18.02@2x.png"
+  },
+  {
+    "question": "You have CloudTrail enabled for your AWS Account in all AWS Regions. What should you use to detect unusual activity in your AWS Account?",
+    "options": [
+      "CloudTrail Data Events",
+      "CloudTrail Insights",
+      "CloudTrail Management Events"
+    ],
+    "answer": "CloudTrail Insights",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.07.57@2x.png"
+  },
+  {
+    "question": "You have made a configuration change and would like to evaluate the impact of it on the performance of your application. Which AWS service should you use?",
+    "options": [
+      "Amazon CloudWatch",
+      "AWS CloudTrail"
+    ],
+    "answer": "Amazon CloudWatch",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.05.03@2x.png"
+  },
+  {
+    "question": "You have an RDS DB instance that's configured to push its database logs to CloudWatch. You want to create a CloudWatch alarm if there's an Error found in the logs. How would you do that?",
+    "options": [
+      "Create a scheduled CloudWatch Event that triggers an AWS Lambda every 1 hour, scans the logs, and notify you through SNS topic",
+      "Create a CloudWatch Logs Metric Filter that filter the logs for the keyword Error , then create a CloudWatch Alarm based on that Metric Filter",
+      "Create an AWS Config Rule that monitors Error in your database logs and notify you through SNS topic"
+    ],
+    "answer": "Create a CloudWatch Logs Metric Filter that filter the logs for the keyword Error , then create a CloudWatch Alarm based on that Metric Filter",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 16.55.31@2x.png"
+  },
+  {
+    "question": "You are running a website on a fleet of EC2 instances with OS that has a known vulnerability on port 84. You want to continuously monitor your EC2 instances if they have port 84 exposed. How should you do this?",
+    "options": [
+      "Setup CloudWatch Metrics",
+      "Setup CloudTrail Trails",
+      "Setup Config Rules",
+      "Schedule a CloudWatch Event to trigger a Lambda function to scan your EC2 instances"
+    ],
+    "answer": "Setup Config Rules",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.09.39@2x.png"
+  },
+  {
+    "question": "Someone has terminated an EC2 instance in your AWS account last week, which was hosting a critical database that contains sensitive data. Which AWS service helps you find who did that and when?",
+    "options": [
+      "CloudWatch Metrics",
+      "CloudWatch Alarms",
+      "CloudWatch Events",
+      "AWS CloudTrail"
+    ],
+    "answer": "AWS CloudTrail",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.06.26@2x.png"
+  },
+  {
+    "question": "You would like to evaluate the compliance of your resource's configurations over time. Which AWS service will you choose?",
+    "options": [
+      "AWS Config",
+      "Amazon CloudWatch",
+      "AWS CloudTrail"
+    ],
+    "answer": "AWS Config",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.10.27@2x.png"
+  },
+  {
+    "question": "You are running a critical website on a set of EC2 instances with a tightened Security Group that has restricted SSH access. You have enabled AWS Config in your AWS Region and you want to be notified via email when someone modified your EC2 instances' Security Group. Which AWS Config feature helps you do this?",
+    "options": [
+      "AWS Config Remediations",
+      "AWS Config Rules",
+      "AWS Config Notifications"
+    ],
+    "answer": "AWS Config Rules",
+    "theme": "CLOUD-WATCH",
+    "embedding": null,
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.17.40@2x.png"
   },
   {
     "question": "You have an S3 bucket that has S3 Versioning enabled. This S3 bucket has a lot of objects, and you would like to remove old object versions to reduce costs. What's the best approach to automate the deletion of these old object versions?",
@@ -739,6 +1064,184 @@
     "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.27.40@2x.png"
   },
   {
+    "question": "@ Personalize",
+    "options": [
+      "Kendra",
+      "Connect"
+    ],
+    "answer": "Kendra",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.41.55@2x.png"
+  },
+  {
+    "question": "An online medical company that allows you to book an appointment with doctors using through a phone call is using AWS to host their infrastructure. They are using Amazon Connect and Amazon Lex to receive calls and create a workflow, book an appointment, and pay. According to the company\u2019s policy, all calls must be recorded for review. But, there is a requirement to remove any Personally Identifiable Information (PII) from the call before it's saved. What do you recommend to use which helps in removing PIl from calls?",
+    "options": [
+      "Amazon Polly",
+      "Amazon Transcribe",
+      "Amazon Recognition",
+      "Amazon Forecast"
+    ],
+    "answer": "Amazon Transcribe",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.47.45@2x.png"
+  },
+  {
+    "question": "A company would like to convert its documents into different languages, with natural and accurate wording. What should they use?",
+    "options": [
+      "Transcribe",
+      "Polly",
+      "Translate",
+      "WordTranslator"
+    ],
+    "answer": "Translate",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.44.07@2x.png"
+  },
+  {
+    "question": "Which fully managed service can deliver highly accurate forecasts?",
+    "options": [
+      "Personalize",
+      "SageMaker",
+      "Lex",
+      "Forecast"
+    ],
+    "answer": "Forecast",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.34.48@2x.png"
+  },
+  {
+    "question": "A developer would like to build, train, and deploy a machine learning model quickly. Which service can he use?",
+    "options": [
+      "SageMaker",
+      "Polly",
+      "Comprehend",
+      "Personalize"
+    ],
+    "answer": "SageMaker",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.44.27@2x.png"
+  },
+  {
+    "question": "A research team would like to group articles by topics using Natural Language Processing (NLP). Which service should they use?",
+    "options": [
+      "Translate",
+      "Comprehend",
+      "Lex",
+      "Rekognition"
+    ],
+    "answer": "Comprehend",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.43.40@2x.png"
+  },
+  {
+    "question": "A company is managing an image and video sharing platform which is used by customers around the globe. The platform is running on AWS using an S3 bucket to host both images and videos and using CloudFront as the CDN to deliver content to customers all over the world with low latency. In the last couple of months, a lot of customers have complained that they have started to see inappropriate content on the platform which started to increase in the last week. It will be very expensive and time-consuming to manually approve those images and videos by employees before its published on the platform. There is a requirement to find a solution that can automatically detect inappropriate and offensive images and videos and give you the ability to set a minimum confidence threshold for items that will be flagged and allows for manual review. Which AWS service can fit the requirement?",
+    "options": [
+      "Amazon Polly",
+      "Amazon Translate",
+      "Amazon Lex",
+      "Amazon Rekognition"
+    ],
+    "answer": "Amazon Rekognition",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.47.04@2x.png"
+  },
+  {
+    "question": "A medical company is in the process of implementing a solution to detect, extract, and analyze information from unstructured medical text like doctors\u2019 notes, clinical trial reports, and radiology reports. Those documents are uploaded and stored on S3 buckets. According to the company\u2019s regulations, the solution must be designed and implemented to keep patients\u2019 privacy by identifying Protected Health Information (PHI) so the solution will be eligible with HIPAA. Which AWS service should you use?",
+    "options": [
+      "Amazon Comprehend Medical",
+      "Amazon Rekognition",
+      "Amazon Polly",
+      "Amazon Translate"
+    ],
+    "answer": "Amazon Comprehend Medical",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.48.50@2x.png"
+  },
+  {
+    "question": "You would like to find objects, people, text, or scenes in images and videos. What AWS service should you use?",
+    "options": [
+      "Rekognition",
+      "Polly",
+      "Kendra",
+      "Lex"
+    ],
+    "answer": "Rekognition",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.41.22@2x.png"
+  },
+  {
+    "question": "Which AWS service makes it easy to convert speech-to-text?",
+    "options": [
+      "Connect",
+      "Translate",
+      "Transcribe",
+      "Polly"
+    ],
+    "answer": "Transcribe",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.44.46@2x.png"
+  },
+  {
+    "question": "A company would like to implement a chatbot that will convert speech-to-text and recognize the customers' intentions. What service should it use?",
+    "options": [
+      "Transcribe",
+      "Rekognition",
+      "Connect",
+      "Lex"
+    ],
+    "answer": "Lex",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.34.28@2x.png"
+  },
+  {
+    "question": "You should use Amazon Transcribe to turn text into lifelike speech using deep learning?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.53.01@2x.png"
+  },
+  {
+    "question": "Amazon Polly allows you to turn text into speech. It has two important features. First is ............... which allows you to customize the pronunciation of words (e.g., \u201cAmazon EC2\u201d will be \u201cAmazon Elastic Compute Cloud\u201d). The second is................... Which allows you to emphasize words, including breathing sounds, whispering, and more.",
+    "options": [
+      "Speech Synthesis Markup Language (SSML), Pronunciation Lexicons",
+      "Pronunciation Lexicons, Security Assertion Markup Language (SAML)",
+      "Pronunciation Lexicons, Speech Synthesis Markup Language (SSML)",
+      "Security Assertion Markup Language (SAML), Pronunciation Lexicons"
+    ],
+    "answer": "Pronunciation Lexicons, Speech Synthesis Markup Language (SSML)",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.48.06@2x.png"
+  },
+  {
+    "question": "Which of the following services is a document search service powered by machine learning?",
+    "options": [
+      "Forecast",
+      "Kendra",
+      "Comprehend",
+      "Polly"
+    ],
+    "answer": "Kendra",
+    "theme": "ML",
+    "embedding": null,
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.46.13@2x.png"
+  },
+  {
     "question": "You have an application hosted on a set of EC2 instances managed by an Auto Scaling Group that you configured both desired and maximum capacity to 3. Also, you have created a CloudWatch Alarm that is configured to scale out your ASG when CPU Utilization reaches 60%. Your application suddenly received huge traffic and is now running at 80% CPU Utilization. What will happen?",
     "options": [
       "Nothing",
@@ -786,7 +1289,7 @@
     "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.47.36@2x.png"
   },
   {
-    "question": "You have a Network Load Balancer that distributes traffic across a set of EC2 instances in us\u2014east-1. You have 2 EC2 instances in us\u2014east-1b AZ and 5 EC2 instances in us\u2014east\u2014le AZ. You have noticed that the CPU utilization is higher in the EC2 instances in us\u2014east\u20141b AZ. After more investigation, you noticed that the traffic is equally distributed across the two AZs. How would you solve this problem?",
+    "question": "You have a Network Load Balancer that distributes traffic across a set of EC2 instances in us-east-1. You have 2 EC2 instances in us-east-1b AZ and 5 EC2 instances in us-east-1e AZ. You have noticed that the CPU utilization is higher in the EC2 instances in us-east-1b AZ. After more investigation, you noticed that the traffic is equally distributed across the two AZs. How would you solve this problem?",
     "options": [
       "Enable Cross-Zone Load Balancing",
       "Enable Sticky Sessions",
@@ -1072,7 +1575,7 @@
     "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.47.38@2x.png"
   },
   {
-    "question": "A company you're working for wants their data stored in S3 to be encrypted. They don't mind the encryption keys stored and managed by AWS, but they want to maintain control over the rotation policy of the encryption keys. You recommend them to USE what?",
+    "question": "A company you're working for wants their data stored in S3 to be encrypted. They don't mind the encryption keys stored and managed by AWS, but they want to maintain control over the rotation policy of the encryption keys. You recommend them to use what?",
     "options": [
       "SSE-S3",
       "SSE-KMS",
@@ -1122,7 +1625,7 @@
     "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.02.23@2x.png"
   },
   {
-    "question": "Your company does not trust AWS for the encryption process and wants it to happen on the application. You recommend them to USE wees",
+    "question": "Your company does not trust AWS for the encryption process and wants it to happen on the application. You recommend them to USE what?",
     "options": [
       "SSE-S3",
       "SSE-KMS",
@@ -1197,7 +1700,7 @@
     "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.05.38@2x.png"
   },
   {
-    "question": "Your client wants to make sure that file encryption is happening in S3, but he wants to fully manage the encryption keys and never store them in AWS. You recommend him to use?",
+    "question": "Your client wants to make sure that file encryption is happening in S3, but he wants to fully manage the encryption keys and never store them in AWS. You recommend him to use...",
     "options": [
       "SSE-S3",
       "SSE-KMS",
@@ -1213,7 +1716,7 @@
     "question": "You suspect that some of your employees try to access files in an S3 bucket that they don't have access to. How can you verify this is indeed the case without them noticing?",
     "options": [
       "Enable S3 Access Logs and analyze them using Athena",
-      "Restrict their IAM policies and look at CloudTail logs",
+      "Restrict their IAM policies and look at CloudTrail logs",
       "Use a bucket policy"
     ],
     "answer": "Enable S3 Access Logs and analyze them using Athena",
@@ -1398,7 +1901,7 @@
     "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.32.45@2x.png"
   },
   {
-    "question": "Amazon FSx for NetApp ONTAP is compatible with the following protocols, EXCEPT ........0.0cuee",
+    "question": "Amazon FSx for NetApp ONTAP is compatible with the following protocols, EXCEPT",
     "options": [
       "NFS",
       "SMB",
@@ -1451,7 +1954,7 @@
     "question": "You have hundreds of Terabytes that you want to migrate to AWS S3 as soon as possible. You tried to use your network bandwidth and it will take around 3 weeks to complete the upload process. What is the recommended approach to using in this situation?",
     "options": [
       "AWS Storage Gateway - Volume Gateway",
-      "$3 Multi-part Upload",
+      "S3 Multi-part Upload",
       "AWS Snowball Edge",
       "AWS Data Migration Service"
     ],
@@ -2092,7 +2595,7 @@
       "Use an EC2 Instance Store",
       "Use an EBS io2 Block Express drive"
     ],
-    "answer": "Use an EC2 Instance Store",
+    "answer": "Use an EBS io2 Block Express drive",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
     "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.29.44@2x.png"
@@ -2119,6 +2622,186 @@
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
     "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.27.34@2x.png"
+  },
+  {
+    "question": "Which feature in Redshift forces all COPY and UNLOAD traffic moving between your cluster and data repositories through your VPCs?",
+    "options": [
+      "Enhanced VPC Routing",
+      "Improved VPC Routing",
+      "Redshift Spectrum"
+    ],
+    "answer": "Enhanced VPC Routing",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.23.27.png"
+  },
+  {
+    "question": "You are running a gaming website that is using DynamoDB as its data store. Users have been asking for a search feature to find other gamers by name, with partial matches if possible. Which AWS technology do you recommend to implement this feature?",
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon Redshift",
+      "Amazon OpenSearch Service",
+      "Amazon Neptune"
+    ],
+    "answer": "Amazon OpenSearch Service",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.24.02.png"
+  },
+  {
+    "question": "As a Solutions Architect, you have been instructed you to prepare a disaster recovery plan for a Redshift cluster. What should you do?",
+    "options": [
+      "Enable Multi-AZ",
+      "Enable Automated Snapshots, then configure your Redshift cluster to automatically copy snapshots to another AWS region",
+      "Take a snapshot then restore to a Redshift Global cluster"
+    ],
+    "answer": "Enable Automated Snapshots, then configure your Redshift cluster to automatically copy snapshots to another AWS region",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.23.08.png"
+  },
+  {
+    "question": "An AWS service allows you to create, run, and monitor ETL (extract, transform, and load) jobs in a few clicks.",
+    "options": [
+      "AwsGlue",
+      "Amazon Redshift",
+      "Amazon RDS",
+      "Amazon DynamoDB"
+    ],
+    "answer": "AwsGlue",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.28.28.png"
+  },
+  {
+    "question": "Which AWS service is most appropriate when you want to perform real-time analytics on streams of data?",
+    "options": [
+      "Amazon SQS",
+      "Amazon SNS",
+      "Amazon Kinesis Data Analytics",
+      "Amazon Kinesis Data Firehose"
+    ],
+    "answer": "Amazon Kinesis Data Analytics",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.33.31@2x.png"
+  },
+  {
+    "question": "A company is using AWS to host its public websites and internal applications. Those different websites and applications generate a lot of logs and traces. There is a requirement to centrally store those logs and efficiently search and analyze those logs in real-time for detection of any errors and if there is a threat. Which AWS service can help them efficiently store and analyze logs?",
+    "options": [
+      "Amazon s3",
+      "Amazon OpenSearch service",
+      "Amazon ElastiCache",
+      "Amazon QLDB"
+    ],
+    "answer": "Amazon OpenSearch service",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.28.48.png"
+  },
+  {
+    "question": "You are a DevOps engineer in a machine learning company which 3 TB of JSON files stored in an S3 bucket. There\u2019s a requirement to do some analytics on those files using Amazon Athena and you have been tasked to find a way to convert those files\u2019 format from JSON to Apache Parquet. Which AWS service is best suited?",
+    "options": [
+      "S3 Object Versioning",
+      "Kinesis Data Streams",
+      "Amazon MSK",
+      "AWS Glue"
+    ],
+    "answer": "AWS Glue",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.30.41@2x.png"
+  },
+  {
+    "question": "makes it easy and cost-effective for data engineers and analysts to run applications built using open source big data frameworks such as Apache Spark, Hive, or Presto without having to operate or manage clusters.",
+    "options": [
+      "AWS Lambda",
+      "Amazon EMR",
+      "Amazon Athena",
+      "Amazon OpenSearch Service"
+    ],
+    "answer": "Amazon EMR",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.30.19.png"
+  },
+  {
+    "question": "You would like to have a database that is efficient at performing analytical queries on large sets of columnar data. You would like to connect to this Data Warehouse using a reporting and dashboard tool such as Amazon QuickSight. Which AWS technology do you recommend?",
+    "options": [
+      "Amazon RDS",
+      "Amazon s3",
+      "Amazon Redshift",
+      "Amazon Neptune"
+    ],
+    "answer": "Amazon Redshift",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.22.20.png"
+  },
+  {
+    "question": "You have a lot of log files stored in an S3 bucket that you want to perform a quick analysis, if possible Serverless, to filter the logs and find users that attempted to make an unauthorized action. Which AWS service allows you to do so?",
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon Redshift",
+      "S3Glacier",
+      "Amazon Athena"
+    ],
+    "answer": "Amazon Athena",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.22.44.png"
+  },
+  {
+    "question": "Which AWS Glue feature allows you to save and track the data that has already been processed during a previous run of a Glue ETL job?",
+    "options": [
+      "Glue Job Bookmarks",
+      "Glue Elastic Views",
+      "Glue Streaming ETL",
+      "Glue DataBrew"
+    ],
+    "answer": "Glue Job Bookmarks",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.31.03@2x.png"
+  },
+  {
+    "question": "You have an on-premises application that is used together with an on-premises Apache Kafka to receive a stream of clickstream events from multiple websites. You have been tasked to migrate this application as soon as possible without any code changes. You decided to host the application on an EC2 instance. What is the best option you recommend to migrate Apache Kafka?",
+    "options": [
+      "Kinesis Data Streams",
+      "AWS Glue",
+      "Amazon MSK",
+      "Kinesis Data Analytics"
+    ],
+    "answer": "Amazon MSK",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.32.22@2x.png"
+  },
+  {
+    "question": "You have data stored in RDS, S3 buckets and you are using AWS Lake Formation as a data lake to collect, move and catalog data so you can do some analytics. You have a lot of big data and ML engineers in the company and you want to control access to part of the data as it might contain sensitive information. What can you use?",
+    "options": [
+      "Lake Formation Fine-grained Access Control",
+      "Amazon Cognito",
+      "AWS Shield",
+      "S3 Object Lock"
+    ],
+    "answer": "Lake Formation Fine-grained Access Control",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.33.00@2x.png"
+  },
+  {
+    "question": "An e-commerce company has all its historical data such as orders, customers, revenues, and sales for the previous years hosted on a Redshift cluster. There is a requirement to generate some dashboards and reports indicating the revenues from the previous years and the total sales, so it will be easy to define the requirements for the next year. The DevOps team is assigned to find an AWS service that can help define those dashboards and have native integration with Redshift. Which AWS service is best suited?",
+    "options": [
+      "Amazon OpenSearch Service",
+      "Amazon Athena",
+      "Amazon QuickSight",
+      "Amazon EMR"
+    ],
+    "answer": "Amazon QuickSight",
+    "theme": "DATA-ANAL",
+    "embedding": null,
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.30.19@2x.png"
   },
   {
     "question": "You have deployed a new Elastic Beanstalk environment and would like to direct 5% of your production traffic to this new environment. This allows you to monitor for CloudWatch metrics and ensuring that there're no bugs exist with your new environment. Which Route 53 Record type allows you to do so?",
@@ -2186,7 +2869,7 @@
     "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.46.05@2x.png"
   },
   {
-    "question": "You have an application that's hosted in two different AWS Regions us-west-1 and eu-west-2 . You want your users to get the best possible user experience by minimizing the response time from application servers to your users. Which Route 53 Routing Policy should you choose?",
+    "question": "You have an application that's hosted in two different AWS Regions us-west-1 and eu-west-2. You want your users to get the best possible user experience by minimizing the response time from application servers to your users. Which Route 53 Routing Policy should you choose?",
     "options": [
       "Multi Value",
       "Weighted",
@@ -2223,7 +2906,7 @@
     "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.04.18@2x.png"
   },
   {
-    "question": "Spot Fleet is a set of Spot Instances and optionally",
+    "question": "Spot Fleet is a set of Spot Instances and optionally?",
     "options": [
       "Reserved Instances",
       "On-Demand Instances",

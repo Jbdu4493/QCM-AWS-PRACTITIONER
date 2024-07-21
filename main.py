@@ -2,12 +2,19 @@ import streamlit as st
 import json
 import random
 
+nb_quest = 65
+
+
+def shuffler_answer(quiz):
+    for i,q in enumerate(quiz):
+        random.shuffle(quiz[i]["options"])
+
 def run():
     st.set_page_config(
-        page_title="Streamlit quizz app",
-        page_icon="❓",
+        page_title="AWS QUIZZ",
+        page_icon="💻",
     )
-nb_quest = 20
+
 if __name__ == "__main__":
     run()
 
@@ -20,8 +27,6 @@ div.stButton > button:first-child {
 </style>
 """, unsafe_allow_html=True)
 
-nb_question=20
-
 # Initialize session variables if they do not exist
 default_values = {'current_index': 0, 'current_question': 0, 'score': 0, 'selected_option': None, 'answer_submitted': False}
 for key, value in default_values.items():
@@ -32,7 +37,9 @@ for key, value in default_values.items():
 if "quiz_data" not in  st.session_state:
     with open('./quizz_question.json', 'r', encoding='utf-8') as f:
         quiz_data = json.load(f)
-        st.session_state.quiz_data = random.choices(quiz_data,k=nb_quest)
+        quiz_data = random.sample(quiz_data,k=nb_quest)
+        shuffler_answer(quiz_data)
+        st.session_state.quiz_data = quiz_data
 
 
 def restart_quiz():
@@ -42,7 +49,10 @@ def restart_quiz():
     st.session_state.answer_submitted = False
     with open('./quizz_question.json', 'r', encoding='utf-8') as f:
         quiz_data = json.load(f)
-        st.session_state.quiz_data = random.choices(quiz_data,k=nb_quest)
+        quiz_data = random.sample(quiz_data,k=nb_quest)
+        shuffler_answer(quiz_data)
+        st.session_state.quiz_data = quiz_data
+    
 
 
 def submit_answer():
