@@ -303,7 +303,7 @@
     "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.13.33@2x.png"
   },
   {
-    "question": "You have an SOS Queue where each consumer polls 10 messages at a time and finishes processing them in 1 minute. After a while, you noticed that the same SQS messages are received by different consumers resulting in your messages being processed more than once. What should you do to resolve this issue?",
+    "question": "You have an SQS Queue where each consumer polls 10 messages at a time and finishes processing them in 1 minute. After a while, you noticed that the same SQS messages are received by different consumers resulting in your messages being processed more than once. What should you do to resolve this issue?",
     "options": [
       "Enable Long Polling",
       "Add DelaySeconds parameter to the messages when being produced",
@@ -344,7 +344,7 @@
     "options": [
       "Contact AWS Support to pre-warm your SQS Standard Queue",
       "Enable Auto Scaling in your SQS queue",
-      "Increase the capacity of the SAS queue",
+      "Increase the capacity of the SQS queue",
       "Do nothing, SQS scales automatically"
     ],
     "answer": "Do nothing, SQS scales automatically",
@@ -1064,12 +1064,13 @@
     "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.27.40@2x.png"
   },
   {
-    "question": "@ Personalize",
+    "question": "A start-up would like to rapidly create customized user experiences. Which AWS service can help?",
     "options": [
+      "Personalize",
       "Kendra",
       "Connect"
     ],
-    "answer": "Kendra",
+    "answer": "Personalize",
     "theme": "ML",
     "embedding": null,
     "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.41.55@2x.png"
@@ -1302,7 +1303,7 @@
     "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.42.40@2x.png"
   },
   {
-    "question": "Elastic Load Balancers provide a wwe",
+    "question": "Elastic Load Balancers provide a ....:",
     "options": [
       "static IPv4 we can use in our application",
       "static DNS name we can use in our application",
@@ -1444,7 +1445,7 @@
       "AWSALBTG",
       "AWSALB"
     ],
-    "answer": "AWSALBAPP",
+    "answer": "APPUSERC",
     "theme": "ELB-ASG",
     "embedding": null,
     "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.41.40@2x.png"
@@ -1692,7 +1693,7 @@
       "S3 Object Lock - Retention Governance Mode",
       "S3 Versioning",
       "S3 Object Lock - Retention Compliance Mode",
-      "$3 Glacier Vault Lock"
+      "S3 Glacier Vault Lock"
     ],
     "answer": "S3 Object Lock - Retention Compliance Mode",
     "theme": "S3-SEC",
@@ -1763,7 +1764,7 @@
     "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.24.14@2x.png"
   },
   {
-    "question": "Amazon Elastic Container Service (ECS) has two Launch Types: ....cscseseee AN weet",
+    "question": "Amazon Elastic Container Service (ECS) has two Launch Types: ....",
     "options": [
       "Amazon EC2 Launch Type and Fargate Launch Type",
       "Amazon EC2 Launch Type and EKS Launch Type",

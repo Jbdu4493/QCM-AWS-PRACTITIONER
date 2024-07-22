@@ -7,7 +7,7 @@ nb_quest = 65
 def load_quizz():
     with open('./quizz_question.json', 'r', encoding='utf-8') as f:
         quiz_data = json.load(f)
-        quiz_data = random.sample(quiz_data,k=nb_quest)
+       
         shuffler_answer(quiz_data)
         st.session_state.quiz_data = quiz_data
 
@@ -58,17 +58,27 @@ themes = themes = set([q["theme"] for q in st.session_state.quiz_data])
 add_selectbox = st.sidebar.multiselect(
     "Wich themes would you like to be choose?",
     themes
-)  
-selected_theme = [ add_selectbox[a] for a in add_selectbox]
-if selected_theme not in st.session_state:
-    st.session_state['selected_theme']=selected_theme
+)
+
+
+if add_selectbox not in st.session_state:
+    st.session_state['selected_theme']=add_selectbox[:]
 
 def filter_quizz():
     st.session_state.current_index = 0
     st.session_state.score = 0
     st.session_state.selected_option = None
     st.session_state.answer_submitted = False
-    st.session_state.quiz_data = list(filter(lambda x: x['theme']in ("SA-LEVEL",'SERVERLESS'),st.session_state.quiz_data  ))
+    if st.session_state.selected_theme:
+        st.session_state.quiz_data = list(filter(lambda x: x['theme']in st.session_state.selected_theme,st.session_state.quiz_data  ))
+        random.shuffle(st.session_state.quiz_data)
+        if len(st.session_state.quiz_data) >nb_quest:
+            st.session_state.quiz_data= random.sample(st.session_state.quiz_data,k=nb_quest)
+        else:
+            st.session_state.quiz_data= random.choices(st.session_state.quiz_data,k=nb_quest)
+
+    elif st.session_state.selected_theme == []:
+         st.session_state.quiz_data = random.sample(st.session_state.quiz_data ,k=nb_quest)
 
 st.sidebar.button('Filtrer',on_click=filter_quizz)
 
@@ -95,14 +105,14 @@ def next_question():
 st.title("Streamlit Quiz App")
 
 # Progress bar
-progress_bar_value = (st.session_state.current_index + 1) / nb_quest
+progress_bar_value = (st.session_state.current_index + 1) / len(st.session_state.quiz_data )
 score = st.session_state.score*100/st.session_state.current_index if st.session_state.current_index != 0 else 0
 st.metric(label="Score", value=f"{score:.1f} %")
 st.progress(progress_bar_value)
 
 # Display the question and answer options
 question_item = st.session_state.quiz_data[st.session_state.current_index]
-st.subheader(f"Question {st.session_state.current_index + 1}")
+st.subheader(f"Question {st.session_state.current_index + 1} sur {len(st.session_state.quiz_data )}")
 st.write(f"#### {question_item['question']}")
 
 st.markdown(""" ___""")
@@ -129,14 +139,14 @@ st.markdown(""" ___""")
 
 # Submission button and response logic
 if st.session_state.answer_submitted:
-    if st.session_state.current_index < nb_quest - 1:
+    if st.session_state.current_index < len(st.session_state.quiz_data ) - 1:
         st.button('Next', on_click=next_question)
     else:
-        st.write(f"### Quiz completed! Your score is: {st.session_state.score*100/nb_quest:.1f}")
+        st.write(f"### Quiz completed! Your score is: {st.session_state.score*100/len(st.session_state.quiz_data ):.1f}")
         col = st.columns(5,gap='large')
         with col[0]:
             if st.button('Restart', on_click=restart_quiz):
                 pass
 else:
-    if st.session_state.current_index < nb_quest:
+    if st.session_state.current_index < len(st.session_state.quiz_data ):
         st.button('Submit', on_click=submit_answer)
