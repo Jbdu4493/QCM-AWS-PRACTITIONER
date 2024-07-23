@@ -817,7 +817,7 @@
       "AWS Config Rules",
       "AWS Config Notifications"
     ],
-    "answer": "AWS Config Rules",
+    "answer": "AWS Config Notifications",
     "theme": "CLOUD-WATCH",
     "embedding": null,
     "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.17.40@2x.png"
@@ -1665,7 +1665,7 @@
   {
     "question": "You are looking to provide temporary URLs to a growing list of federated users to allow them to perform a file upload on your S3 bucket to a specific location. What should you use?",
     "options": [
-      "s3CcorRs",
+      "S3 CORS",
       "S3 Pre-Signed URL",
       "S3 Bucket Policies"
     ],
@@ -2117,7 +2117,7 @@
     "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.34.20@2x.png"
   },
   {
-    "question": "Amazon Aurora Supports both uu. databases.",
+    "question": "Amazon Aurora Supports both databases:",
     "options": [
       "MySQL and MariaDB",
       "MySQL and PostgreSQL",
@@ -2186,7 +2186,7 @@
       "RDS Custom for Oracle",
       "Deploy Oracle on EC2"
     ],
-    "answer": "Deploy Oracle on EC2",
+    "answer": "RDS Custom for Oracle",
     "theme": "RDS",
     "embedding": null,
     "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.42.04@2x.png"
@@ -2596,7 +2596,7 @@
       "Use an EC2 Instance Store",
       "Use an EBS io2 Block Express drive"
     ],
-    "answer": "Use an EBS io2 Block Express drive",
+    "answer": "Use an EC2 Instance Store",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
     "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.29.44@2x.png"
@@ -2605,10 +2605,10 @@
     "question": "Which of the following EBS volume types can be used as boot volumes when you create EC2 instances?",
     "options": [
       "gp2, gp3, stl, scl",
-      "gp2, gp3, i01, io2",
+      "gp2, gp3, io1, io2 ",
       "iol, io2, stl, scl"
     ],
-    "answer": "gp2, gp3, i01, io2",
+    "answer": "gp2, gp3, io1, io2 ",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
     "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.27.59@2x.png"

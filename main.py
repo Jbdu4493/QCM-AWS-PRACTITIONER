@@ -72,8 +72,8 @@ def filter_quizz():
     if st.session_state.selected_theme:
         st.session_state.quiz_data = list(filter(lambda x: x['theme']in st.session_state.selected_theme,st.session_state.quiz_data  ))
         random.shuffle(st.session_state.quiz_data)
-        if len(st.session_state.quiz_data) >nb_quest:
-            st.session_state.quiz_data= random.sample(st.session_state.quiz_data,k=nb_quest)
+        if len(st.session_state.quiz_data) > nb_quest:
+            st.session_state.quiz_data += random.choices(st.session_state.quiz_data,k=nb_quest - len(st.session_state.quiz_data))
         else:
             st.session_state.quiz_data= random.choices(st.session_state.quiz_data,k=nb_quest)
 
