@@ -10,7 +10,8 @@
     "answer": "Amazon Neptune",
     "theme": "DATABASE",
     "embedding": null,
-    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.15.30.png"
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.15.30.png",
+    "id-question": 1
   },
   {
     "question": "A startup is working on developing a new project to reduce forest fires due to climate change. The startup is developing sensors that will be spread across the entire forest to make some readings such as temperature, humidity, and pressures which will help detect the forest fires before it happens. They are going to have thousands of sensors that are going to store a lot of readings each second. There is a requirement to store those readings and do fast analytics so they can predict if there is a fire. Which AWS service can they use to store those readings?",
@@ -23,7 +24,8 @@
     "answer": "Amazon Timestream",
     "theme": "DATABASE",
     "embedding": null,
-    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.19.25.png"
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.19.25.png",
+    "id-question": 2
   },
   {
     "question": "A company using a self-hosted on-premises Apache Cassandra database which they want to migrate to AWS. Which AWS service can they use which provides them with a fully managed, highly available, and scalable Apache Cassandra database?",
@@ -36,7 +38,8 @@
     "answer": "Amazon Keyspaces",
     "theme": "DATABASE",
     "embedding": null,
-    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.17.32.png"
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.17.32.png",
+    "id-question": 3
   },
   {
     "question": "Which database helps you store relational datasets, with SQL language compatibility and the capability of processing transactions such as insert, update, and delete?",
@@ -49,7 +52,8 @@
     "answer": "Amazon RDS",
     "theme": "DATABASE",
     "embedding": null,
-    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.13.32.png"
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.13.32.png",
+    "id-question": 4
   },
   {
     "question": "Which AWS service provides you with caching capability that is compatible with Redis API?",
@@ -62,7 +66,8 @@
     "answer": "Amazon ElastiCache",
     "theme": "DATABASE",
     "embedding": null,
-    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.14.04.png"
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.14.04.png",
+    "id-question": 5
   },
   {
     "question": "You want to migrate an on-premises MongoDB NoSQL database to AWS. You don't want to manage any database servers, so you want to use a managed NoSQL Serverless database, that provides you with high availability, durability, and reliability, and the capability to take your database global. Which database should you choose?",
@@ -75,7 +80,8 @@
     "answer": "Amazon DynamoDB",
     "theme": "DATABASE",
     "embedding": null,
-    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.14.38.png"
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.14.38.png",
+    "id-question": 6
   },
   {
     "question": "You have a set of files, 100MB each, that you want to store in a reliable and durable key-value store. Which AWS service do you recommend?",
@@ -88,7 +94,8 @@
     "answer": "Amazon s3",
     "theme": "DATABASE",
     "embedding": null,
-    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.15.56.png"
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.15.56.png",
+    "id-question": 7
   },
   {
     "question": "A company has an on-premises website that uses ReactJS as its frontend, NodeJS as its backend, and MongoDB for the database. There are some issues with the self-hosted MongoDB database as there is a lot of maintenance required and they don\u2019t have and can\u2019t afford the resources or experience to handle those issues. So, a decision was made to migrate the website to AWS. They have decided to host the frontend ReactJS application in an S3 bucket and the NodeJS backend on a set of EC2 instances. Which AWS service can they use to migrate the MongoDB database that provides them with high scalability and availability without making any code changes?",
@@ -101,7 +108,8 @@
     "answer": "Amazon DocumentDB",
     "theme": "DATABASE",
     "embedding": null,
-    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.16.37.png"
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.16.37.png",
+    "id-question": 8
   },
   {
     "question": "You are looking to perform Online Transaction Processing (OLTP). You would like to use a database that has built-in auto-scaling capabilities and provides you with the maximum number of replicas for its underlying storage. What AWS service do you recommend?",
@@ -114,7 +122,8 @@
     "answer": "Amazon Aurora",
     "theme": "DATABASE",
     "embedding": null,
-    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.14.57.png"
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.14.57.png",
+    "id-question": 9
   },
   {
     "question": "An online payment company is using AWS to host its infrastructure. Due to the application's nature, they have a strict requirement to store an accurate record of financial transactions such as credit and debit transactions. Those transactions must be stored in secured, immutable, encrypted storage which can be cryptographically verified. Which AWS service is best suited for this use case?",
@@ -127,7 +136,8 @@
     "answer": "Amazon QLDB",
     "theme": "DATABASE",
     "embedding": null,
-    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.19.01.png"
+    "img_path": "./screen_question/DATABASE/CleanShot 2024-07-19 at 14.19.01.png",
+    "id-question": 10
   },
   {
     "question": "You have enabled versioning in your S3 bucket which already contains a lot of files. Which version will the existing files have?",
@@ -140,7 +150,8 @@
     "answer": "null",
     "theme": "S3",
     "embedding": null,
-    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.50.24@2x.png"
+    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.50.24@2x.png",
+    "id-question": 11
   },
   {
     "question": "You have 3 S3 buckets. One source bucket A, and two destination buckets B and C in different AWS Regions. You want to replicate objects from bucket A to both bucket B and C. How would you achieve this?",
@@ -152,7 +163,8 @@
     "answer": "Configure replication from bucket A to bucket B, then from bucket A to bucket C",
     "theme": "S3",
     "embedding": null,
-    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.52.05@2x.png"
+    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.52.05@2x.png",
+    "id-question": 12
   },
   {
     "question": "You want the content of an S3 bucket to be fully available in different AWS Regions. That will help your team perform data analysis at the lowest latency and cost possible. What S3 feature should you use?",
@@ -165,7 +177,8 @@
     "answer": "S3 Replication",
     "theme": "S3",
     "embedding": null,
-    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.50.54@2x.png"
+    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.50.54@2x.png",
+    "id-question": 13
   },
   {
     "question": "You have updated an S3 bucket policy to allow IAM users to read/write files in the S3 bucket, but one of the users complain that he can't perform a PutObject API call. What is a possible cause for this?",
@@ -178,7 +191,8 @@
     "answer": "The IAM user must have an explicit DENY in the attached IAM Policy",
     "theme": "S3",
     "embedding": null,
-    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.50.39@2x.png"
+    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.50.39@2x.png",
+    "id-question": 14
   },
   {
     "question": "You're getting errors while trying to create a new S3 bucket named 'dev'. You're using a new AWS Account with no S3 buckets created before. What is a possible cause for this?",
@@ -189,7 +203,8 @@
     "answer": "S3 bucket names must be globally unique and 'dev' is already taken",
     "theme": "S3",
     "embedding": null,
-    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.50.11@2x.png"
+    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.50.11@2x.png",
+    "id-question": 15
   },
   {
     "question": "Which of the following is NOT a Glacier Flexible retrieval mode?",
@@ -202,7 +217,8 @@
     "answer": "Instant (10 seconds)",
     "theme": "S3",
     "embedding": null,
-    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.52.38@2x.png"
+    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.52.38@2x.png",
+    "id-question": 16
   },
   {
     "question": "Which of the following is NOT a Glacier Deep Archive retrieval mode?",
@@ -214,7 +230,8 @@
     "answer": "Expedited (4 - 5 minutes)",
     "theme": "S3",
     "embedding": null,
-    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.52.22@2x.png"
+    "img_path": "./screen_question/S3/CleanShot 2024-07-05 at 16.52.22@2x.png",
+    "id-question": 17
   },
   {
     "question": "A company is using Amazon Kinesis Data Streams to ingest clickstream data and then do some analytical processes on it. There is a campaign in the next few days and the traffic is unpredictable which might grow up to 100x. What Kinesis Data Stream capacity mode do you recommend?",
@@ -225,7 +242,8 @@
     "answer": "On-demand Mode",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-09 at 18.32.36@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-09 at 18.32.36@2x.png",
+    "id-question": 18
   },
   {
     "question": "Which of the following is NOT a supported subscriber for AWS SNS?",
@@ -238,7 +256,8 @@
     "answer": "Amazon Kinesis Data Streams",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.12.55@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.12.55@2x.png",
+    "id-question": 19
   },
   {
     "question": "Which SQS Queue type allows your messages to be processed exactly once and in order?",
@@ -251,7 +270,8 @@
     "answer": "SQS FIFO Queue",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.02.03@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.02.03@2x.png",
+    "id-question": 20
   },
   {
     "question": "You have 3 different applications that you'd like to send them the same message. All 3 applications are using SQS. What is the best approach would you choose?",
@@ -263,7 +283,8 @@
     "answer": "Use SNS + SQS Fan Out Pattern",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.03.44@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.03.44@2x.png",
+    "id-question": 21
   },
   {
     "question": "An e-commerce company is preparing for a big marketing promotion that will bring millions of transactions. Their website is hosted on EC2 instances in an Auto Scaling Group and they are using Amazon Aurora as their database. The Aurora database has a bottleneck and a lot of transactions have been failed in the last promotion they have made as they had a lot of transaction and the Aurora database wasn\u2019t prepared to handle these too many transactions. What do you recommend to handle those transactions and prevent any failed transactions?",
@@ -275,7 +296,8 @@
     "answer": "Use SQS as a buffer to write to Aurora",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.10.52@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.10.52@2x.png",
+    "id-question": 22
   },
   {
     "question": "You are running an application that produces a large amount of real-time data that you want to load into S3 and Redshift. Also, these data need to be transformed before being delivered to their destination. What is the best architecture would you choose?",
@@ -287,7 +309,8 @@
     "answer": "Kinesis Data Streams + Kinesis Data Firehose",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.09.26@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.09.26@2x.png",
+    "id-question": 23
   },
   {
     "question": "You're running many micro-services applications on-premises and they communicate using a message broker that supports MQTT protocol. You're planning to migrate these applications to AWS without re-engineering the applications and modifying the code. Which AWS service allows you to get a managed message broker that supports the MQTT protocol?",
@@ -300,7 +323,8 @@
     "answer": "Amazon MQ",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.13.33@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.13.33@2x.png",
+    "id-question": 24
   },
   {
     "question": "You have an SQS Queue where each consumer polls 10 messages at a time and finishes processing them in 1 minute. After a while, you noticed that the same SQS messages are received by different consumers resulting in your messages being processed more than once. What should you do to resolve this issue?",
@@ -313,7 +337,8 @@
     "answer": "Increase the Visibility Timeout",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.01.35@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.01.35@2x.png",
+    "id-question": 25
   },
   {
     "question": "You have a Kinesis data stream with 6 shards provisioned. This data stream usually receiving 5 MB/s of data and sending out 8 MB/s. Occasionally, your traffic spikes up to 2x and you get a ProvisionedThroughputExceeded exception. What should you do to resolve the issue?",
@@ -325,7 +350,8 @@
     "answer": "Add more Shards",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.04.41@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.04.41@2x.png",
+    "id-question": 26
   },
   {
     "question": "Which AWS service helps you when you want to send email notifications to your users?",
@@ -337,7 +363,8 @@
     "answer": "Amazon SNS",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.10.22@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 12.10.22@2x.png",
+    "id-question": 27
   },
   {
     "question": "You have an e-commerce website and you are preparing for Black Friday which is the biggest sale of the year. You expect that your traffic will increase by 100x. Your website already using an SQS Standard Queue, and you're running a fleet of EC2 instances in an Auto Scaling Group to consume SQS messages. What should you do to prepare your SQS Queue?",
@@ -350,7 +377,8 @@
     "answer": "Do nothing, SQS scales automatically",
     "theme": "SNS-SQS-KENESIS",
     "embedding": null,
-    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 11.59.58@2x.png"
+    "img_path": "./screen_question/SNS-SQS-KENESIS/CleanShot 2024-07-07 at 11.59.58@2x.png",
+    "id-question": 28
   },
   {
     "question": "A WordPress website is hosted in a set of EC2 instances in an EC2 Auto Scaling Group and fronted by a CloudFront Distribution which is configured to cache the content for 3 days. You have released a new version of the website and want to release it immediately to production without waiting for 3 days for the cached content to be expired. What is the easiest and most efficient way to solve this?",
@@ -362,7 +390,8 @@
     "answer": "CloudFront Cache Invalidation",
     "theme": "CLOUD-FRONT",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-FRONT/CleanShot 2024-07-06 at 10.51.00@2x.png"
+    "img_path": "./screen_question/CLOUD-FRONT/CleanShot 2024-07-06 at 10.51.00@2x.png",
+    "id-question": 29
   },
   {
     "question": "A company is migrating a web application to AWS Cloud and they are going to use a set of EC2 instances in an EC2 Auto Scaling Group. The web application is made of multiple components so they will need a host-based routing feature to route to specific web application components. This web application is used by many customers and therefore the web application must have a static IP address so it can be whitelisted by the customers\u2019 firewalls. As the customers are distributed around the world, the web application must also provide low latency to all customers. Which AWS service can help you to assign a static IP address and provide low latency across the globe?",
@@ -375,7 +404,8 @@
     "answer": "AWS Global Accelerator + Application Load Balancer",
     "theme": "CLOUD-FRONT",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-FRONT/CleanShot 2024-07-06 at 10.51.49@2x.png"
+    "img_path": "./screen_question/CLOUD-FRONT/CleanShot 2024-07-06 at 10.51.49@2x.png",
+    "id-question": 30
   },
   {
     "question": "You have a CloudFront Distribution that serves your website hosted on a fleet of EC2 instances behind an Application Load Balancer. All your clients are from the United States, but you found that some malicious requests are coming from other countries. What should you do to only allow users from the US and block other countries?",
@@ -388,7 +418,8 @@
     "answer": "Use CloudFront Geo Restriction",
     "theme": "CLOUD-FRONT",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-FRONT/CleanShot 2024-07-06 at 10.44.51@2x.png"
+    "img_path": "./screen_question/CLOUD-FRONT/CleanShot 2024-07-06 at 10.44.51@2x.png",
+    "id-question": 31
   },
   {
     "question": "You have a static website hosted on an S3 bucket. You have created a CloudFront Distribution that points to your S3 bucket to better serve your requests and improve performance. After a while, you noticed that users can still access your website directly from the S3 bucket. You want to enforce users to access the website only through CloudFront. How would you achieve that?",
@@ -400,7 +431,8 @@
     "answer": "Configure your CloudFront Distribution and create an Origin Access Control (OAC), then update your S3 Bucket Policy to only accept requests from your CloudFront Distribution.",
     "theme": "CLOUD-FRONT",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-FRONT/CleanShot 2024-07-06 at 10.47.20@2x.png"
+    "img_path": "./screen_question/CLOUD-FRONT/CleanShot 2024-07-06 at 10.47.20@2x.png",
+    "id-question": 32
   },
   {
     "question": "A company is deploying a media-sharing website to AWS. They are going to use CloudFront to deliver the content with low latency to their customers where they are located in both US and Europe only. After a while there a huge costs for CloudFront. Which CloudFront feature allows you to decrease costs by targeting only US and Europe?",
@@ -413,7 +445,8 @@
     "answer": "CloudFront Price Classes",
     "theme": "CLOUD-FRONT",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-FRONT/CleanShot 2024-07-06 at 10.51.27@2x.png"
+    "img_path": "./screen_question/CLOUD-FRONT/CleanShot 2024-07-06 at 10.51.27@2x.png",
+    "id-question": 33
   },
   {
     "question": "You have an e-commerce website where you are using DynamoDB as your database. You are about to enter the Christmas sale and you have a few items which are very popular and you expect that they will be read often. Unfortunately, last year due to the huge traffic you had the ProvisionedThroughputExceededException exception. What would you do to prevent this error from happening again?",
@@ -425,7 +458,8 @@
     "answer": "Create a DAX Cluster",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.22.07@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.22.07@2x.png",
+    "id-question": 34
   },
   {
     "question": "To create a serverless API, you should integrate Amazon API Gateway With",
@@ -437,7 +471,8 @@
     "answer": "AWS Lambda",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.23.01@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.23.01@2x.png",
+    "id-question": 35
   },
   {
     "question": "When you are using an Edge-Optimized API Gateway, your API Gateway lives in CloudFront Edge Locations across all AWS Regions.",
@@ -448,7 +483,8 @@
     "answer": "False",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.25.13@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.25.13@2x.png",
+    "id-question": 36
   },
   {
     "question": "You are developing a new web and mobile application that will be hosted on AWS and currently, you are working on developing the login and signup page. The application backend is serverless and you are using Lambda, DynamoDB, and API Gateway. Which of the following is the best and easiest approach to configure the authentication for your backend?",
@@ -461,7 +497,8 @@
     "answer": "Use Cognito User Pools",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.35.38@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.35.38@2x.png",
+    "id-question": 37
   },
   {
     "question": "You have a mobile application and would like to give your users access to their own personal space in the S3 bucket. How do you achieve that?",
@@ -474,7 +511,8 @@
     "answer": "Use Amazon Cognito Identity Federation",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.35.18@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.35.18@2x.png",
+    "id-question": 38
   },
   {
     "question": "You are running an application in production that is leveraging DynamoDB as its datastore and is experiencing smooth sustained usage. There is a need to make the application run in development mode as well, where it will experience the unpredictable volume of requests. What is the most cost-effective solution that you recommend?",
@@ -487,7 +525,8 @@
     "answer": "Use Provisioned Capacity Mode with Auto Scaling enabled for production and use On-Demand Capacity Mode for development",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.25.33@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.25.33@2x.png",
+    "id-question": 39
   },
   {
     "question": "The maximum size of an item in a DynamoDB table is?",
@@ -500,7 +539,8 @@
     "answer": "400KB",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.32.00@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.32.00@2x.png",
+    "id-question": 40
   },
   {
     "question": "Before you create a DynamoDB table, you need to provision the EC2 instance the DynamoDB table will be running on.",
@@ -511,7 +551,8 @@
     "answer": "False",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.18.34@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.18.34@2x.png",
+    "id-question": 41
   },
   {
     "question": "A website is currently in the development process and it is going to be hosted on AWS. There is a requirement to store user sessions for users logged in to the website with an automatic expiry and deletion of expired user sessions. Which of the following AWS services are best suited for this use case?",
@@ -524,7 +565,8 @@
     "answer": "Store users\u2019 sessions in a DynamoDB table and enable TTL",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.34.38@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.34.38@2x.png",
+    "id-question": 42
   },
   {
     "question": "You have created a Lambda function that typically will take around 1 hour to process some data. The code works fine when you run it locally on your machine, but when you invoke the Lambda function it fails with a 'timeout' error after 3 seconds. What should you do?",
@@ -536,7 +578,8 @@
     "answer": "Run your code somewhere else (e.g., EC2 instance)",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.19.25@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.19.25@2x.png",
+    "id-question": 43
   },
   {
     "question": "You are a DevOps engineer in a football company that has a website that is backed by a DynamoDB table. The table stores viewers\u2019 feedback for football matches. You have been tasked to work with the analytics team to generate reports on the viewers\u2019 feedback. The analytics team wants the data in DynamoDB in json format and hosted in an S3 bucket to start working on it and create the reports. What is the best and most cost-effective way to convert DynamoDB data to json files?",
@@ -549,7 +592,8 @@
     "answer": "Select DynamoDB table then select Export to S3",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.34.07@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.34.07@2x.png",
+    "id-question": 44
   },
   {
     "question": "You have provisioned a DynamoDB table with 10 RCUs and 10 WCUs. A month later you want to increase the RCU to handle more read traffic. What should you do?",
@@ -561,7 +605,8 @@
     "answer": "Increase RCU and keep WCU the same",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.19.01@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.19.01@2x.png",
+    "id-question": 45
   },
   {
     "question": "You have developed a mobile application that uses DynamoDB as its datastore. You want to automate sending welcome emails to new users after they sign up. What is the most efficient way to achieve this?",
@@ -573,7 +618,8 @@
     "answer": "Enable DynamoDB Streams and configure it to invoke a Lambda function to send emails",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.22.41@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.22.41@2x.png",
+    "id-question": 46
   },
   {
     "question": "Which AWS service allows you to build Serverless workflows using AWS services (e.g., Lambda) and supports human approval?",
@@ -586,7 +632,8 @@
     "answer": "AWS Step Functions",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.32.21@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.32.21@2x.png",
+    "id-question": 47
   },
   {
     "question": "You are running a mobile application where you want each registered user to upload/download images to/from his own folder in the S3 bucket. Also, you want to give your users to sign-up and sign in using their social media accounts (e.g., Facebook). Which AWS service should you choose?",
@@ -599,7 +646,8 @@
     "answer": "Amazon Cognito",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.35.58@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.35.58@2x.png",
+    "id-question": 48
   },
   {
     "question": "You have an application that is served globally using CloudFront Distribution. You want to authenticate users at the CloudFront Edge Locations instead of authentication requests go all the way to your origins. What should you use to satisfy this requirement?",
@@ -612,7 +660,8 @@
     "answer": "Lambda@Edge",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.25.51@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.25.51@2x.png",
+    "id-question": 49
   },
   {
     "question": "A company has a serverless application on AWS which consists of Lambda, DynamoDB, and Step Functions. In the last month, there are an increase in the number of requests against the application which results in an increase in DynamoDB costs, and requests started to be throttled. After further investigation, it shows that the majority of requests are read requests against some queries in the DynamoDB table. What do you recommend to prevent throttles and reduce costs efficiently?",
@@ -625,7 +674,8 @@
     "answer": "Use DynamoDB Accelerator (DAX) to cache the most requested read data",
     "theme": "SERVERLESS",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.33.40@2x.png"
+    "img_path": "./screen_question/SERVERLESS/CleanShot 2024-07-07 at 13.33.40@2x.png",
+    "id-question": 50
   },
   {
     "question": "How would you monitor your EC2 instance memory usage in CloudWatch?",
@@ -637,7 +687,8 @@
     "answer": "Use the Unified CloudWatch Agent to push memory usage as a custom metric to CloudWatch",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 16.56.19@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 16.56.19@2x.png",
+    "id-question": 51
   },
   {
     "question": "Someone changed the configuration of a resource and made it non-compliant. Which AWS service is responsible for logging who made modifications to resources?",
@@ -649,7 +700,8 @@
     "answer": "AWS CloudTrail",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.11.38@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.11.38@2x.png",
+    "id-question": 52
   },
   {
     "question": "A company is developing a Serverless application on AWS using Lambda, DynamoDB, and Cognito. A junior developer joined a few weeks ago and accidentally deleted one of the DynamoDB tables in the dev AWS account which contained important data. The CTO asks you to prevent this from happening again and there must be a notification system to monitor if there is an attempt to make such deletion actions for the DynamoDB tables. What would you do?",
@@ -661,7 +713,8 @@
     "answer": "Assign developers to a certain IAM group which prevents deletion of DynamoDB tables. Configure EventBridge to capture any DeleteTable API calls through CloudTrail and send a notification using SNS",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.16.53@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.16.53@2x.png",
+    "id-question": 53
   },
   {
     "question": ".............. is a CloudWatch feature that allows you to send CloudWatch metrics in near real-time to S3 bucket (through Kinesis Data Firehose) and 3rd party destinations (e.g., Splunk, Datadog, ...).",
@@ -674,7 +727,8 @@
     "answer": "CloudWatch Metric Stream",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.15.46@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.15.46@2x.png",
+    "id-question": 54
   },
   {
     "question": "One of your teammates terminated an EC2 instance 4 months ago which has critical data. You don't know who made this so you are going to review all API calls within this period using CloudTrail. You already have CloudTrail set up and configured to send logs to the S3 bucket. What should you do to find out who made this?",
@@ -685,7 +739,8 @@
     "answer": "Analyze CloudTrail logs in S3 bucket using Amazon Athena",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.08.49@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.08.49@2x.png",
+    "id-question": 55
   },
   {
     "question": "You have enabled AWS Config to monitor Security Groups if there's unrestricted SSH access to any of your EC2 instances. Which AWS Config feature can you use to automatically re-configure your Security Groups to their correct state?",
@@ -697,7 +752,8 @@
     "answer": "AWS Config Remediations",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.12.25@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.12.25@2x.png",
+    "id-question": 56
   },
   {
     "question": "A DevOps engineer is working for a company and managing its infrastructure and resources on AWS. There was a sudden spike in traffic for the main application for the company which was not normal in this period of the year. The application is hosted on a couple of EC2 instances in private subnets and is fronted by an Application Load Balancer in a public subnet. To detect if this is normal traffic or an attack, the DevOps engineer enabled the VPC Flow Logs for the subnets and stored those logs in CloudWatch Log Group. The DevOps wants to analyze those logs and find out the top IP addresses making requests against the website to check if there is an attack. Which of the following can help the DevOps engineer to analyze those logs?",
@@ -710,7 +766,8 @@
     "answer": "CloudWatch Contributor Insights",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.16.05@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.16.05@2x.png",
+    "id-question": 57
   },
   {
     "question": "You have an application hosted on a fleet of EC2 instances managed by an Auto Scaling Group that you configured its minimum capacity to 2. Also, you have created a CloudWatch Alarm that is configured to scale in your ASG when CPU Utilization is below 60%. Currently, your application runs on 2 EC2 instances and has low traffic and the CloudWatch Alarm is in the ALARM state. What will happen?",
@@ -723,7 +780,8 @@
     "answer": "The CloudWatch Alarm will remain in ALARM state but never decrease the number of EC2 instances in the ASG",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 16.55.54@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 16.55.54@2x.png",
+    "id-question": 58
   },
   {
     "question": "A company has a running Serverless application on AWS which uses EventBridge as an inter-communication channel between different services within the application. There is a requirement to use the events in the prod environment in the dev environment to make some tests. The tests will be done every 6 months, so the events need to be stored and used later on. What is the most efficient and cost-effective way to store EventBridge events and use them later?",
@@ -735,7 +793,8 @@
     "answer": "Use EventBridge Archive and Replay feature",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.18.02@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.18.02@2x.png",
+    "id-question": 59
   },
   {
     "question": "You have CloudTrail enabled for your AWS Account in all AWS Regions. What should you use to detect unusual activity in your AWS Account?",
@@ -747,7 +806,8 @@
     "answer": "CloudTrail Insights",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.07.57@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.07.57@2x.png",
+    "id-question": 60
   },
   {
     "question": "You have made a configuration change and would like to evaluate the impact of it on the performance of your application. Which AWS service should you use?",
@@ -758,7 +818,8 @@
     "answer": "Amazon CloudWatch",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.05.03@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.05.03@2x.png",
+    "id-question": 61
   },
   {
     "question": "You have an RDS DB instance that's configured to push its database logs to CloudWatch. You want to create a CloudWatch alarm if there's an Error found in the logs. How would you do that?",
@@ -770,7 +831,8 @@
     "answer": "Create a CloudWatch Logs Metric Filter that filter the logs for the keyword Error , then create a CloudWatch Alarm based on that Metric Filter",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 16.55.31@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 16.55.31@2x.png",
+    "id-question": 62
   },
   {
     "question": "You are running a website on a fleet of EC2 instances with OS that has a known vulnerability on port 84. You want to continuously monitor your EC2 instances if they have port 84 exposed. How should you do this?",
@@ -783,7 +845,8 @@
     "answer": "Setup Config Rules",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.09.39@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.09.39@2x.png",
+    "id-question": 63
   },
   {
     "question": "Someone has terminated an EC2 instance in your AWS account last week, which was hosting a critical database that contains sensitive data. Which AWS service helps you find who did that and when?",
@@ -796,7 +859,8 @@
     "answer": "AWS CloudTrail",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.06.26@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.06.26@2x.png",
+    "id-question": 64
   },
   {
     "question": "You would like to evaluate the compliance of your resource's configurations over time. Which AWS service will you choose?",
@@ -808,7 +872,8 @@
     "answer": "AWS Config",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.10.27@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.10.27@2x.png",
+    "id-question": 65
   },
   {
     "question": "You are running a critical website on a set of EC2 instances with a tightened Security Group that has restricted SSH access. You have enabled AWS Config in your AWS Region and you want to be notified via email when someone modified your EC2 instances' Security Group. Which AWS Config feature helps you do this?",
@@ -820,7 +885,8 @@
     "answer": "AWS Config Notifications",
     "theme": "CLOUD-WATCH",
     "embedding": null,
-    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.17.40@2x.png"
+    "img_path": "./screen_question/CLOUD-WATCH/CleanShot 2024-07-19 at 17.17.40@2x.png",
+    "id-question": 66
   },
   {
     "question": "You have an S3 bucket that has S3 Versioning enabled. This S3 bucket has a lot of objects, and you would like to remove old object versions to reduce costs. What's the best approach to automate the deletion of these old object versions?",
@@ -832,7 +898,8 @@
     "answer": "S3 Lifecycle Rules - Expiration Actions",
     "theme": "S3-ADV",
     "embedding": null,
-    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.54.56@2x.png"
+    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.54.56@2x.png",
+    "id-question": 67
   },
   {
     "question": "You have a large dataset stored on-premises that you want to upload to the S3 bucket. The dataset is divided into 10 GB files. You have good bandwidth but your Internet connection isn't stable. What is the best way to upload this dataset to S3 and ensure that the process is fast and avoid any problems with the Internet connection?",
@@ -844,7 +911,8 @@
     "answer": "Use S3 Multi-part Upload & S3 Transfer Acceleration",
     "theme": "S3-ADV",
     "embedding": null,
-    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.56.59@2x.png"
+    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.56.59@2x.png",
+    "id-question": 68
   },
   {
     "question": "A company is preparing for compliance and regulatory review on its infrastructure on AWS. Currently, they have their files stored on S3 buckets that are not encrypted, which must be encrypted as required for compliance and regulatory review. Which S3 feature allows them to encrypt all files in their S3 buckets in the most efficient and cost-effective way?",
@@ -857,7 +925,8 @@
     "answer": "S3 Batch Operations",
     "theme": "S3-ADV",
     "embedding": null,
-    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.57.38@2x.png"
+    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.57.38@2x.png",
+    "id-question": 69
   },
   {
     "question": "You are looking to get recommendations for S3 Lifecycle Rules. How can you analyze the optimal number of days to move objects between different storage tiers?",
@@ -869,7 +938,8 @@
     "answer": "S3 Analytics",
     "theme": "S3-ADV",
     "embedding": null,
-    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.58.13@2x.png"
+    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.58.13@2x.png",
+    "id-question": 70
   },
   {
     "question": "You are looking to build an index of your files in S3, using Amazon RDS PostgreSQL. To build this index, it is necessary to read the first 250 bytes of each object in S3, which contains some metadata about the content of the file itself. There are over 100,000 files in your S3 bucket, amounting to 50 TB of data. How can you build this index efficiently?",
@@ -882,7 +952,8 @@
     "answer": "Create an application that will traverse the S3 bucket, issue a Byte Range Fetch for the first 250 bytes, and store that information in RDS",
     "theme": "S3-ADV",
     "embedding": null,
-    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.56.39@2x.png"
+    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.56.39@2x.png",
+    "id-question": 71
   },
   {
     "question": "How can you be notified when there's an object uploaded to your S3 bucket?",
@@ -895,7 +966,8 @@
     "answer": "S3 Event Notifications",
     "theme": "S3-ADV",
     "embedding": null,
-    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.54.02@2x.png"
+    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.54.02@2x.png",
+    "id-question": 72
   },
   {
     "question": "You would like to retrieve a subset of your dataset stored in S3 with the .csv format. You would like to retrieve a month of data and only 3 columns out of 10, to minimize compute and network costs. What should you use?",
@@ -908,7 +980,8 @@
     "answer": "S3 Select",
     "theme": "S3-ADV",
     "embedding": null,
-    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.57.11@2x.png"
+    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.57.11@2x.png",
+    "id-question": 73
   },
   {
     "question": "You have a 25 GB file that you're trying to upload to S3 but you're getting errors. What is a possible solution for this?",
@@ -921,7 +994,8 @@
     "answer": "Use Multi-Part upload when uploading files larger than 5GB",
     "theme": "S3-ADV",
     "embedding": null,
-    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.57.56@2x.png"
+    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.57.56@2x.png",
+    "id-question": 74
   },
   {
     "question": "How can you automate the transition of S3 objects between their different tiers?",
@@ -933,7 +1007,8 @@
     "answer": "S3 Lifecycle Rules",
     "theme": "S3-ADV",
     "embedding": null,
-    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.55.12@2x.png"
+    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.55.12@2x.png",
+    "id-question": 75
   },
   {
     "question": "While you're uploading large files to an S3 bucket using Multi-part Upload, there are a lot of unfinished parts stored in the S3 bucket due to network issues. You are not using these unfinished parts and they cost you money. What is the best approach to remove these unfinished parts?",
@@ -945,7 +1020,8 @@
     "answer": "Use an S3 Lifecycle Policy to automate old/unfinished parts deletion",
     "theme": "S3-ADV",
     "embedding": null,
-    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.56.07@2x.png"
+    "img_path": "./screen_question/S3-ADV/CleanShot 2024-07-05 at 16.56.07@2x.png",
+    "id-question": 76
   },
   {
     "question": "Which of the following is an IAM best practice?",
@@ -958,7 +1034,8 @@
     "answer": "Don't use the root user account",
     "theme": "IAM",
     "embedding": null,
-    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.26.18@2x.png"
+    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.26.18@2x.png",
+    "id-question": 77
   },
   {
     "question": "An IAM policy consists of one or more statements. A statement in an IAM Policy consists of the following, EXCEPT:",
@@ -972,7 +1049,8 @@
     "answer": "Version",
     "theme": "IAM",
     "embedding": null,
-    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.29.19@2x.png"
+    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.29.19@2x.png",
+    "id-question": 78
   },
   {
     "question": "What should you do to increase your root account security?",
@@ -985,7 +1063,8 @@
     "answer": "Enable Multi-Factor Authentication (MFA)",
     "theme": "IAM",
     "embedding": null,
-    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.28.15@2x.png"
+    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.28.15@2x.png",
+    "id-question": 79
   },
   {
     "question": "IAM User Groups can contain IAM Users and other User Groups.",
@@ -996,7 +1075,8 @@
     "answer": "False",
     "theme": "IAM",
     "embedding": null,
-    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.28.45@2x.png"
+    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.28.45@2x.png",
+    "id-question": 80
   },
   {
     "question": "Which of the following is an IAM Security Tool?",
@@ -1009,7 +1089,8 @@
     "answer": "IAM Credentials Report",
     "theme": "IAM",
     "embedding": null,
-    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.25.24@2x.png"
+    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.25.24@2x.png",
+    "id-question": 81
   },
   {
     "question": "What is a proper definition of an IAM Role?",
@@ -1022,7 +1103,8 @@
     "answer": "An IAM entity that defines a set of permissions for making requests to AWS services, and will be used by an AWS service",
     "theme": "IAM",
     "embedding": null,
-    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.24.57@2x.png"
+    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.24.57@2x.png",
+    "id-question": 82
   },
   {
     "question": "What are IAM Policies?",
@@ -1035,7 +1117,8 @@
     "answer": "JSON documents that define a set of permissions for making requests to AWS services, and can be used by IAM Users, User Groups, and IAM Roles",
     "theme": "IAM",
     "embedding": null,
-    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.27.17@2x.png"
+    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.27.17@2x.png",
+    "id-question": 83
   },
   {
     "question": "Which answer is INCORRECT regarding IAM Users?",
@@ -1048,7 +1131,8 @@
     "answer": "IAM Users access AWS services using root account credentials",
     "theme": "IAM",
     "embedding": null,
-    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.25.51@2x.png"
+    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.25.51@2x.png",
+    "id-question": 84
   },
   {
     "question": "Which principle should you apply regarding IAM Permissions?",
@@ -1061,7 +1145,8 @@
     "answer": "Grant least privilege",
     "theme": "IAM",
     "embedding": null,
-    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.27.40@2x.png"
+    "img_path": "./screen_question/IAM/CleanShot 2024-07-03 at 08.27.40@2x.png",
+    "id-question": 85
   },
   {
     "question": "A start-up would like to rapidly create customized user experiences. Which AWS service can help?",
@@ -1073,7 +1158,8 @@
     "answer": "Personalize",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.41.55@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.41.55@2x.png",
+    "id-question": 86
   },
   {
     "question": "An online medical company that allows you to book an appointment with doctors using through a phone call is using AWS to host their infrastructure. They are using Amazon Connect and Amazon Lex to receive calls and create a workflow, book an appointment, and pay. According to the company\u2019s policy, all calls must be recorded for review. But, there is a requirement to remove any Personally Identifiable Information (PII) from the call before it's saved. What do you recommend to use which helps in removing PIl from calls?",
@@ -1086,7 +1172,8 @@
     "answer": "Amazon Transcribe",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.47.45@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.47.45@2x.png",
+    "id-question": 87
   },
   {
     "question": "A company would like to convert its documents into different languages, with natural and accurate wording. What should they use?",
@@ -1099,7 +1186,8 @@
     "answer": "Translate",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.44.07@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.44.07@2x.png",
+    "id-question": 88
   },
   {
     "question": "Which fully managed service can deliver highly accurate forecasts?",
@@ -1112,7 +1200,8 @@
     "answer": "Forecast",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.34.48@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.34.48@2x.png",
+    "id-question": 89
   },
   {
     "question": "A developer would like to build, train, and deploy a machine learning model quickly. Which service can he use?",
@@ -1125,7 +1214,8 @@
     "answer": "SageMaker",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.44.27@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.44.27@2x.png",
+    "id-question": 90
   },
   {
     "question": "A research team would like to group articles by topics using Natural Language Processing (NLP). Which service should they use?",
@@ -1138,7 +1228,8 @@
     "answer": "Comprehend",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.43.40@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.43.40@2x.png",
+    "id-question": 91
   },
   {
     "question": "A company is managing an image and video sharing platform which is used by customers around the globe. The platform is running on AWS using an S3 bucket to host both images and videos and using CloudFront as the CDN to deliver content to customers all over the world with low latency. In the last couple of months, a lot of customers have complained that they have started to see inappropriate content on the platform which started to increase in the last week. It will be very expensive and time-consuming to manually approve those images and videos by employees before its published on the platform. There is a requirement to find a solution that can automatically detect inappropriate and offensive images and videos and give you the ability to set a minimum confidence threshold for items that will be flagged and allows for manual review. Which AWS service can fit the requirement?",
@@ -1151,7 +1242,8 @@
     "answer": "Amazon Rekognition",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.47.04@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.47.04@2x.png",
+    "id-question": 92
   },
   {
     "question": "A medical company is in the process of implementing a solution to detect, extract, and analyze information from unstructured medical text like doctors\u2019 notes, clinical trial reports, and radiology reports. Those documents are uploaded and stored on S3 buckets. According to the company\u2019s regulations, the solution must be designed and implemented to keep patients\u2019 privacy by identifying Protected Health Information (PHI) so the solution will be eligible with HIPAA. Which AWS service should you use?",
@@ -1164,7 +1256,8 @@
     "answer": "Amazon Comprehend Medical",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.48.50@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.48.50@2x.png",
+    "id-question": 93
   },
   {
     "question": "You would like to find objects, people, text, or scenes in images and videos. What AWS service should you use?",
@@ -1177,7 +1270,8 @@
     "answer": "Rekognition",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.41.22@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.41.22@2x.png",
+    "id-question": 94
   },
   {
     "question": "Which AWS service makes it easy to convert speech-to-text?",
@@ -1190,7 +1284,8 @@
     "answer": "Transcribe",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.44.46@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.44.46@2x.png",
+    "id-question": 95
   },
   {
     "question": "A company would like to implement a chatbot that will convert speech-to-text and recognize the customers' intentions. What service should it use?",
@@ -1203,7 +1298,8 @@
     "answer": "Lex",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.34.28@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.34.28@2x.png",
+    "id-question": 96
   },
   {
     "question": "You should use Amazon Transcribe to turn text into lifelike speech using deep learning?",
@@ -1214,7 +1310,8 @@
     "answer": "False",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.53.01@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.53.01@2x.png",
+    "id-question": 97
   },
   {
     "question": "Amazon Polly allows you to turn text into speech. It has two important features. First is ............... which allows you to customize the pronunciation of words (e.g., \u201cAmazon EC2\u201d will be \u201cAmazon Elastic Compute Cloud\u201d). The second is................... Which allows you to emphasize words, including breathing sounds, whispering, and more.",
@@ -1227,7 +1324,8 @@
     "answer": "Pronunciation Lexicons, Speech Synthesis Markup Language (SSML)",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.48.06@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.48.06@2x.png",
+    "id-question": 98
   },
   {
     "question": "Which of the following services is a document search service powered by machine learning?",
@@ -1240,7 +1338,8 @@
     "answer": "Kendra",
     "theme": "ML",
     "embedding": null,
-    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.46.13@2x.png"
+    "img_path": "./screen_question/ML/CleanShot 2024-07-19 at 16.46.13@2x.png",
+    "id-question": 99
   },
   {
     "question": "You have an application hosted on a set of EC2 instances managed by an Auto Scaling Group that you configured both desired and maximum capacity to 3. Also, you have created a CloudWatch Alarm that is configured to scale out your ASG when CPU Utilization reaches 60%. Your application suddenly received huge traffic and is now running at 80% CPU Utilization. What will happen?",
@@ -1252,7 +1351,8 @@
     "answer": "Nothing",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.44.23@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.44.23@2x.png",
+    "id-question": 100
   },
   {
     "question": "Running an application on an Auto Scaling Group that scales the number of EC2 instances in and out is called what?",
@@ -1263,7 +1363,8 @@
     "answer": "Horizontal Scalability",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.32.13@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.32.13@2x.png",
+    "id-question": 101
   },
   {
     "question": "You are working as a Solutions Architect for a company and you are required to design an architecture for a high-performance, low-latency application that will receive millions of requests per second. Which type of Elastic Load Balancer should you choose?",
@@ -1275,7 +1376,8 @@
     "answer": "Network Load Balancer",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.40.04@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.40.04@2x.png",
+    "id-question": 102
   },
   {
     "question": "For compliance purposes, you would like to expose a fixed static IP address to your end-users so that they can write firewall rules that will be stable and approved by regulators. What type of Elastic Load Balancer would you choose?",
@@ -1287,7 +1389,8 @@
     "answer": "Network Load Balancer",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.47.36@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.47.36@2x.png",
+    "id-question": 103
   },
   {
     "question": "You have a Network Load Balancer that distributes traffic across a set of EC2 instances in us-east-1. You have 2 EC2 instances in us-east-1b AZ and 5 EC2 instances in us-east-1e AZ. You have noticed that the CPU utilization is higher in the EC2 instances in us-east-1b AZ. After more investigation, you noticed that the traffic is equally distributed across the two AZs. How would you solve this problem?",
@@ -1300,7 +1403,8 @@
     "answer": "Enable Cross-Zone Load Balancing",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.42.40@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.42.40@2x.png",
+    "id-question": 104
   },
   {
     "question": "Elastic Load Balancers provide a ....:",
@@ -1312,7 +1416,8 @@
     "answer": "static DNS name we can use in our application",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.32.40@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.32.40@2x.png",
+    "id-question": 105
   },
   {
     "question": "Scaling an EC2 instance from r4.large to r4.4xlarge is called?",
@@ -1323,7 +1428,8 @@
     "answer": "Vertical Scalability",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.31.28@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.31.28@2x.png",
+    "id-question": 106
   },
   {
     "question": "Which feature in both Application Load Balancers and Network Load Balancers allows you to load multiple SSL certificates on one listener?",
@@ -1336,7 +1442,8 @@
     "answer": "Server Name Indication (SNI)",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.43.33@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.43.33@2x.png",
+    "id-question": 107
   },
   {
     "question": "You hosted an application on a set of EC2 instances fronted by an Elastic Load Balancer. A week later, users begin complaining that sometimes the application just doesn't work. You investigate the issue and found that some EC2 instances crash from time to time. What should you do to protect users from connecting to the EC2 instances that are crashing?",
@@ -1349,7 +1456,8 @@
     "answer": "Enable ELB Health Checks",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.36.41@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.36.41@2x.png",
+    "id-question": 108
   },
   {
     "question": "Registered targets in a Target Groups for an Application Load Balancer can be one of the following, EXCEPT:",
@@ -1362,7 +1470,8 @@
     "answer": "Network Load Balancer",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.41.14@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.41.14@2x.png",
+    "id-question": 109
   },
   {
     "question": "Application Load Balancers support the following protocols, EXCEPT:",
@@ -1375,7 +1484,8 @@
     "answer": "TCP",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.40.33@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.40.33@2x.png",
+    "id-question": 110
   },
   {
     "question": "You are running a website on 10 EC2 instances fronted by an Elastic Load Balancer. Your users are complaining about the fact that the website always asks them to re-authenticate when they are moving between website pages. You are puzzled because it's working just fine on your machine and in the Dev environment with 1 EC2 instance. What could be the reason?",
@@ -1387,7 +1497,8 @@
     "answer": "The Elastic Load Balancer does not have Sticky Sessions enabled",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.32.57@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.32.57@2x.png",
+    "id-question": 111
   },
   {
     "question": "Your boss asked you to scale your Auto Scaling Group based on the number of requests per minute your application makes to your database. What should you do?",
@@ -1399,7 +1510,8 @@
     "answer": "Create a CloudWatch custom metric then create a CloudWatch Alarm on this metric to scale your ASG",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.45.45@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.45.45@2x.png",
+    "id-question": 112
   },
   {
     "question": "You have an Application Load Balancer that is configured to redirect traffic to 3 Target Groups based on the following hostnames: users.example.com, api.external.example.com, and checkout.example.com. You would like to configure HTTPS for each of these hostnames. How do you configure the ALB to make this work?",
@@ -1411,7 +1523,8 @@
     "answer": "Use Server Name Indication (SNI)",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.44.00@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.44.00@2x.png",
+    "id-question": 113
   },
   {
     "question": "You are using an Application Load Balancer to distribute traffic to your website hosted on EC2 instances. It turns out that your website only sees traffic coming from private IPv4 addresses which are in fact your Application Load Balancer's IP addresses. What should you do to get the IP address of clients connected to your website?",
@@ -1424,7 +1537,8 @@
     "answer": "Modify your website's backend to get the client IP address from the X-Forwarded-For header",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.33.24@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.33.24@2x.png",
+    "id-question": 114
   },
   {
     "question": "You have an ASG and a Network Load Balancer. The application on your ASG supports the HTTP protocol and is integrated with the Load Balancer health checks. You are currently using the TCP health checks. You would like to migrate to using HTTP health checks, what do you do?",
@@ -1435,7 +1549,8 @@
     "answer": "Migrate the health check to HTTP",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.46.46@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.46.46@2x.png",
+    "id-question": 115
   },
   {
     "question": "You want to create a custom application-based cookie in your Application Load Balancer. Which of the following you can use as a cookie name?",
@@ -1448,7 +1563,8 @@
     "answer": "APPUSERC",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.41.40@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.41.40@2x.png",
+    "id-question": 116
   },
   {
     "question": "An application is deployed with an Application Load Balancer and an Auto Scaling Group. Currently, you manually scale the ASG and you would like to define a Scaling Policy that will ensure the average number of connections to your EC2 instances is around 1000. Which Scaling Policy should you use?",
@@ -1461,7 +1577,8 @@
     "answer": "Target Tracking Policy",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.46.11@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.46.11@2x.png",
+    "id-question": 117
   },
   {
     "question": "Application Load Balancers can route traffic to different Target Groups based on the following, EXCEPT:",
@@ -1474,7 +1591,8 @@
     "answer": "Client's Location (Geography)",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.49.02@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.49.02@2x.png",
+    "id-question": 118
   },
   {
     "question": "You have an Auto Scaling Group fronted by an Application Load Balancer. You have configured the ASG to use ALB Health Checks, then one EC2 instance has just been reported unhealthy. What will happen to the EC2 instance?",
@@ -1486,7 +1604,8 @@
     "answer": "The ASG will terminate the EC2 instance",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.44.49@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.44.49@2x.png",
+    "id-question": 119
   },
   {
     "question": "You have a website hosted in EC2 instances in an Auto Scaling Group fronted by an Application Load Balancer. Currently, the website is served over HTTP, and you have been tasked to configure it to use HTTPS. You have created a certificate in ACM and attached it to the Application Load Balancer. What you can do to force users to access the website using HTTPS instead of HTTP?",
@@ -1498,7 +1617,8 @@
     "answer": "Configure the Application Load Balancer to redirect HTTP to HTTPS",
     "theme": "ELB-ASG",
     "embedding": null,
-    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.47.09@2x.png"
+    "img_path": "./screen_question/ELB-ASG/CleanShot 2024-07-05 at 15.47.09@2x.png",
+    "id-question": 120
   },
   {
     "question": "As a Solutions Architect, you're planning to migrate a complex ERP software suite to AWS Cloud. You're planning to host the software on a set of Linux EC2 instances managed by an Auto Scaling Group. The software traditionally takes over an hour to set up on a Linux machine. How do you recommend you speed up the installation process when there's a scale-out event?",
@@ -1511,7 +1631,8 @@
     "answer": "Use a Golden AMI",
     "theme": "SA-CLASS",
     "embedding": null,
-    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.48.53@2x.png"
+    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.48.53@2x.png",
+    "id-question": 121
   },
   {
     "question": "Which of the following will NOT help us while designing a STATELESS application tier?",
@@ -1524,7 +1645,8 @@
     "answer": "Store session data on EBS volumes",
     "theme": "SA-CLASS",
     "embedding": null,
-    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.48.24@2x.png"
+    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.48.24@2x.png",
+    "id-question": 122
   },
   {
     "question": "You want to install software updates on 100s of Linux EC2 instances that you manage. You want to store these updates on shared storage which should be dynamically loaded on the EC2 instances and shouldn't require heavy operations. What do you suggest?",
@@ -1537,7 +1659,8 @@
     "answer": "Store the software updates on EFS and mount EFS as a network drive at startup",
     "theme": "SA-CLASS",
     "embedding": null,
-    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.48.36@2x.png"
+    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.48.36@2x.png",
+    "id-question": 123
   },
   {
     "question": "You're developing an application and would like to deploy it to Elastic Beanstalk with minimal cost. You should run it in which mode?",
@@ -1548,7 +1671,8 @@
     "answer": "Single Instance Mode",
     "theme": "SA-CLASS",
     "embedding": null,
-    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.49.08@2x.png"
+    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.49.08@2x.png",
+    "id-question": 124
   },
   {
     "question": "You're deploying your application to an Elastic Beanstalk environment but you notice that the deployment process is painfully slow. After reviewing the logs, you found that your dependencies are resolved on each EC2 instance each time you deploy. How can you speed up the deployment process with minimal impact?",
@@ -1560,7 +1684,8 @@
     "answer": "Create a Golden AMI that contains the dependencies and use that image to launch the EC2 instances",
     "theme": "SA-CLASS",
     "embedding": null,
-    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.49.31@2x.png"
+    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.49.31@2x.png",
+    "id-question": 125
   },
   {
     "question": "Your website TriangleSunglasses.com is hosted on a fleet of EC2 instances managed by an Auto Scaling Group and fronted by an Application Load Balancer. Your ASG has been configured to scale on-demand based on the traffic going to your website. To reduce costs, you have configured the ASG to scale based on the traffic going through the ALB. To make the solution highly available, you have updated your ASG and set the minimum capacity to 2. How can you further reduce the costs while respecting the requirements?",
@@ -1573,7 +1698,8 @@
     "answer": "Reserve two EC2 instances",
     "theme": "SA-CLASS",
     "embedding": null,
-    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.47.38@2x.png"
+    "img_path": "./screen_question/SA-CLASS/CleanShot 2024-07-05 at 16.47.38@2x.png",
+    "id-question": 126
   },
   {
     "question": "A company you're working for wants their data stored in S3 to be encrypted. They don't mind the encryption keys stored and managed by AWS, but they want to maintain control over the rotation policy of the encryption keys. You recommend them to use what?",
@@ -1586,7 +1712,8 @@
     "answer": "SSE-KMS",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.00.47@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.00.47@2x.png",
+    "id-question": 127
   },
   {
     "question": "You have enabled versioning and want to be extra careful when it comes to deleting files on an S3 bucket. What should you enable to prevent accidental permanent deletions?",
@@ -1599,7 +1726,8 @@
     "answer": "Enable MFA Delete",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.03.33@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.03.33@2x.png",
+    "id-question": 128
   },
   {
     "question": "An e-commerce company has its customers and orders data stored in an S3 bucket. The company\u2019s CEO wants to generate a report to show the list of customers and the revenue for each customer. Customer data stored in files on the S3 bucket has sensitive information that we don\u2019t want to expose in the report. How do you recommend the report can be created without exposing sensitive information?",
@@ -1611,7 +1739,8 @@
     "answer": "Use S3 Object Lambda to change the objects before they are retrieved by the report generator application",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.04.50@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.04.50@2x.png",
+    "id-question": 129
   },
   {
     "question": "For compliance reasons, your company has a policy mandate that database backups must be retained for 4 years. It shouldn't be possible to erase them. What do you recommend?",
@@ -1623,7 +1752,8 @@
     "answer": "Glacier Vaults with Vault Lock Policies",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.02.23@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.02.23@2x.png",
+    "id-question": 130
   },
   {
     "question": "Your company does not trust AWS for the encryption process and wants it to happen on the application. You recommend them to USE what?",
@@ -1636,7 +1766,8 @@
     "answer": "Client-Side Encryption",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.01.02@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.01.02@2x.png",
+    "id-question": 131
   },
   {
     "question": "Which of the following S3 Object Lock configuration allows you to prevent an object or its versions from being overwritten or deleted indefinitely and gives you the ability to remove it manually?",
@@ -1648,7 +1779,8 @@
     "answer": "Legal Hold",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.04.34@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.04.34@2x.png",
+    "id-question": 132
   },
   {
     "question": "You would like all your files in an S3 bucket to be encrypted by default. What is the optimal way of achieving this?",
@@ -1660,7 +1792,8 @@
     "answer": "Do nothing, Amazon S3 automatically encrypt new objects using Server-Side Encryption with S3-Managed Keys (SSE-S3)",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.03.14@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.03.14@2x.png",
+    "id-question": 133
   },
   {
     "question": "You are looking to provide temporary URLs to a growing list of federated users to allow them to perform a file upload on your S3 bucket to a specific location. What should you use?",
@@ -1672,7 +1805,8 @@
     "answer": "S3 Pre-Signed URL",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.02.00@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.02.00@2x.png",
+    "id-question": 134
   },
   {
     "question": "You have a website that loads files from an S3 bucket. When you try the URL of the files directly in your Chrome browser it works, but when a website with a different domain tries to load these files it doesn't. What's the problem?",
@@ -1685,7 +1819,8 @@
     "answer": "CORS is wrong",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.01.17@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.01.17@2x.png",
+    "id-question": 135
   },
   {
     "question": "A company has its data and files stored on some S3 buckets. Some of these files need to be kept for a predefined period of time and protected from being overwritten and deletion according to company compliance policy. Which S3 feature helps you in doing this?",
@@ -1698,7 +1833,8 @@
     "answer": "S3 Object Lock - Retention Compliance Mode",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.05.38@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.05.38@2x.png",
+    "id-question": 136
   },
   {
     "question": "Your client wants to make sure that file encryption is happening in S3, but he wants to fully manage the encryption keys and never store them in AWS. You recommend him to use...",
@@ -1711,7 +1847,8 @@
     "answer": "SSE-C",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.00.23@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.00.23@2x.png",
+    "id-question": 137
   },
   {
     "question": "You suspect that some of your employees try to access files in an S3 bucket that they don't have access to. How can you verify this is indeed the case without them noticing?",
@@ -1723,7 +1860,8 @@
     "answer": "Enable S3 Access Logs and analyze them using Athena",
     "theme": "S3-SEC",
     "embedding": null,
-    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.01.44@2x.png"
+    "img_path": "./screen_question/S3-SEC/CleanShot 2024-07-05 at 17.01.44@2x.png",
+    "id-question": 138
   },
   {
     "question": "You are deploying an application on an ECS Cluster made of EC2 instances. Currently, the cluster is hosting one application that is issuing API calls to DynamoDB successfully. Upon adding a second application, which issues API calls to S3, you are getting authorization issues. What should you do to resolve the problem and ensure proper security?",
@@ -1736,7 +1874,8 @@
     "answer": "Create an IAM task role for the new application",
     "theme": "ECS-ECR-EKS",
     "embedding": null,
-    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.25.07@2x.png"
+    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.25.07@2x.png",
+    "id-question": 139
   },
   {
     "question": "A developer has a running website and APIs on his local machine using containers and he wants to deploy both of them on AWS. The developer is new to AWS and doesn\u2019t know much about different AWS services. Which of the following AWS services allows the developer to build and deploy the website and the APIs in the easiest way according to AWS best practices?",
@@ -1749,7 +1888,8 @@
     "answer": "AWS App Runner",
     "theme": "ECS-ECR-EKS",
     "embedding": null,
-    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.28.31@2x.png"
+    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.28.31@2x.png",
+    "id-question": 140
   },
   {
     "question": "You're planning to migrate a WordPress website running on Docker containers from on-premises to AWS. You have decided to run the application in an ECS Cluster, but you want your docker containers to access the same WordPress website content such as website files, images, videos, etc. What do you recommend to achieve this?",
@@ -1761,7 +1901,8 @@
     "answer": "Mount an EFS volume",
     "theme": "ECS-ECR-EKS",
     "embedding": null,
-    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.24.14@2x.png"
+    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.24.14@2x.png",
+    "id-question": 141
   },
   {
     "question": "Amazon Elastic Container Service (ECS) has two Launch Types: ....",
@@ -1773,7 +1914,8 @@
     "answer": "Amazon EC2 Launch Type and Fargate Launch Type",
     "theme": "ECS-ECR-EKS",
     "embedding": null,
-    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.23.20@2x.png"
+    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.23.20@2x.png",
+    "id-question": 142
   },
   {
     "question": "You are migrating your on-premises Docker-based applications to Amazon ECS. You were using Docker Hub Container Image Library as your container image repository. Which is an alternative AWS service which is fully integrated with Amazon ECS?",
@@ -1786,7 +1928,8 @@
     "answer": "Elastic Container Registry (ECR)",
     "theme": "ECS-ECR-EKS",
     "embedding": null,
-    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.26.37@2x.png"
+    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.26.37@2x.png",
+    "id-question": 143
   },
   {
     "question": "You have multiple Docker-based applications hosted on-premises that you want to migrate to AWS. You don't want to provision or manage any infrastructure; you just want to run your containers on AWS. Which AWS service should you choose?",
@@ -1798,7 +1941,8 @@
     "answer": "AWS Fargate on ECS",
     "theme": "ECS-ECR-EKS",
     "embedding": null,
-    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.21.23@2x.png"
+    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.21.23@2x.png",
+    "id-question": 144
   },
   {
     "question": "Amazon EKS supports the following node types, EXCEPT:",
@@ -1811,7 +1955,8 @@
     "answer": "AWS Lambda",
     "theme": "ECS-ECR-EKS",
     "embedding": null,
-    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.27.33@2x.png"
+    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.27.33@2x.png",
+    "id-question": 145
   },
   {
     "question": "You have an application hosted on an ECS Cluster (EC2 Launch Type) where you want your ECS tasks to upload files to an S3 bucket. Which IAM Role for your ECS Tasks should you modify?",
@@ -1822,7 +1967,8 @@
     "answer": "ECS Task Role",
     "theme": "ECS-ECR-EKS",
     "embedding": null,
-    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.23.41@2x.png"
+    "img_path": "./screen_question/ECS-ECR-EKS/CleanShot 2024-07-07 at 12.23.41@2x.png",
+    "id-question": 146
   },
   {
     "question": "Your EC2 Windows Servers need to share some data by having a Network File System mounted on them which respects the Windows security mechanisms and has integration with Microsoft Active Directory. What do you recommend?",
@@ -1835,7 +1981,8 @@
     "answer": "Amazon FSx for Windows (File Server)",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.08.42@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.08.42@2x.png",
+    "id-question": 147
   },
   {
     "question": "Which AWS service is best suited to migrate a large amount of data from an S3 bucket to an EFS file system?",
@@ -1848,7 +1995,8 @@
     "answer": "AWS DataSync",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.24.09@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.24.09@2x.png",
+    "id-question": 148
   },
   {
     "question": "A Solutions Architect is working on planning the migration of a startup company from on-premises to AWS. Currently, their infrastructure consists of many servers and 30 TB of data hosted on a shared NFS storage. He has decided to use Amazon S3 to host the data. Which AWS service can efficiently migrate the data from on-premises to S3?",
@@ -1861,7 +2009,8 @@
     "answer": "AWS DataSync",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.23.25@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.23.25@2x.png",
+    "id-question": 149
   },
   {
     "question": "You have a large dataset stored in S3 that you want to access from on-premises servers using the NFS or SMB protocol. Also, you want to authenticate access to these files through on-premises Microsoft AD. What would you use?",
@@ -1874,7 +2023,8 @@
     "answer": "AWS Storage Gateway - S3 File Gateway",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.18.51@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.18.51@2x.png",
+    "id-question": 150
   },
   {
     "question": "Which of the following protocols is NOT supported by AWS Transfer Family?",
@@ -1887,7 +2037,8 @@
     "answer": "Transport Layer Security (TLS)",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.21.38@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.21.38@2x.png",
+    "id-question": 151
   },
   {
     "question": "You have on-premises sensitive files and documents that you want to regularly synchronize to AWS to keep another copy. Which AWS service can help you with that?",
@@ -1899,7 +2050,8 @@
     "answer": "AWS DataSync",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.32.45@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.32.45@2x.png",
+    "id-question": 152
   },
   {
     "question": "Amazon FSx for NetApp ONTAP is compatible with the following protocols, EXCEPT",
@@ -1912,7 +2064,8 @@
     "answer": "FTP",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.25.19@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.25.19@2x.png",
+    "id-question": 153
   },
   {
     "question": "Which deployment option in the FSx file system provides you with long-term storage that's replicated within AZ?",
@@ -1923,7 +2076,8 @@
     "answer": "Persistent File System",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.21.16@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.21.16@2x.png",
+    "id-question": 154
   },
   {
     "question": "You need to move hundreds of Terabytes into Amazon S3, then process the data using a fleet of EC2 instances. You have a 1 Gbit/s broadband. You would like to move the data faster and possibly processing it while in transit. What do you recommend?",
@@ -1936,7 +2090,8 @@
     "answer": "Use Snowball Edge",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.07.28@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.07.28@2x.png",
+    "id-question": 155
   },
   {
     "question": "A Machine Learning company is working on a set of datasets that are hosted on S3 buckets. The company decided to release those datasets to the public to be useful for others in their research, but they don\u2019t want to configure the S3 bucket to be public. And those datasets should be exposed over the FTP protocol. What can they do to do the requirement efficiently and with the least effort?",
@@ -1949,7 +2104,8 @@
     "answer": "Use AWS Transfer Family",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.24.51@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.24.51@2x.png",
+    "id-question": 156
   },
   {
     "question": "You have hundreds of Terabytes that you want to migrate to AWS S3 as soon as possible. You tried to use your network bandwidth and it will take around 3 weeks to complete the upload process. What is the recommended approach to using in this situation?",
@@ -1962,7 +2118,8 @@
     "answer": "AWS Snowball Edge",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.09.02@2x copy 2.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.09.02@2x copy 2.png",
+    "id-question": 157
   },
   {
     "question": "You want to expose virtually infinite storage for your tape backups. You want to keep the same software you're using and want an iSCSI compatible interface. What do you use?",
@@ -1975,7 +2132,8 @@
     "answer": "AWS Storage Gateway - Tape Gateway",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.14.56@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.14.56@2x.png",
+    "id-question": 158
   },
   {
     "question": "A company is running Amazon S3 File Gateway to host their data on S3 buckets and is able to mount them on-premises using SMB. The data currently is hosted on S3 Standard storage class and there is a requirement to reduce the costs for S3. So, they have decided to migrate some of those data to S3 Glacier. What is the most efficient way they can use to move the data to S3 Glacier automatically?",
@@ -1989,7 +2147,8 @@
     "answer": "Use S3 Lifecycle Policy",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.31.59@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.31.59@2x.png",
+    "id-question": 159
   },
   {
     "question": "Acompany uses a lot of files and data which is stored in an FSx for Windows File Server storage on AWS. Those files are currently used by the resources hosted on AWS. There\u2019s a requirement for those files to be accessed on-premises with low latency. Which AWS service can help you achieve this?",
@@ -2002,7 +2161,8 @@
     "answer": "FSx File Gateway",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.23.02@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.23.02@2x.png",
+    "id-question": 160
   },
   {
     "question": "You are planning to migrate your company's infrastructure from on-premises to AWS Cloud. You have an on-premises Microsoft Windows File Server that you want to migrate. What is the most suitable AWS service you can use?",
@@ -2014,7 +2174,8 @@
     "answer": "Amazon FSx for Windows (File Server)",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.19.52@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.19.52@2x.png",
+    "id-question": 161
   },
   {
     "question": "Which AWS service is best suited when migrating from an on-premises ZFS file system to AWS?",
@@ -2027,7 +2188,8 @@
     "answer": "Amazon FSx for OpenZFS",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.27.17@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.27.17@2x.png",
+    "id-question": 162
   },
   {
     "question": "You would like to have a distributed POSIX compliant file system that will allow you to maximize the IOPS in order to perform some High-Performance Computing (HPC) and genomics computational research. This file system has to easily scale to millions of OPS. What do you recommend?",
@@ -2040,7 +2202,8 @@
     "answer": "Amazon FSx for Lustre",
     "theme": "STORAGE-EXTRA",
     "embedding": null,
-    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.20.39@2x.png"
+    "img_path": "./screen_question/STORAGE-EXTRA/CleanShot 2024-07-06 at 11.20.39@2x.png",
+    "id-question": 163
   },
   {
     "question": "The following are true regarding EC2 Hibernate, EXCEPT:",
@@ -2053,7 +2216,8 @@
     "answer": "EC2 Instance Root Volume must be an Instance Store volume",
     "theme": "SA-LEVEL",
     "embedding": null,
-    "img_path": "./screen_question/SA-LEVEL/CleanShot 2024-07-05 at 15.11.26@2x.png"
+    "img_path": "./screen_question/SA-LEVEL/CleanShot 2024-07-05 at 15.11.26@2x.png",
+    "id-question": 164
   },
   {
     "question": "Elastic Network Interface (ENI) can be attached to EC2 instances in another AZ.",
@@ -2064,7 +2228,8 @@
     "answer": "False",
     "theme": "SA-LEVEL",
     "embedding": null,
-    "img_path": "./screen_question/SA-LEVEL/CleanShot 2024-07-05 at 15.10.05@2x.png"
+    "img_path": "./screen_question/SA-LEVEL/CleanShot 2024-07-05 at 15.10.05@2x.png",
+    "id-question": 165
   },
   {
     "question": "You have an application performing big data analysis hosted on a fleet of EC2 instances. You want to ensure your EC2 instances have the highest networking performance while communicating with each other. Which EC2 Placement Group should you choose?",
@@ -2076,7 +2241,8 @@
     "answer": "Cluster Placement Group",
     "theme": "SA-LEVEL",
     "embedding": null,
-    "img_path": "./screen_question/SA-LEVEL/CleanShot 2024-07-05 at 15.09.01@2x.png"
+    "img_path": "./screen_question/SA-LEVEL/CleanShot 2024-07-05 at 15.09.01@2x.png",
+    "id-question": 166
   },
   {
     "question": "You have a critical application hosted on a fleet of EC2 instances in which you want to achieve maximum availability when there's an AZ failure. Which EC2 Placement Group should you choose?",
@@ -2088,7 +2254,8 @@
     "answer": "Spread Placement Group",
     "theme": "SA-LEVEL",
     "embedding": null,
-    "img_path": "./screen_question/SA-LEVEL/CleanShot 2024-07-05 at 15.09.39@2x.png"
+    "img_path": "./screen_question/SA-LEVEL/CleanShot 2024-07-05 at 15.09.39@2x.png",
+    "id-question": 167
   },
   {
     "question": "You have launched an EC2 instance that will host a NodeJS application. After installing all the required software and configured your application, you noted down the EC2 instance public IPv4 so you can access it. Then, you stopped and then started your EC2 instance to complete the application configuration. After restart, you can't access the EC2 instance, and you found that the EC2 instance public IPv4 has been changed. What should you do to assign a fixed public IPv4 to your EC2 instance?",
@@ -2101,7 +2268,8 @@
     "answer": "Allocate an Elastic IP and assign it to your EC2 instance",
     "theme": "SA-LEVEL",
     "embedding": null,
-    "img_path": "./screen_question/SA-LEVEL/CleanShot 2024-07-05 at 15.07.43@2x.png"
+    "img_path": "./screen_question/SA-LEVEL/CleanShot 2024-07-05 at 15.07.43@2x.png",
+    "id-question": 168
   },
   {
     "question": "Amazon RDS supports the following databases, EXCEPT:",
@@ -2114,7 +2282,8 @@
     "answer": "MongoDB",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.34.20@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.34.20@2x.png",
+    "id-question": 169
   },
   {
     "question": "Amazon Aurora Supports both databases:",
@@ -2127,7 +2296,8 @@
     "answer": "MySQL and PostgreSQL",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.41.21@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.41.21@2x.png",
+    "id-question": 170
   },
   {
     "question": "You need to store long-term backups for your Aurora database for disaster recovery and audit purposes. What do you recommend?",
@@ -2139,7 +2309,8 @@
     "answer": "Perform On Demand Backups",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.42.36@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.42.36@2x.png",
+    "id-question": 171
   },
   {
     "question": "Your company has a production Node.js application that is using RDS MySQL 5.6 as its database. A new application programmed in Java will perform some heavy analytics workload to create a dashboard on a regular hourly basis. What is the most cost-effective solution you can implement to minimize disruption for the main application?",
@@ -2151,7 +2322,8 @@
     "answer": "Create a Read Replica in a different AZ and run the analytics workload on the replica database",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.37.13@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.37.13@2x.png",
+    "id-question": 172
   },
   {
     "question": "Your application running on a fleet of EC2 instances managed by an Auto Scaling Group behind an Application Load Balancer. Users have to constantly log back in and you don't want to enable Sticky Sessions on your ALB as you fear it will overload some EC2 instances. What should you do?",
@@ -2164,7 +2336,8 @@
     "answer": "Store session data in ElastiCache",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.35.36@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.35.36@2x.png",
+    "id-question": 173
   },
   {
     "question": "You work as a Solutions Architect for a gaming company. One of the games mandates that players are ranked in real-time based on their score. Your boss asked you to design then implement an effective and highly available solution to create a gaming leaderboard. What should you use?",
@@ -2177,7 +2350,8 @@
     "answer": "Use ElastiCache for Redis - Sorted Sets",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.41.35@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.41.35@2x.png",
+    "id-question": 174
   },
   {
     "question": "You need full customization of an Oracle Database on AWS. You would like to benefit from using the AWS services. What do you recommend?",
@@ -2189,7 +2363,8 @@
     "answer": "RDS Custom for Oracle",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.42.04@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.42.04@2x.png",
+    "id-question": 175
   },
   {
     "question": "How many Aurora Read Replicas can you have in a single Aurora DB Cluster?",
@@ -2201,7 +2376,8 @@
     "answer": "15",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.41.03@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.41.03@2x.png",
+    "id-question": 176
   },
   {
     "question": "How can you enhance the security of your ElastiCache Redis Cluster by allowing users to access your ElastiCache Redis Cluster using their IAM Identities (e.g., Users, Roles)?",
@@ -2213,7 +2389,8 @@
     "answer": "Using IAM Authentication",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.36.39@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.36.39@2x.png",
+    "id-question": 177
   },
   {
     "question": "Which RDS (NOT Aurora) feature when used does not require you to change the SQL connection string?",
@@ -2224,7 +2401,8 @@
     "answer": "Multi-Az",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.35.18@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.35.18@2x.png",
+    "id-question": 178
   },
   {
     "question": "You have an un-encrypted RDS DB instance and you want to create Read Replicas. Can you configure the RDS Read Replicas to be encrypted?",
@@ -2235,7 +2413,8 @@
     "answer": "No",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.40.23@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.40.23@2x.png",
+    "id-question": 179
   },
   {
     "question": "For your RDS database, you can have up to how many Read Replicas?",
@@ -2247,7 +2426,8 @@
     "answer": "15",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.39.12@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.39.12@2x.png",
+    "id-question": 180
   },
   {
     "question": "You're planning for a new solution that requires a MySQL database that must be available even in case of a disaster in one of the Availability Zones. What should you use?",
@@ -2259,7 +2439,8 @@
     "answer": "Enable Multi-AZ",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.34.36@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.34.36@2x.png",
+    "id-question": 181
   },
   {
     "question": "Which of the following statement is true regarding replication in both RDS Read Replicas and Multi-AZ?",
@@ -2272,7 +2453,8 @@
     "answer": "Read Replica uses Asynchronous Replication and Multi-AZ uses Synchronous Replication",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.38.27@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.38.27@2x.png",
+    "id-question": 182
   },
   {
     "question": "Your development team would like to perform a suite of read and write tests against your production Aurora database because they need access to production data as soon as possible. What do you advise?",
@@ -2285,7 +2467,8 @@
     "answer": "Use the Aurora Cloning feature",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.42.56@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.42.56@2x.png",
+    "id-question": 183
   },
   {
     "question": "You have 100 EC2 instances connected to your RDS database and you see that upon a maintenance of the database, all your applications take a lot of time to reconnect to RDS, due to poor application logic. How do you improve this?",
@@ -2298,7 +2481,8 @@
     "answer": "Use an RDS Proxy",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.43.17@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.43.17@2x.png",
+    "id-question": 184
   },
   {
     "question": "You would like to ensure you have a replica of your database available in another AWS Region if a disaster happens to your main AWS Region. Which database do you recommend to implement this easily?",
@@ -2311,7 +2495,8 @@
     "answer": "Aurora Global Database",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.36.22@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.36.22@2x.png",
+    "id-question": 185
   },
   {
     "question": "You would like to create a disaster recovery strategy for your RDS PostgreSQL database so that in case of a regional outage the database can be quickly made available for both read and write workloads in another AWS Region. The DR database must be highly available. What do you recommend?",
@@ -2324,7 +2509,8 @@
     "answer": "Create a Read Replica in a different region and enable Multi-AZ on the Read Replica",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.43.40@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.43.40@2x.png",
+    "id-question": 186
   },
   {
     "question": "You have set up read replicas on your RDS database, but users are complaining that upon updating their social media posts, they do not see their updated posts right away. What is a possible cause for this?",
@@ -2336,7 +2522,8 @@
     "answer": "Read Replicas have Asynchronous Replication, therefore it's likely your users will only read Eventual Consistency",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.35.01@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.35.01@2x.png",
+    "id-question": 187
   },
   {
     "question": "An analytics application is currently performing its queries against your main production RDS database. These queries run at any time of the day and slow down the RDS database which impacts your users' experience. What should you do to improve the users' experience?",
@@ -2348,7 +2535,8 @@
     "answer": "Setup a Read Replica",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.35.58@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.35.58@2x.png",
+    "id-question": 188
   },
   {
     "question": "You have migrated the MySQL database from on-premises to RDS. You have a lot of applications and developers interacting with your database. Each developer has an IAM user in the company's AWS account. What is a suitable approach to give access to developers to the MySQL RDS DB instance instead of creating a DB user for each one?",
@@ -2360,7 +2548,8 @@
     "answer": "Enable IAM Database Authentication",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.37.55@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.37.55@2x.png",
+    "id-question": 189
   },
   {
     "question": "Which RDS database technology does NOT support IAM Database Authentication?",
@@ -2372,7 +2561,8 @@
     "answer": "Oracle",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.39.56@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.39.56@2x.png",
+    "id-question": 190
   },
   {
     "question": "How do you encrypt an unencrypted RDS DB instance?",
@@ -2384,7 +2574,8 @@
     "answer": "Create a snapshot of the unencrypted RDS DB instance, copy the snapshot and tick \"Enable encryption\", then restore the RDS DB instance from the encrypted snapshot",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.38.50@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.38.50@2x.png",
+    "id-question": 191
   },
   {
     "question": "We have an RDS database that struggles to keep up with the demand of requests from our website. Our million users mostly read news, and we don't post news very often. Which solution is NOT adapted to this problem?",
@@ -2396,7 +2587,8 @@
     "answer": "RDS Multi-Az",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.34.48@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.34.48@2x.png",
+    "id-question": 192
   },
   {
     "question": "An application running in production is using an Aurora Cluster as its database. Your development team would like to run a version of the application in a scaled-down application with the ability to perform some heavy workload on a need-basis. Most of the time, the application will be unused. Your ClO has tasked you with helping the team to achieve this while minimizing costs. What do you suggest?",
@@ -2409,7 +2601,8 @@
     "answer": "Use Aurora Serverless",
     "theme": "RDS",
     "embedding": null,
-    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.40.41@2x.png"
+    "img_path": "./screen_question/RDS/CleanShot 2024-07-05 at 16.40.41@2x.png",
+    "id-question": 193
   },
   {
     "question": "You have a lot of static files stored in an S3 bucket that you want to distribute globally to your users. Which AWS service should you use?",
@@ -2422,7 +2615,8 @@
     "answer": "Amazon CloudFront",
     "theme": "SERVERLESS-ARCH-DISC",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 16.41.00@2x.png"
+    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 16.41.00@2x.png",
+    "id-question": 194
   },
   {
     "question": "You have created a DynamoDB table in ap-northeast-1 and would like to make it available in eu-west-1, so you decided to create a DynamoDB Global Table. What needs to be enabled first before you create a DynamoDB Global Table?",
@@ -2435,7 +2629,8 @@
     "answer": "DynamoDB Streams",
     "theme": "SERVERLESS-ARCH-DISC",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 16.42.40@2x.png"
+    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 16.42.40@2x.png",
+    "id-question": 195
   },
   {
     "question": "An AWS service allows you to capture gigabytes of data per second in real-time and deliver these data to multiple consuming applications, with a replay feature.",
@@ -2447,7 +2642,8 @@
     "answer": "Kinesis Data Streams",
     "theme": "SERVERLESS-ARCH-DISC",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 22.09.58@2x.png"
+    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 22.09.58@2x.png",
+    "id-question": 196
   },
   {
     "question": "The following AWS services have an out of the box caching feature, EXCEPT ...........0.",
@@ -2459,7 +2655,8 @@
     "answer": "Lambda",
     "theme": "SERVERLESS-ARCH-DISC",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 13.39.51@2x.png"
+    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 13.39.51@2x.png",
+    "id-question": 197
   },
   {
     "question": "A startup company plans to run its application on AWS. As a solutions architect, the company hired you to design and implement a fully Serverless REST API. Which technology stack do you recommend?",
@@ -2472,7 +2669,8 @@
     "answer": "API Gateway + AWS Lambda",
     "theme": "SERVERLESS-ARCH-DISC",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 13.37.19@2x.png"
+    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 13.37.19@2x.png",
+    "id-question": 198
   },
   {
     "question": "You would like to create an architecture for a micro-services application whose sole purpose is to encode videos stored in an S3 bucket and store the encoded videos back into an S3 bucket. You would like to make this micro-services application reliable and has the ability to retry upon failures. Each video may take over 25 minutes to be processed. The services used in the architecture should be asynchronous and should have the capability to be stopped for a day and resume the next day from the videos that haven't been encoded yet. Which of the following AWS services would you recommend in this scenario?",
@@ -2485,7 +2683,8 @@
     "answer": "Amazon SQS + Amazon EC2",
     "theme": "SERVERLESS-ARCH-DISC",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 22.07.34@2x.png"
+    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 22.07.34@2x.png",
+    "id-question": 199
   },
   {
     "question": "You have configured a Lambda function to run each time an item is added to a DynamoDB table using DynamoDB Streams. The function is meant to insert messages into the SQS queue for further long processing jobs. Each time the Lambda function is invoked, it seems able to read from the DynamoDB Stream but it isn't able to insert the messages into the SQS queue. What do you think the problem is?",
@@ -2498,7 +2697,8 @@
     "answer": "The Lambda Execution IAM Role is missing permissions",
     "theme": "SERVERLESS-ARCH-DISC",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 16.44.28@2x.png"
+    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 16.44.28@2x.png",
+    "id-question": 200
   },
   {
     "question": "You are running a photo-sharing website where your images are downloaded from all over the world. Every month you publish a master pack of beautiful mountain images that are over 15 GB in size. The content is currently hosted on an Elastic File System (EFS) file system and distributed by an Application Load Balancer and a set of EC2 instances. Each month, you are experiencing very high traffic which increases the load on your EC2 instances and increases network costs. What do you recommend to reduce EC2 load and network costs without refactoring your website?",
@@ -2511,7 +2711,8 @@
     "answer": "Create a CloudFront Distribution",
     "theme": "SERVERLESS-ARCH-DISC",
     "embedding": null,
-    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 22.07.58@2x.png"
+    "img_path": "./screen_question/SERVERLESS-ARCH-DISC/CleanShot 2024-07-07 at 22.07.58@2x.png",
+    "id-question": 201
   },
   {
     "question": "What is EBS Multi-Attach?",
@@ -2524,7 +2725,8 @@
     "answer": "Attach the same EBS volume to multiple EC2 instances in the same AZ",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
-    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.30.12@2x.png"
+    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.30.12@2x.png",
+    "id-question": 202
   },
   {
     "question": "You have a fleet of EC2 instances distributed across AZs that process a large data set. What do you recommend to make the same data to be accessible as an NFS drive to all of your EC2 instances?",
@@ -2536,7 +2738,8 @@
     "answer": "Use EFS",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
-    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.28.41@2x.png"
+    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.28.41@2x.png",
+    "id-question": 203
   },
   {
     "question": "You would like to have a high-performance local cache for your application hosted on an EC2 instance. You don't mind losing the cache upon the termination of your EC2 instance. Which storage mechanism do you recommend as a Solutions Architect?",
@@ -2548,7 +2751,8 @@
     "answer": "Instance Store",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
-    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.29.08@2x.png"
+    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.29.08@2x.png",
+    "id-question": 204
   },
   {
     "question": "You have just terminated an EC2 instance in us-east-1a, and its attached EBS volume is now available. Your teammate tries to attach it to an EC2 instance in us-east-1b but he can't. What is a possible cause for this?",
@@ -2560,7 +2764,8 @@
     "answer": "EBS volumes are locked to an Availability Zone",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
-    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.25.49@2x.png"
+    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.25.49@2x.png",
+    "id-question": 205
   },
   {
     "question": "You would like to encrypt an unencrypted EBS volume attached to your EC2 instance. What should you do?",
@@ -2573,7 +2778,8 @@
     "answer": "Create an EBS snapshot of your EBS volume. Copy the snapshot and tick the option to encrypt the copied snapshot. Then, use the encrypted snapshot to create a new EBS volume",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
-    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.28.19@2x.png"
+    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.28.19@2x.png",
+    "id-question": 206
   },
   {
     "question": "You have launched an EC2 instance with two EBS volumes, Root volume type and the other EBS volume type to store the data. A month later you are planning to terminate the EC2 instance. What's the default behavior that will happen to each EBS volume?",
@@ -2586,7 +2792,8 @@
     "answer": "The Root volume type will be deleted and the EBS volume type will not be deleted",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
-    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.26.57@2x.png"
+    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.26.57@2x.png",
+    "id-question": 207
   },
   {
     "question": "You are running a high-performance database that requires an IOPS of 310,000 for its underlying storage. What do you recommend?",
@@ -2599,7 +2806,8 @@
     "answer": "Use an EC2 Instance Store",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
-    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.29.44@2x.png"
+    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.29.44@2x.png",
+    "id-question": 208
   },
   {
     "question": "Which of the following EBS volume types can be used as boot volumes when you create EC2 instances?",
@@ -2611,7 +2819,8 @@
     "answer": "gp2, gp3, io1, io2 ",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
-    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.27.59@2x.png"
+    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.27.59@2x.png",
+    "id-question": 209
   },
   {
     "question": "You can use an AMI in N.Virginia Region us\u2014east-1 to launch an EC2 instance in any AWS Region.",
@@ -2622,7 +2831,8 @@
     "answer": "False",
     "theme": "EC2-INSTANCE-STORAGE",
     "embedding": null,
-    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.27.34@2x.png"
+    "img_path": "./screen_question/EC2-INSTANCE-STORAGE/CleanShot 2024-07-05 at 15.27.34@2x.png",
+    "id-question": 210
   },
   {
     "question": "Which feature in Redshift forces all COPY and UNLOAD traffic moving between your cluster and data repositories through your VPCs?",
@@ -2634,7 +2844,8 @@
     "answer": "Enhanced VPC Routing",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.23.27.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.23.27.png",
+    "id-question": 211
   },
   {
     "question": "You are running a gaming website that is using DynamoDB as its data store. Users have been asking for a search feature to find other gamers by name, with partial matches if possible. Which AWS technology do you recommend to implement this feature?",
@@ -2647,7 +2858,8 @@
     "answer": "Amazon OpenSearch Service",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.24.02.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.24.02.png",
+    "id-question": 212
   },
   {
     "question": "As a Solutions Architect, you have been instructed you to prepare a disaster recovery plan for a Redshift cluster. What should you do?",
@@ -2659,7 +2871,8 @@
     "answer": "Enable Automated Snapshots, then configure your Redshift cluster to automatically copy snapshots to another AWS region",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.23.08.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.23.08.png",
+    "id-question": 213
   },
   {
     "question": "An AWS service allows you to create, run, and monitor ETL (extract, transform, and load) jobs in a few clicks.",
@@ -2672,7 +2885,8 @@
     "answer": "AwsGlue",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.28.28.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.28.28.png",
+    "id-question": 214
   },
   {
     "question": "Which AWS service is most appropriate when you want to perform real-time analytics on streams of data?",
@@ -2685,7 +2899,8 @@
     "answer": "Amazon Kinesis Data Analytics",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.33.31@2x.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.33.31@2x.png",
+    "id-question": 215
   },
   {
     "question": "A company is using AWS to host its public websites and internal applications. Those different websites and applications generate a lot of logs and traces. There is a requirement to centrally store those logs and efficiently search and analyze those logs in real-time for detection of any errors and if there is a threat. Which AWS service can help them efficiently store and analyze logs?",
@@ -2698,7 +2913,8 @@
     "answer": "Amazon OpenSearch service",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.28.48.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.28.48.png",
+    "id-question": 216
   },
   {
     "question": "You are a DevOps engineer in a machine learning company which 3 TB of JSON files stored in an S3 bucket. There\u2019s a requirement to do some analytics on those files using Amazon Athena and you have been tasked to find a way to convert those files\u2019 format from JSON to Apache Parquet. Which AWS service is best suited?",
@@ -2711,7 +2927,8 @@
     "answer": "AWS Glue",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.30.41@2x.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.30.41@2x.png",
+    "id-question": 217
   },
   {
     "question": "makes it easy and cost-effective for data engineers and analysts to run applications built using open source big data frameworks such as Apache Spark, Hive, or Presto without having to operate or manage clusters.",
@@ -2724,7 +2941,8 @@
     "answer": "Amazon EMR",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.30.19.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.30.19.png",
+    "id-question": 218
   },
   {
     "question": "You would like to have a database that is efficient at performing analytical queries on large sets of columnar data. You would like to connect to this Data Warehouse using a reporting and dashboard tool such as Amazon QuickSight. Which AWS technology do you recommend?",
@@ -2737,7 +2955,8 @@
     "answer": "Amazon Redshift",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.22.20.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.22.20.png",
+    "id-question": 219
   },
   {
     "question": "You have a lot of log files stored in an S3 bucket that you want to perform a quick analysis, if possible Serverless, to filter the logs and find users that attempted to make an unauthorized action. Which AWS service allows you to do so?",
@@ -2750,7 +2969,8 @@
     "answer": "Amazon Athena",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.22.44.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 14.22.44.png",
+    "id-question": 220
   },
   {
     "question": "Which AWS Glue feature allows you to save and track the data that has already been processed during a previous run of a Glue ETL job?",
@@ -2763,7 +2983,8 @@
     "answer": "Glue Job Bookmarks",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.31.03@2x.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.31.03@2x.png",
+    "id-question": 221
   },
   {
     "question": "You have an on-premises application that is used together with an on-premises Apache Kafka to receive a stream of clickstream events from multiple websites. You have been tasked to migrate this application as soon as possible without any code changes. You decided to host the application on an EC2 instance. What is the best option you recommend to migrate Apache Kafka?",
@@ -2776,7 +2997,8 @@
     "answer": "Amazon MSK",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.32.22@2x.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.32.22@2x.png",
+    "id-question": 222
   },
   {
     "question": "You have data stored in RDS, S3 buckets and you are using AWS Lake Formation as a data lake to collect, move and catalog data so you can do some analytics. You have a lot of big data and ML engineers in the company and you want to control access to part of the data as it might contain sensitive information. What can you use?",
@@ -2789,7 +3011,8 @@
     "answer": "Lake Formation Fine-grained Access Control",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.33.00@2x.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.33.00@2x.png",
+    "id-question": 223
   },
   {
     "question": "An e-commerce company has all its historical data such as orders, customers, revenues, and sales for the previous years hosted on a Redshift cluster. There is a requirement to generate some dashboards and reports indicating the revenues from the previous years and the total sales, so it will be easy to define the requirements for the next year. The DevOps team is assigned to find an AWS service that can help define those dashboards and have native integration with Redshift. Which AWS service is best suited?",
@@ -2802,7 +3025,8 @@
     "answer": "Amazon QuickSight",
     "theme": "DATA-ANAL",
     "embedding": null,
-    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.30.19@2x.png"
+    "img_path": "./screen_question/DATA-ANAL/CleanShot 2024-07-19 at 16.30.19@2x.png",
+    "id-question": 224
   },
   {
     "question": "You have deployed a new Elastic Beanstalk environment and would like to direct 5% of your production traffic to this new environment. This allows you to monitor for CloudWatch metrics and ensuring that there're no bugs exist with your new environment. Which Route 53 Record type allows you to do so?",
@@ -2815,7 +3039,8 @@
     "answer": "Weighted",
     "theme": "ROUTE53",
     "embedding": null,
-    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.44.47@2x.png"
+    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.44.47@2x.png",
+    "id-question": 225
   },
   {
     "question": "Which of the following are NOT valid Route 53 Health Checks?",
@@ -2828,7 +3053,8 @@
     "answer": "Health Check that monitor SQS Queue",
     "theme": "ROUTE53",
     "embedding": null,
-    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.46.25@2x.png"
+    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.46.25@2x.png",
+    "id-question": 226
   },
   {
     "question": "You have updated a Route 53 Record's myapp.mydomain.com value to point to a new Elastic Load Balancer, but it looks like users are still redirected to the old ELB. What is a possible cause for this behavior?",
@@ -2841,7 +3067,8 @@
     "answer": "Because of the TTL",
     "theme": "ROUTE53",
     "embedding": null,
-    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.45.00@2x.png"
+    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.45.00@2x.png",
+    "id-question": 227
   },
   {
     "question": "You have a legal requirement that people in any country but France should NOT be able to access your website. Which Route 53 Routing Policy helps you in achieving this?",
@@ -2854,7 +3081,8 @@
     "answer": "Geolocation",
     "theme": "ROUTE53",
     "embedding": null,
-    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.45.34@2x.png"
+    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.45.34@2x.png",
+    "id-question": 228
   },
   {
     "question": "You have purchased a domain on GoDaddy and would like to use Route 53 as the DNS Service Provider. What should you do to make this work?",
@@ -2867,7 +3095,8 @@
     "answer": "Create a Public Hosted Zone and update the 3rd party Registrar NS records",
     "theme": "ROUTE53",
     "embedding": null,
-    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.46.05@2x.png"
+    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.46.05@2x.png",
+    "id-question": 229
   },
   {
     "question": "You have an application that's hosted in two different AWS Regions us-west-1 and eu-west-2. You want your users to get the best possible user experience by minimizing the response time from application servers to your users. Which Route 53 Routing Policy should you choose?",
@@ -2880,7 +3109,8 @@
     "answer": "Latency",
     "theme": "ROUTE53",
     "embedding": null,
-    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.45.15@2x.png"
+    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.45.15@2x.png",
+    "id-question": 230
   },
   {
     "question": "You have purchased mycoolcompany.com on Amazon Route 53 Registrar and would like the domain to point to your Elastic Load Balancer my-elb-1234567890.us-west-2.elb.amazonaws.com. Which Route 53 Record type must you use here?",
@@ -2891,7 +3121,8 @@
     "answer": "Alias",
     "theme": "ROUTE53",
     "embedding": null,
-    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.44.37@2x.png"
+    "img_path": "./screen_question/ROUTE53/CleanShot 2024-07-05 at 16.44.37@2x.png",
+    "id-question": 231
   },
   {
     "question": "You have an e-commerce application with an OLTP database hosted on-premises. This application has popularity which results in its database has thousands of requests per second. You want to migrate the database to an EC2 instance. Which EC2 Instance Type should you choose to handle this high-frequency OLTP database?",
@@ -2904,7 +3135,8 @@
     "answer": "Storage Optimized",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.04.18@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.04.18@2x.png",
+    "id-question": 232
   },
   {
     "question": "Spot Fleet is a set of Spot Instances and optionally?",
@@ -2917,7 +3149,8 @@
     "answer": "On-Demand Instances",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.06.23@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.06.23@2x.png",
+    "id-question": 233
   },
   {
     "question": "You would like to deploy a High-Performance Computing (HPC) application on EC2 instances. Which EC2 instance type should you choose?",
@@ -2930,7 +3163,8 @@
     "answer": "Compute Optimized",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.02.30@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.02.30@2x.png",
+    "id-question": 234
   },
   {
     "question": "You are preparing to launch an application that will be hosted on a set of EC2 instances. This application needs some software installation and some OS packages need to be updated during the first launch. What is the best way to achieve this when you launch the EC2 instances?",
@@ -2942,7 +3176,8 @@
     "answer": "Write a bash script that installs the required software and updates to your OS, then use this script in EC2 User Data when you launch your EC2 instances",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.03.24@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.03.24@2x.png",
+    "id-question": 235
   },
   {
     "question": "Which EC2 Instance Type should you choose for a critical application that uses an in-memory database?",
@@ -2955,7 +3190,8 @@
     "answer": "Memory Optimized",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.03.47@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.03.47@2x.png",
+    "id-question": 236
   },
   {
     "question": "Security Groups can be attached to only one EC2 instance.",
@@ -2966,7 +3202,8 @@
     "answer": "False",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.04.47@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.04.47@2x.png",
+    "id-question": 237
   },
   {
     "question": "Which EC2 Purchasing Option can provide you the biggest discount, but it is not suitable for critical jobs or databases?",
@@ -2978,7 +3215,8 @@
     "answer": "Spot Instances",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 14.59.47@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 14.59.47@2x.png",
+    "id-question": 238
   },
   {
     "question": "How long can you reserve an EC2 Reserved Instance?",
@@ -2991,7 +3229,8 @@
     "answer": "1 or 3 years",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.01.23@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.01.23@2x.png",
+    "id-question": 239
   },
   {
     "question": "You're planning to migrate on-premises applications to AWS. Your company has strict compliance requirements that require your applications to run on dedicated servers. You also need to use your own server-bound software license to reduce costs. Which EC2 Purchasing Option is suitable for you?",
@@ -3003,7 +3242,8 @@
     "answer": "Dedicated Hosts",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.05.13@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.05.13@2x.png",
+    "id-question": 240
   },
   {
     "question": "What should you use to control traffic in and out of EC2 instances?",
@@ -3015,7 +3255,8 @@
     "answer": "Security Groups",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.01.02@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.01.02@2x.png",
+    "id-question": 241
   },
   {
     "question": "You would like to deploy a database technology on an EC2 instance and the vendor license bills you based on the physical cores and underlying network socket visibility. Which EC2 Purchasing Option allows you to get visibility into them?",
@@ -3028,7 +3269,8 @@
     "answer": "Dedicated Hosts",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.06.02@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.06.02@2x.png",
+    "id-question": 242
   },
   {
     "question": "Which EC2 Purchasing Option should you use for an application you plan to run on a server continuously for 1 year?",
@@ -3040,7 +3282,8 @@
     "answer": "Reserved Instances",
     "theme": "EC2",
     "embedding": null,
-    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.02.54@2x.png"
+    "img_path": "./screen_question/EC2/CleanShot 2024-07-05 at 15.02.54@2x.png",
+    "id-question": 243
   },
   {
     "question": "What is the most suitable AWS service for storing RDS DB passwords which also provides you automatic rotation?",
@@ -3052,7 +3295,8 @@
     "answer": "AWS Secrets Manager",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 20.00.38@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 20.00.38@2x.png",
+    "id-question": 244
   },
   {
     "question": "You are managing an AWS Organization with multiple AWS accounts. Each account has a separate application with different resources. You want an easy way to manage Security Groups and WAF Rules across those accounts as there was a security incident the last week and you want to tighten up your resources. Which AWS service can help you to do so?",
@@ -3065,7 +3309,8 @@
     "answer": "AWS Firewall Manager",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 20.04.13@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 20.04.13@2x.png",
+    "id-question": 245
   },
   {
     "question": "You have an S3 bucket that is encrypted with SSE-KMS. You have been tasked to replicate the objects to a target bucket in the same AWS region but with a different KMS Key. You have configured the S3 replication, the target bucket, and the target KMS key and it is still not working. What is missing to make the S3 replication work?",
@@ -3078,7 +3323,8 @@
     "answer": "You have to configure permissions for both Source KMS Key kms:Decrypt and Target KMS Key kms:Encrypt to be used by the S3 Replication Service",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 20.03.09@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 20.03.09@2x.png",
+    "id-question": 246
   },
   {
     "question": "AWS KMS supports both symmetric and asymmetric KMS keys.",
@@ -3089,7 +3335,8 @@
     "answer": "True",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.51.19@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.51.19@2x.png",
+    "id-question": 247
   },
   {
     "question": "An online-payment company is using AWS to host its infrastructure. The frontend is created using VueJS and is hosted on an S3 bucket and the backend is developed using PHP and is hosted on EC2 instances in an Auto Scaling Group. As their customers are worldwide, they use both CloudFront and Aurora Global database to implement multi-region deployments to provide the lowest latency and provide availability, and resiliency. A new feature required which gives customers the ability to store data encrypted on the database and this data must not be disclosed even by the company admins. The data should be encrypted on the client side and stored in an encrypted format. What do you recommend to implement this?",
@@ -3102,7 +3349,8 @@
     "answer": "Using Aurora Client-side Encryption and KMS Multi-region Keys",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 20.02.29@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 20.02.29@2x.png",
+    "id-question": 248
   },
   {
     "question": "You have a website hosted on a fleet of EC2 instances fronted by an Application Load Balancer. What should you use to protect your website from common web application attacks (e.g., SQL Injection)?",
@@ -3115,7 +3363,8 @@
     "answer": "AWS WAF",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.58.22@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.58.22@2x.png",
+    "id-question": 249
   },
   {
     "question": "What should you use to control access to your KMS CMKs?",
@@ -3128,7 +3377,8 @@
     "answer": "KMS Key Policies",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.52.49@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.52.49@2x.png",
+    "id-question": 250
   },
   {
     "question": "Which AWS service helps you protect your sensitive data stored in S3 buckets?",
@@ -3141,7 +3391,8 @@
     "answer": "Amazon Macie",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 20.01.57@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 20.01.57@2x.png",
+    "id-question": 251
   },
   {
     "question": "You have created the main Edge-Optimized API Gateway in us-west-2 AWS region. This main Edge-Optimized API Gateway forwards traffic to the second level API Gateway in ap-southeast-1 . You want to secure the main API Gateway by attaching an ACM certificate to it. Which AWS region are you going to create the ACM certificate in?",
@@ -3154,7 +3405,8 @@
     "answer": "us-east-1",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 20.03.39@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 20.03.39@2x.png",
+    "id-question": 252
   },
   {
     "question": "You would like to externally maintain the configuration values of your main database, to be picked up at runtime by your application. What's the best place to store them to maintain control and version history?",
@@ -3167,7 +3419,8 @@
     "answer": "SSM Parameter Store",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.55.57@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.55.57@2x.png",
+    "id-question": 253
   },
   {
     "question": "You have a secret value that you use for encryption purposes, and you want to store and track the values of this secret over time. Which AWS service should you use?",
@@ -3179,7 +3432,8 @@
     "answer": "SSM Parameter Store",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.54.14@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.54.14@2x.png",
+    "id-question": 254
   },
   {
     "question": "AWS GuardDuty scans the following data sources, EXCEPT ..........",
@@ -3192,7 +3446,8 @@
     "answer": "CloudWatch Logs",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.57.51@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.57.51@2x.png",
+    "id-question": 255
   },
   {
     "question": "In Server-Side Encryption, where do the encryption and decryption happen?",
@@ -3205,7 +3460,8 @@
     "answer": "Both Encryption and Decryption happen on the server",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.49.55@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.49.55@2x.png",
+    "id-question": 256
   },
   {
     "question": "Server-Side Encryption means that the data is sent encrypted to the server.",
@@ -3216,7 +3472,8 @@
     "answer": "False",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.49.38@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.49.38@2x.png",
+    "id-question": 257
   },
   {
     "question": "You have created a Customer-managed CMK in KMS that you use to encrypt both S3 buckets and EBS snapshots. Your company policy mandates that your encryption keys be rotated every 3 months. What should you do?",
@@ -3228,7 +3485,8 @@
     "answer": "Rotate the KMS CMK manually. Create a new KMS CMK and use Key Aliases to reference the new KMS CMK. Keep the old KMS CMK so you can decrypt the old data",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.52.27@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.52.27@2x.png",
+    "id-question": 258
   },
   {
     "question": "You have an AMI that has an encrypted EBS snapshot using KMS CMK. You want to share this AMI with another AWS account. You have shared the AMI with the desired AWS account, but the other AWS account still can't use it. How would you solve this problem?",
@@ -3240,7 +3498,8 @@
     "answer": "You need to share the KMS CMK used to encrypt the AMI with the other AWS account",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.52.03@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.52.03@2x.png",
+    "id-question": 259
   },
   {
     "question": "Your user-facing website is a high-risk target for DDoS attacks and you would like to get 24/7 support in case they happen and AWS bill reimbursement for the incurred costs during the attack. What AWS service should you use?",
@@ -3253,7 +3512,8 @@
     "answer": "AWS Shield Advanced",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 20.05.04@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 20.05.04@2x.png",
+    "id-question": 260
   },
   {
     "question": "You need to create KMS Keys in AWS KMS before you are able to use the encryption features for EBS, S3, RDS...",
@@ -3264,7 +3524,8 @@
     "answer": "False",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.50.49@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.50.49@2x.png",
+    "id-question": 261
   },
   {
     "question": "You have a Lambda function used to process some data in the database. You would like to give your Lambda function access to the database password. Which of the following options is the most secure?",
@@ -3276,7 +3537,8 @@
     "answer": "Have it as an encrypted environment variable and decrypt it at runtime",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.53.50@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.53.50@2x.png",
+    "id-question": 262
   },
   {
     "question": "To enable In-flight Encryption (In-Transit Encryption), we need to have uses",
@@ -3288,7 +3550,8 @@
     "answer": "an HTTPS endpoint with an SSL certificate",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.49.18@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.49.18@2x.png",
+    "id-question": 263
   },
   {
     "question": "You have generated a public certificate using LetsEncrypt and uploaded it to the ACM so you can use and attach to an Application Load Balancer that forwards traffic to EC2 instances. As this certificate is generated outside of AWS, it does not support the automatic renewal feature. How would you be notified 30 days before this certificate expires so you can manually generate a new one?",
@@ -3301,7 +3564,8 @@
     "answer": "Configure EventBridge for Daily Expiration Events from ACM to invoke SNS notifications to your email",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 20.05.34@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 20.05.34@2x.png",
+    "id-question": 264
   },
   {
     "question": "Which AWS service allows you to centrally manage EC2 Security Groups and AWS Shield Advanced across all AWS accounts in your AWS Organization?",
@@ -3314,7 +3578,8 @@
     "answer": "AWS Firewall Manager",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 20.01.29@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 20.01.29@2x.png",
+    "id-question": 265
   },
   {
     "question": "In Client-Side Encryption, the server must know our encryption scheme before we can upload the data.",
@@ -3325,7 +3590,8 @@
     "answer": "False",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.50.20@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.50.20@2x.png",
+    "id-question": 266
   },
   {
     "question": "When you enable Automatic Rotation on your KMS Key, the backing key is rotated every how many days?",
@@ -3338,7 +3604,8 @@
     "answer": "1 year",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.51.45@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.51.45@2x.png",
+    "id-question": 267
   },
   {
     "question": "You would like to analyze OS vulnerabilities from within EC2 instances. You need these analyses to occur weekly and provide you with concrete recommendations in case vulnerabilities are found. Which AWS service should you use?",
@@ -3351,7 +3618,8 @@
     "answer": "Amazon Inspector",
     "theme": "SECURITY",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/SECURITY/CleanShot 2024-07-25 at 19.59.23@2x.png"
+    "img_path": "./screen_question/SECURITY/CleanShot 2024-07-25 at 19.59.23@2x.png",
+    "id-question": 268
   },
   {
     "question": "You would like to provide Internet access to your EC2 instances in private subnets with IPv4 while making sure this solution requires the least amount of administration and scales seamlessly. What should you use?",
@@ -3363,7 +3631,8 @@
     "answer": "NAT Gateway",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.53.42@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.53.42@2x.png",
+    "id-question": 269
   },
   {
     "question": "You want to scale up an AWS Site-to-Site VPN connection throughput, established between your on-premises data and AWS Cloud, beyond a single IPsec tunnel's maximum limit of 1.25 Gbps. What should you do?",
@@ -3375,7 +3644,8 @@
     "answer": "Use Transit Gateway",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 22.00.15@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 22.00.15@2x.png",
+    "id-question": 270
   },
   {
     "question": "VPC Peering has been enabled between VPC A and VPC B, and the route tables have been updated for VPC A. But, the EC2 instances cannot communicate. What is the likely issue?",
@@ -3388,7 +3658,8 @@
     "answer": "Check the Route Tables in VPC B",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.54.01@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.54.01@2x.png",
+    "id-question": 271
   },
   {
     "question": "You need to set up a dedicated connection between your on-premises corporate datacenter and AWS Cloud. This connection must be private, consistent, and traffic must not travel through the Internet. Which AWS service should you use?",
@@ -3401,7 +3672,8 @@
     "answer": "AWS Direct Connect",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.59.56@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.59.56@2x.png",
+    "id-question": 272
   },
   {
     "question": "Aweb application backend is hosted on EC2 instances in private subnets fronted by an Application Load Balancer in public subnets. There is a requirement to give some of the developers access to the backend EC2 instances but without exposing the backend EC2 instances to the Internet. You have created a bastion host EC2 instance in the public subnet and configured the backend EC2 instances Security Group to allow traffic from the bastion host. Which of the following is the best configuration for bastion host Security Group to make it secure?",
@@ -3414,7 +3686,8 @@
     "answer": "Allow traffic only on port 22 from the company\u2019s public CIDR",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 22.01.27@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 22.01.27@2x.png",
+    "id-question": 273
   },
   {
     "question": "AWS reserves 5 IP addresses each time you create a new subnet in a VPC. When you create a subnet with CIDR 10.0.0.0/24 , the following IP addresses are reserved, EXCEPT ...........:00",
@@ -3427,7 +3700,8 @@
     "answer": "10.0.0.4",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.55.21@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.55.21@2x.png",
+    "id-question": 274
   },
   {
     "question": "If you want a 500 Mbps Direct Connect connection between your corporate datacenter to AWS, you would choose 2 connection.",
@@ -3438,7 +3712,8 @@
     "answer": "Hosted",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.58.25@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.58.25@2x.png",
+    "id-question": 275
   },
   {
     "question": "Security Groups operate at the",
@@ -3449,7 +3724,8 @@
     "answer": "EC2 instance, Subnet",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.52.42@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.52.42@2x.png",
+    "id-question": 276
   },
   {
     "question": "Which AWS service allows you to protect and control traffic in your VPC from layer 3 to layer 7?",
@@ -3462,7 +3738,8 @@
     "answer": "AWS Network Firewall",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 22.02.12@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 22.02.12@2x.png",
+    "id-question": 277
   },
   {
     "question": "You have 3 VPCs A, B, and C. You want to establish a VPC Peering connection between all the 3 VPCs. What should you do?",
@@ -3473,7 +3750,8 @@
     "answer": "Establish 3 VPC Peering connections (A-B, A-C, B-C)",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.55.46@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.55.46@2x.png",
+    "id-question": 278
   },
   {
     "question": "You have a VPC in your AWS account that runs in a dual-stack mode. You are continuously trying to launch an EC2 instance, but it fails. After further investigation, you have found that you are no longer have IPv4 addresses available. What should you do?",
@@ -3485,7 +3763,8 @@
     "answer": "Add an additional IPv4 CIDR to your VPC",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 22.01.07@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 22.01.07@2x.png",
+    "id-question": 279
   },
   {
     "question": "A company has set up a Direct Connect connection between their corporate data center to AWS. There is a requirement to prepare a cost-effective secure backup connection in case there are issues with this Direct Connect connection. What is the most cost effective and secure solution you recommend?",
@@ -3497,7 +3776,8 @@
     "answer": "Setup a Site-to-Site VPN connection as a backup",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 22.01.50@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 22.01.50@2x.png",
+    "id-question": 280
   },
   {
     "question": "A web application hosted on a fleet of EC2 instances managed by an Auto Scaling Group. You are exposing this application through an Application Load Balancer. Both the EC2 instances and the ALB are deployed on a VPC with the following CIDR 192.168.0.8/18 . How do you configure the EC2 instances' security group to ensure only the ALB can access them on port 80 ?",
@@ -3510,7 +3790,8 @@
     "answer": "Add an Inbound Rule with port 80 and ALB's Security Group as the source",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 22.02.34@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 22.02.34@2x.png",
+    "id-question": 281
   },
   {
     "question": "Using a Direct Connect connection, you can access both public and private AWS resources.",
@@ -3521,7 +3802,8 @@
     "answer": "True",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 22.04.28@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 22.04.28@2x.png",
+    "id-question": 282
   },
   {
     "question": "When you set up an AWS Site-to-Site VPN connection between your corporate on-premises datacenter and VPCs in AWS Cloud, what are the two major components you want to configure for this connection?",
@@ -3534,7 +3816,8 @@
     "answer": "Virtual Private Gateway and Customer Gateway",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.58.41@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.58.41@2x.png",
+    "id-question": 283
   },
   {
     "question": "When using VPC Endpoints, what are the only two AWS services that have a Gateway Endpoint available?",
@@ -3546,7 +3829,8 @@
     "answer": "Amazon S3 & DynamoDB",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.54.47@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.54.47@2x.png",
+    "id-question": 284
   },
   {
     "question": "How can you capture information about IP traffic inside your VPCs?",
@@ -3558,7 +3842,8 @@
     "answer": "Enable VPC Flow Logs",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 22.03.13@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 22.03.13@2x.png",
+    "id-question": 285
   },
   {
     "question": "What does this CIDR 10.0.4.0/28 correspond to?",
@@ -3571,7 +3856,8 @@
     "answer": "10.0.4.0 to 10.0.4.15",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.51.31@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.51.31@2x.png",
+    "id-question": 286
   },
   {
     "question": "You have attached an Internet Gateway to your VPC, but your EC2 instances still don't have access to the internet. What is NOT a possible issue?",
@@ -3584,7 +3870,8 @@
     "answer": "The Security Group does not allow traffic in",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.53.18@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.53.18@2x.png",
+    "id-question": 287
   },
   {
     "question": "You have a corporate network of size 10.0.0.0/8 anda satellite office of size 192.168.0.0/16 .Which CIDR is acceptable for your AWS VPC if you plan on connecting your networks later on?",
@@ -3597,7 +3884,8 @@
     "answer": "172.16.0.0/12",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.52.04@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.52.04@2x.png",
+    "id-question": 288
   },
   {
     "question": "Your company has several on-premises sites across the USA. These sites are currently linked using private connections, but your private connections provider has been recently quite unstable, making your IT architecture partially offline. You would like to create a backup connection that will use the public Internet to link your on-premises sites, that you can failover in case of issues with your provider. What do you recommend?",
@@ -3610,7 +3898,8 @@
     "answer": "AWS VPN CloudHub",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.59.30@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.59.30@2x.png",
+    "id-question": 289
   },
   {
     "question": "You plan on creating a subnet and want it to have at least capacity for 28 EC2 instances. What's the minimum size you need to have for your subnet?",
@@ -3623,7 +3912,8 @@
     "answer": "/26",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 21.52.20@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.52.20@2x.png",
+    "id-question": 290
   },
   {
     "question": "You have set up a Direct Connect connection between your corporate data center and your VPC A in your AWS account. You need to access VPC B in another AWS region from your corporate datacenter as well. What should you do?",
@@ -3636,6 +3926,7 @@
     "answer": "Use a Direct Connect Gateway",
     "theme": "VPC",
     "embedding": null,
-    "img_path": "/Users/jonathanbizet/Documents/Formation_IA/QCM-AWS-PRACTITIONER/Analyse_TimeSerie_biere/screen_question/VPC/CleanShot 2024-07-28 at 22.02.56@2x.png"
+    "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 22.02.56@2x.png",
+    "id-question": 291
   }
 ]
