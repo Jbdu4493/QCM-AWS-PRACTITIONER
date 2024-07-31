@@ -1,3 +1,5 @@
 .DS_Store
 .venv/*
 .env
+api-text-from-image/__pycache__/main.cpython-311.pyc
+.DS_Store
