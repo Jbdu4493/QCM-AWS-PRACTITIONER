@@ -3690,7 +3690,7 @@
     "id-question": 273
   },
   {
-    "question": "AWS reserves 5 IP addresses each time you create a new subnet in a VPC. When you create a subnet with CIDR 10.0.0.0/24 , the following IP addresses are reserved, EXCEPT ...........:00",
+    "question": "AWS reserves 5 IP addresses each time you create a new subnet in a VPC. When you create a subnet with CIDR 10.0.0.0/24 , the following IP addresses are reserved, EXCEPT ...........:",
     "options": [
       "10.0.0.1",
       "10.0.0.2",
@@ -3881,7 +3881,7 @@
       "10.0.16.0/16",
       "192.168.4.0/18"
     ],
-    "answer": "172.16.0.0/12",
+    "answer": "172.16.0.0/16",
     "theme": "VPC",
     "embedding": null,
     "img_path": "./screen_question/VPC/CleanShot 2024-07-28 at 21.52.04@2x.png",

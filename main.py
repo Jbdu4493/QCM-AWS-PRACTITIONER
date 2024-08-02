@@ -53,8 +53,9 @@ if "quiz_data" not in  st.session_state:
 
 
 
-themes = themes = set([q["theme"] for q in st.session_state.quiz_data])
-        
+themes = set([q["theme"] for q in st.session_state.quiz_data])
+themes = list(themes)
+themes.sort()
 add_selectbox = st.sidebar.multiselect(
     "Wich themes would you like to be choose?",
     themes
@@ -62,7 +63,7 @@ add_selectbox = st.sidebar.multiselect(
 
 
 if add_selectbox not in st.session_state:
-    st.session_state['selected_theme']=add_selectbox[:]
+    st.session_state['selected_theme'] = add_selectbox[:]
 
 def filter_quizz():
     st.session_state.current_index = 0
