@@ -1,0 +1,38 @@
+{
+    "Records": [
+      {
+        "eventVersion": "2.1",
+        "eventSource": "aws:s3",
+        "awsRegion": "eu-west-3",
+        "eventTime": "2024-07-31T21:42:57.116Z",
+        "eventName": "ObjectCreated:Put",
+        "userIdentity": {
+          "principalId": "AWS:AIDAV2K2WIYJ6R6F5FAR5"
+        },
+        "requestParameters": {
+          "sourceIPAddress": "82.66.29.153"
+        },
+        "responseElements": {
+          "x-amz-request-id": "CR8TTTV6DN06ACZC",
+          "x-amz-id-2": "W3D9AcI5GwzZ9mbIRtc+9Y08Fy445kEngt8fVGk+c2lIMkXjCWdc9lZyB45MgTNLhVSIU0DCWwnjeFsm7Z17hg620OCWtUIC"
+        },
+        "s3": {
+          "s3SchemaVersion": "1.0",
+          "configurationId": "Add_Question",
+          "bucket": {
+            "name": "joe-bizet-aws-question-ss",
+            "ownerIdentity": {
+              "principalId": "A3VTZCXQ24ED1D"
+            },
+            "arn": "arn:aws:s3:::joe-bizet-aws-question-ss"
+          },
+          "object": {
+            "key": "screen_question/DESASTER-MIG/CleanShot+2024-07-31+at+23.36.42%402x.png",
+            "size": 99155,
+            "eTag": "9339ca6d352c9a16ea9c8802306506eb",
+            "sequencer": "0066AAAFE113CA675F"
+          }
+        }
+      }
+    ]
+  }
