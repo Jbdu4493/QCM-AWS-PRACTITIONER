@@ -9,8 +9,8 @@ def get_question_by_theme(theme):
     reponse = requests.get(api_url+"/theme/"+theme)
     return reponse.json()
 
-def post_error(id_question):
-    reponse = requests.post(api_url+"/question_error/",params={"id-question":"24b068ea-4f6c-4f85-846f-67afad50c1d3"})
+def post_event(id_question,event_type):
+    reponse = requests.post(api_url+"/add_event/",params={"id-question":id_question,"event-type":event_type})
     return reponse.json()
 
 def get_all_theme():
@@ -19,7 +19,7 @@ def get_all_theme():
 
 
 
-nb_quest = 65
+nb_quest = 3
 
 def load_quizz():
     with open('./quizz_question.json', 'r', encoding='utf-8') as f:
@@ -44,9 +44,16 @@ def restart_quiz():
     st.session_state.selected_option = None
     st.session_state.answer_submitted = False
     load_quizz()
+def main_page():
+    pass
 
+def side_bar():
+    pass
 if __name__ == "__main__":
     run()
+    main_page()
+    side_bar()
+
 
 # Custom CSS for the buttons
 st.markdown("""
@@ -64,10 +71,30 @@ for key, value in default_values.items():
 
 # Load quiz data
 
-if "quiz_data" not in  st.session_state:
-    load_quizz()
+#if "quiz_data" not in  st.session_state:
+#    load_quizz()
 
+def get_question_filter():
+    questions = list()
+    for t in st.session_state.selected_theme:
+        questions = questions + get_question_by_theme(t)
+    return questions
 
+def filter_quizz():
+    st.session_state.current_index = 0
+    st.session_state.score = 0
+    st.session_state.selected_option = None
+    st.session_state.answer_submitted = False
+    if st.session_state.selected_theme:
+        st.session_state.quiz_data = get_question_filter()
+        random.shuffle(st.session_state.quiz_data)
+        if len(st.session_state.quiz_data) > nb_quest:
+            st.session_state.quiz_data += random.choices(st.session_state.quiz_data,k=nb_quest - len(st.session_state.quiz_data))
+        else:
+            st.session_state.quiz_data= random.choices(st.session_state.quiz_data,k=nb_quest)
+
+    elif st.session_state.selected_theme == []:
+        st.write(f"### <===== Selectionnez des themes à gauche")
 
 
 themes = get_all_theme()
@@ -78,24 +105,7 @@ add_selectbox = st.sidebar.multiselect(
 )
 
 
-if add_selectbox not in st.session_state:
-    st.session_state['selected_theme'] = add_selectbox[:]
-
-def filter_quizz():
-    st.session_state.current_index = 0
-    st.session_state.score = 0
-    st.session_state.selected_option = None
-    st.session_state.answer_submitted = False
-    if st.session_state.selected_theme:
-        st.session_state.quiz_data = list(filter(lambda x: x['theme']in st.session_state.selected_theme,st.session_state.quiz_data  ))
-        random.shuffle(st.session_state.quiz_data)
-        if len(st.session_state.quiz_data) > nb_quest:
-            st.session_state.quiz_data += random.choices(st.session_state.quiz_data,k=nb_quest - len(st.session_state.quiz_data))
-        else:
-            st.session_state.quiz_data= random.choices(st.session_state.quiz_data,k=nb_quest)
-
-    elif st.session_state.selected_theme == []:
-         st.session_state.quiz_data = random.sample(st.session_state.quiz_data ,k=nb_quest)
+st.session_state['selected_theme'] = add_selectbox
 
 st.sidebar.button('Filtrer',on_click=filter_quizz)
 
@@ -117,53 +127,57 @@ def next_question():
     st.session_state.current_index += 1
     st.session_state.selected_option = None
     st.session_state.answer_submitted = False
-
 # Title and description
 st.title("Streamlit Quiz App")
+if "quiz_data" in  st.session_state:
+    # Progress bar
+    progress_bar_value = (st.session_state.current_index + 1) / len(st.session_state.quiz_data )
+    score = st.session_state.score*100/st.session_state.current_index if st.session_state.current_index != 0 else 0
+    st.metric(label="Score", value=f"{score:.1f} %")
+    st.progress(progress_bar_value)
 
-# Progress bar
-progress_bar_value = (st.session_state.current_index + 1) / len(st.session_state.quiz_data )
-score = st.session_state.score*100/st.session_state.current_index if st.session_state.current_index != 0 else 0
-st.metric(label="Score", value=f"{score:.1f} %")
-st.progress(progress_bar_value)
+    # Display the question and answer options
+    question_item = st.session_state.quiz_data[st.session_state.current_index]
+    st.subheader(f"Question {st.session_state.current_index + 1} sur {len(st.session_state.quiz_data )}")
+    st.write(f"#### {question_item['question']}")
 
-# Display the question and answer options
-question_item = st.session_state.quiz_data[st.session_state.current_index]
-st.subheader(f"Question {st.session_state.current_index + 1} sur {len(st.session_state.quiz_data )}")
-st.write(f"#### {question_item['question']}")
-
-st.markdown(""" ___""")
+    st.markdown(""" ___""")
 
 # Answer selection
-options = question_item['options']
-correct_answer = question_item['answer']
+    options = question_item['options']
+    correct_answer = question_item['answer']
 
-if st.session_state.answer_submitted:
-    for i, option in enumerate(options):
-        label = option
-        if option == correct_answer:
-            st.success(f"{label} (Correct answer)")
-        elif option == st.session_state.selected_option:
-            st.error(f"{label} (Incorrect answer)")
-        else:
-            st.write(label)
-else:
-    for i, option in enumerate(options):
-        if st.button(option, key=i, use_container_width=True):
-            st.session_state.selected_option = option
-
-st.markdown(""" ___""")
-
-# Submission button and response logic
-if st.session_state.answer_submitted:
-    if st.session_state.current_index < len(st.session_state.quiz_data ) - 1:
-        st.button('Next', on_click=next_question)
+    if st.session_state.answer_submitted:
+        for i, option in enumerate(options):
+            label = option
+            if option == correct_answer:
+                st.success(f"{label} (Correct answer)")
+                post_event(question_item["id-question"],"OK")
+            elif option == st.session_state.selected_option:
+                st.error(f"{label} (Incorrect answer)")
+                post_event(question_item["id-question"],"KO")
+                
+            else:
+                st.write(label)
     else:
-        st.write(f"### Quiz completed! Your score is: {st.session_state.score*100/len(st.session_state.quiz_data ):.1f}")
-        col = st.columns(5,gap='large')
-        with col[0]:
-            if st.button('Restart', on_click=restart_quiz):
-                pass
+        for i, option in enumerate(options):
+            if st.button(option, key=i, use_container_width=True):
+                st.session_state.selected_option = option
+
+    st.markdown(""" ___""")
+
+    # Submission button and response logic
+    if st.session_state.answer_submitted:
+        if st.session_state.current_index < len(st.session_state.quiz_data ) - 1:
+            st.button('Next', on_click=next_question)
+        else:
+            st.write(f"### Quiz completed! Your score is: {st.session_state.score*100/len(st.session_state.quiz_data ):.1f}")
+            col = st.columns(5,gap='large')
+            with col[0]:
+                if st.button('Restart', on_click=restart_quiz):
+                    pass
+    else:
+        if st.session_state.current_index < len(st.session_state.quiz_data ):
+            st.button('Submit', on_click=submit_answer)
 else:
-    if st.session_state.current_index < len(st.session_state.quiz_data ):
-        st.button('Submit', on_click=submit_answer)
+    st.write(f"### <===== Selectionnez des themes à gauche")
