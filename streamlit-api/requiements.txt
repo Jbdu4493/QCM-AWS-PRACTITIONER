@@ -1,0 +1,10 @@
+langchain
+openai
+langchain_core
+langchain-community
+langchain-openai
+qdrant_client
+pytesseract
+streamlit
+watchdog
+requests

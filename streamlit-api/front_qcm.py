@@ -2,12 +2,18 @@ import streamlit as st
 import json
 import random
 import requests
+from requests.exceptions import RequestException
 
 api_url = "https://jv6gjfb6zh.execute-api.eu-west-3.amazonaws.com/v1"
 
-def get_question_by_theme(theme):   
-    reponse = requests.get(api_url+"/theme/"+theme)
-    return reponse.json()
+def get_question_by_theme(theme): 
+    try:
+        response = requests.get(f"{api_url}/theme/{theme}")
+        response.raise_for_status()  # Raise an exception for non-2xx status codes
+        return response.json()
+    except RequestException as e:
+        print(f"An error occurred: {e}")
+        return []
 
 def post_event(id_question,event_type):
     reponse = requests.post(api_url+"/add_event/",params={"id-question":id_question,"event-type":event_type})
