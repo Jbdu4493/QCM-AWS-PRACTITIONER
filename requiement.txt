@@ -7,3 +7,4 @@ qdrant_client
 pytesseract
 streamlit
 watchdog
+requests
