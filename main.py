@@ -1,6 +1,23 @@
 import streamlit as st
 import json
 import random
+import requests
+
+api_url = "https://jv6gjfb6zh.execute-api.eu-west-3.amazonaws.com/v1"
+
+def get_question_by_theme(theme):   
+    reponse = requests.get(api_url+"/theme/"+theme)
+    return reponse.json()
+
+def post_error(id_question):
+    reponse = requests.post(api_url+"/question_error/",params={"id-question":"24b068ea-4f6c-4f85-846f-67afad50c1d3"})
+    return reponse.json()
+
+def get_all_theme():
+    reponse =requests.get(api_url+"/theme/")
+    return reponse.json()
+
+
 
 nb_quest = 65
 
@@ -53,8 +70,7 @@ if "quiz_data" not in  st.session_state:
 
 
 
-themes = set([q["theme"] for q in st.session_state.quiz_data])
-themes = list(themes)
+themes = get_all_theme()
 themes.sort()
 add_selectbox = st.sidebar.multiselect(
     "Wich themes would you like to be choose?",
