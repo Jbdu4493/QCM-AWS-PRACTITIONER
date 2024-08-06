@@ -3,6 +3,7 @@ import json
 import random
 import requests
 from requests.exceptions import RequestException
+import random
 
 api_url = "https://jv6gjfb6zh.execute-api.eu-west-3.amazonaws.com/v1"
 
@@ -84,6 +85,8 @@ def get_question_filter():
     questions = list()
     for t in st.session_state.selected_theme:
         questions = questions + get_question_by_theme(t)
+    for q in questions:
+        random.shuffle(q["options"])
     return questions
 
 def filter_quizz():
@@ -138,7 +141,11 @@ st.title("Streamlit Quiz App")
 if "quiz_data" in  st.session_state:
     # Progress bar
     progress_bar_value = (st.session_state.current_index + 1) / len(st.session_state.quiz_data )
-    score = st.session_state.score*100/st.session_state.current_index if st.session_state.current_index != 0 else 0
+    if st.session_state.answer_submitted:
+        score = (st.session_state.score*100)/(st.session_state.current_index+1) if st.session_state.current_index != 0 else 0
+    else:
+        score = (st.session_state.score*100)/(st.session_state.current_index) if st.session_state.current_index != 0 else 0
+    print(st.session_state.score, st.session_state.current_index)
     st.metric(label="Score", value=f"{score:.1f} %")
     st.progress(progress_bar_value)
 
