@@ -24,17 +24,6 @@ def get_all_theme():
     reponse =requests.get(api_url+"/theme/")
     return reponse.json()
 
-
-
-nb_quest = 3
-
-def load_quizz():
-    with open('./quizz_question.json', 'r', encoding='utf-8') as f:
-        quiz_data = json.load(f)
-       
-        shuffler_answer(quiz_data)
-        st.session_state.quiz_data = quiz_data
-
 def shuffler_answer(quiz):
     for i in range(len(quiz)):
         random.shuffle(quiz[i]["options"])
@@ -50,7 +39,7 @@ def restart_quiz():
     st.session_state.score = 0
     st.session_state.selected_option = None
     st.session_state.answer_submitted = False
-    load_quizz()
+
 def main_page():
     pass
 
@@ -95,15 +84,12 @@ def filter_quizz():
     st.session_state.selected_option = None
     st.session_state.answer_submitted = False
     if st.session_state.selected_theme:
+
         st.session_state.quiz_data = get_question_filter()
         random.shuffle(st.session_state.quiz_data)
-        if len(st.session_state.quiz_data) > nb_quest:
-            st.session_state.quiz_data += random.choices(st.session_state.quiz_data,k=nb_quest - len(st.session_state.quiz_data))
-        else:
-            st.session_state.quiz_data= random.choices(st.session_state.quiz_data,k=nb_quest)
 
     elif st.session_state.selected_theme == []:
-        st.write(f"### <===== Selectionnez des themes à gauche")
+        st.write(f"### ◀︎ Aucun thème n'a été choisit ....")
     
 def select_random_theme():
     themes = get_all_theme()
@@ -116,13 +102,8 @@ def select_random_theme():
     if st.session_state.selected_theme:
         st.session_state.quiz_data = get_question_filter()
         random.shuffle(st.session_state.quiz_data)
-        if len(st.session_state.quiz_data) > nb_quest:
-            st.session_state.quiz_data += random.choices(st.session_state.quiz_data,k=nb_quest - len(st.session_state.quiz_data))
-        else:
-            st.session_state.quiz_data= random.choices(st.session_state.quiz_data,k=nb_quest)
-
     elif st.session_state.selected_theme == []:
-        st.write(f"### 🤏 Aucun thème n'a été choisit ....💁")
+        st.write(f"### ◀︎ Aucun thème n'a été choisit ....")
 
 
 
@@ -131,14 +112,19 @@ themes.sort()
 add_selectbox = st.sidebar.multiselect(
     "Wich themes would you like to be choose?",
     themes
-)
-
-
+    )
 st.session_state['selected_theme'] = add_selectbox
+col1, col2  = st.sidebar.columns(2)
 
-st.sidebar.button('Random 4',on_click=select_random_theme)
 
-st.sidebar.button('Filtrer',on_click=filter_quizz)
+with col1:
+    st.sidebar.button('Random 4',on_click=select_random_theme)
+with col2:
+    st.sidebar.button('Filtrer',on_click=filter_quizz)
+
+
+stats = st.sidebar.checkbox("Log statistique",value=True)
+st.session_state['stat'] = stats
 
 
 def submit_answer():
@@ -186,10 +172,12 @@ if "quiz_data" in  st.session_state:
             label = option
             if option == correct_answer:
                 st.success(f"{label} (Correct answer)")
-                post_event(question_item["id-question"],"OK")
+                if st.session_state['stat']:
+                    post_event(question_item["id-question"],"OK")
             elif option == st.session_state.selected_option:
                 st.error(f"{label} (Incorrect answer)")
-                post_event(question_item["id-question"],"KO")
+                if st.session_state['stat']:
+                    post_event(question_item["id-question"],"KO")
                 
             else:
                 st.write(label)
@@ -211,4 +199,4 @@ if "quiz_data" in  st.session_state:
         if st.session_state.current_index < len(st.session_state.quiz_data ):
             st.button('Submit', on_click=submit_answer)
 else:
-    st.write(f"### 🤏 Aucun thème n'a été choisit ....💁")
+    st.write(f"### ◀︎ Aucun thème n'a été choisit ....")
