@@ -122,7 +122,7 @@ def select_random_theme():
             st.session_state.quiz_data= random.choices(st.session_state.quiz_data,k=nb_quest)
 
     elif st.session_state.selected_theme == []:
-        st.write(f"### <===== Selectionnez des themes à gauche")
+        st.write(f"### 🤏 Aucun thème n'a été choisit ....💁")
 
 
 
