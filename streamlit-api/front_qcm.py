@@ -104,6 +104,26 @@ def filter_quizz():
 
     elif st.session_state.selected_theme == []:
         st.write(f"### <===== Selectionnez des themes à gauche")
+    
+def select_random_theme():
+    themes = get_all_theme()
+    random.shuffle(themes)
+    st.session_state.selected_theme = themes[:4]
+    st.session_state.current_index = 0
+    st.session_state.score = 0
+    st.session_state.selected_option = None
+    st.session_state.answer_submitted = False
+    if st.session_state.selected_theme:
+        st.session_state.quiz_data = get_question_filter()
+        random.shuffle(st.session_state.quiz_data)
+        if len(st.session_state.quiz_data) > nb_quest:
+            st.session_state.quiz_data += random.choices(st.session_state.quiz_data,k=nb_quest - len(st.session_state.quiz_data))
+        else:
+            st.session_state.quiz_data= random.choices(st.session_state.quiz_data,k=nb_quest)
+
+    elif st.session_state.selected_theme == []:
+        st.write(f"### <===== Selectionnez des themes à gauche")
+
 
 
 themes = get_all_theme()
@@ -115,6 +135,8 @@ add_selectbox = st.sidebar.multiselect(
 
 
 st.session_state['selected_theme'] = add_selectbox
+
+st.sidebar.button('Random 4',on_click=select_random_theme)
 
 st.sidebar.button('Filtrer',on_click=filter_quizz)
 
@@ -145,7 +167,6 @@ if "quiz_data" in  st.session_state:
         score = (st.session_state.score*100)/(st.session_state.current_index+1) if st.session_state.current_index != 0 else 0
     else:
         score = (st.session_state.score*100)/(st.session_state.current_index) if st.session_state.current_index != 0 else 0
-    print(st.session_state.score, st.session_state.current_index)
     st.metric(label="Score", value=f"{score:.1f} %")
     st.progress(progress_bar_value)
 
@@ -186,9 +207,6 @@ if "quiz_data" in  st.session_state:
         else:
             st.write(f"### Quiz completed! Your score is: {st.session_state.score*100/len(st.session_state.quiz_data ):.1f}")
             col = st.columns(5,gap='large')
-            with col[0]:
-                if st.button('Restart', on_click=restart_quiz):
-                    pass
     else:
         if st.session_state.current_index < len(st.session_state.quiz_data ):
             st.button('Submit', on_click=submit_answer)
