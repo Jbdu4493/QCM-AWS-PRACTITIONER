@@ -211,4 +211,4 @@ if "quiz_data" in  st.session_state:
         if st.session_state.current_index < len(st.session_state.quiz_data ):
             st.button('Submit', on_click=submit_answer)
 else:
-    st.write(f"### <===== Selectionnez des themes à gauche")
+    st.write(f"### 🤏 Aucun thème n'a été choisit ....💁")
