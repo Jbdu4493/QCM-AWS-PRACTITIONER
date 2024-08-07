@@ -36,7 +36,7 @@ def load_quizz():
         st.session_state.quiz_data = quiz_data
 
 def shuffler_answer(quiz):
-    for i,q in enumerate(quiz):
+    for i in range(len(quiz)):
         random.shuffle(quiz[i]["options"])
 
 def run():
