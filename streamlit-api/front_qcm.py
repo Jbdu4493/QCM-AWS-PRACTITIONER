@@ -89,7 +89,7 @@ def filter_quizz():
         random.shuffle(st.session_state.quiz_data)
 
     elif st.session_state.selected_theme == []:
-        st.write(f"### ◀︎ Aucun thème n'a été choisit ....")
+        st.write(f"### ◀︎ Aucun thème n'a été choisi ....")
     
 def select_random_theme():
     themes = get_all_theme()
@@ -103,7 +103,7 @@ def select_random_theme():
         st.session_state.quiz_data = get_question_filter()
         random.shuffle(st.session_state.quiz_data)
     elif st.session_state.selected_theme == []:
-        st.write(f"### ◀︎ Aucun thème n'a été choisit ....")
+        st.write(f"### ◀︎ Aucun thème n'a été choisi ....")
 
 
 
@@ -199,4 +199,4 @@ if "quiz_data" in  st.session_state:
         if st.session_state.current_index < len(st.session_state.quiz_data ):
             st.button('Submit', on_click=submit_answer)
 else:
-    st.write(f"### ◀︎ Aucun thème n'a été choisit ....")
+    st.write(f"### ◀︎ Aucun thème n'a été choisi ....")
