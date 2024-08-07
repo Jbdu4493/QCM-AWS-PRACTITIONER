@@ -1,0 +1,18 @@
+#cloud-config
+repo_update: true
+repo_upgrade: all
+
+packages:
+  - python3
+  - python3-pip
+  - git
+  - python3-virtualenv
+
+runcmd:
+  - ["python3", "-m", "pip", "install", "virtualenv"]
+  - ["python3", "-m", "virtualenv", "/home/ec2-user/venv"]
+  - ["sh", "-c", "source /home/ec2-user/venv/bin/activate && pip install streamlit requests"]
+  - ["git", "clone", "https://github.com/Jbdu4493/QCM-AWS-PRACTITIONER.git", "/home/ec2-user/QCM-AWS-PRACTITIONER"]
+  - ["sh", "-c", "cd /home/ec2-user/QCM-AWS-PRACTITIONER/streamlit-api"]
+  - ["sh", "-c","source /home/ec2-user/venv/bin/activate"]
+  - ["sh", "-c","nohup /home/ec2-user/venv/bin/streamlit run /home/ec2-user/QCM-AWS-PRACTITIONER/streamlit-api/front_qcm.py --server.port 8501 &"]
