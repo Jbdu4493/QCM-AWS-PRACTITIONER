@@ -162,36 +162,9 @@ def next_question():
     st.session_state.answer_submitted = False
 
 
-<< << << < HEAD
-
-== == == =
-
-
-# Title and description
-st.title("Streamlit Quiz App")
-if "quiz_data" in st.session_state:
-    # Progress bar
-    progress_bar_value = (st.session_state.current_index +
-                          1) / len(st.session_state.quiz_data)
-    if st.session_state.answer_submitted:
-        score = (st.session_state.score*100)/(st.session_state.current_index +
-                                              1) if st.session_state.current_index != 0 else 0
-    else:
-        score = (st.session_state.score*100) / \
-            (st.session_state.current_index) if st.session_state.current_index != 0 else 0
-    st.metric(label="Score", value=f"{score:.1f} %")
-    st.progress(progress_bar_value)
-
-    # Display the question and answer options
-    question_item = st.session_state.quiz_data[st.session_state.current_index]
-    st.subheader(
-        f"Question {st.session_state.current_index + 1} sur {len(st.session_state.quiz_data )}")
-    st.write(f"#### {question_item['question']}")
->>>>>> > e6300b0(code formating)
-
 qcm, stat = st.tabs(["QCM", "STATISTIQUE"])
 
-<< << << < HEAD
+
 with qcm:
     # Title and description
     st.title("Streamlit Quiz App")
@@ -256,43 +229,3 @@ with qcm:
                 st.button('Submit', on_click=submit_answer)
     else:
         st.write(f"### ◀︎ Aucun thème n'a été choisi ....")
-== == == =
-# Answer selection
- options = question_item['options']
-  correct_answer = question_item['answer']
-
-   if st.session_state.answer_submitted:
-        for i, option in enumerate(options):
-            label = option
-            if option == correct_answer:
-                st.success(f"{label} (Correct answer)")
-                if st.session_state['stat']:
-                    post_event(question_item["id-question"], "OK")
-            elif option == st.session_state.selected_option:
-                st.error(f"{label} (Incorrect answer)")
-                if st.session_state['stat']:
-                    post_event(question_item["id-question"], "KO")
-
-            else:
-                st.write(label)
-    else:
-        for i, option in enumerate(options):
-            if st.button(option, key=i, use_container_width=True):
-                st.session_state.selected_option = option
-
-    st.markdown(""" ___""")
-
-    # Submission button and response logic
-    if st.session_state.answer_submitted:
-        if st.session_state.current_index < len(st.session_state.quiz_data) - 1:
-            st.button('Next', on_click=next_question)
-        else:
-            st.write(
-                f"### Quiz completed! Your score is: {st.session_state.score*100/len(st.session_state.quiz_data ):.1f}")
-            col = st.columns(5, gap='large')
-    else:
-        if st.session_state.current_index < len(st.session_state.quiz_data):
-            st.button('Submit', on_click=submit_answer)
-else:
-    st.write(f"### ◀︎ Aucun thème n'a été choisi ....")
->>>>>> > e6300b0(code formating)
