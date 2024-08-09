@@ -19,6 +19,7 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI()
 
+
 class Question(BaseModel):
     question: str
     options: List[str]
@@ -32,6 +33,7 @@ class Question(BaseModel):
         if self.answer not in self.options:
             raise ValueError('The correct answer must be in the options list')
         return self
+
 
 # Configuration
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
@@ -47,6 +49,7 @@ s3 = boto3.client(
 # Initialize ChatOpenAI
 chat_model = ChatOpenAI(model="gpt-4", api_key=OPENAI_API_KEY)
 
+
 def extract_text_from_image(image_path: str) -> str:
     try:
         with Image.open(image_path) as img:
@@ -54,7 +57,9 @@ def extract_text_from_image(image_path: str) -> str:
         return text
     except Exception as e:
         logger.error(f"Error extracting text from image: {e}")
-        raise HTTPException(status_code=500, detail="Error extracting text from image")
+        raise HTTPException(
+            status_code=500, detail="Error extracting text from image")
+
 
 def get_langchain_response(prompt: str) -> str:
     try:
@@ -63,7 +68,9 @@ def get_langchain_response(prompt: str) -> str:
         return response.content
     except Exception as e:
         logger.error(f"LangChain API error: {e}")
-        raise HTTPException(status_code=500, detail="Error getting response from LangChain")
+        raise HTTPException(
+            status_code=500, detail="Error getting response from LangChain")
+
 
 def parse_question(text: str) -> Question:
     prompt = """
@@ -124,10 +131,12 @@ def parse_question(text: str) -> Question:
         return question
     except json.JSONDecodeError as e:
         logger.error(f"Error decoding JSON: {e}")
-        raise HTTPException(status_code=500, detail="Error parsing LangChain response")
+        raise HTTPException(
+            status_code=500, detail="Error parsing LangChain response")
     except ValueError as e:
         logger.error(f"Validation error: {e}")
         raise HTTPException(status_code=400, detail=str(e))
+
 
 @app.get("/get-question-json-s3")
 async def get_question_json_s3(bucket: str, file_name: str):
@@ -147,6 +156,8 @@ async def get_question_json_s3(bucket: str, file_name: str):
     finally:
         if 'temp_file_path' in locals():
             os.unlink(temp_file_path)
+
+
 @app.get("/get-question-json-base64")
 async def get_question_json_base64(base64_data: str):
     try:
@@ -160,6 +171,8 @@ async def get_question_json_base64(base64_data: str):
     finally:
         if 'temp_file_path' in locals():
             os.unlink(temp_file_path)
+
+
 @app.get("/get-question-json-file")
 async def get_question_json_file(file: UploadFile = File(...)):
     try:
@@ -174,6 +187,7 @@ async def get_question_json_file(file: UploadFile = File(...)):
     finally:
         if 'temp_file_path' in locals():
             os.unlink(temp_file_path)
+
 
 @app.get("/")
 async def root():
