@@ -302,6 +302,40 @@ with stat:
             ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45, ha='right')
             st.pyplot(fig1)
 
+            # Trier le dernier graphique en fonction du nombre total de questions
+            st.header("Nombre de questions par thème (trié) avec distinction OK/KO")
+
+            # Calculer le nombre de questions par thème avec distinction OK/KO
+            questions_per_theme_result = df.groupby(['theme', 'event-type']).size().unstack().fillna(0)
+
+            # Calculer le total des questions par thème
+            questions_per_theme_result['Total'] = questions_per_theme_result.sum(axis=1)
+
+            # Trier les thèmes par le nombre total de questions en ordre décroissant
+            questions_per_theme_result = questions_per_theme_result.sort_values(by='Total', ascending=False)
+
+            # Supprimer la colonne Total pour ne garder que OK/KO dans le graphique
+            questions_per_theme_result = questions_per_theme_result.drop(columns=['Total'])
+
+            # Générer le graphique trié
+            fig, ax = plt.subplots(figsize=(10, 6))
+
+            # Barres empilées pour OK/KO
+            questions_per_theme_result.plot(kind='bar', stacked=True, ax=ax)
+
+            # Titre et labels
+            ax.set_title('Nombre de questions par thème avec distinction OK/KO (trié par nombre total)')
+            ax.set_ylabel('Nombre de questions')
+            ax.set_xlabel('Thème')
+            ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
+
+            # Légende
+            ax.legend(['KO', 'OK'], loc='upper right')
+
+            plt.tight_layout()  # Pour éviter les chevauchements
+            st.pyplot(fig)
+
+
             # 2. Pourcentage de OK par jour
             st.header("Pourcentage de OK par jour")
             df_unique = df.drop_duplicates(subset=['timestamp', 'event-type'])
@@ -346,26 +380,3 @@ with stat:
             ax3.set_xticks(range(len(formatted_dates_qpd)))
             ax3.set_xticklabels(formatted_dates_qpd, rotation=45, ha='right')
             st.pyplot(fig3)
-
-            # 4. Nombre de questions par thème
-            st.header("Nombre de questions par thème")
-            questions_per_theme = df['theme'].value_counts()
-            fig4, ax4 = plt.subplots(figsize=(10, 6))
-            questions_per_theme.plot(kind='bar', ax=ax4)
-            ax4.set_title('Nombre de questions par thème')
-            ax4.set_ylabel('Nombre de questions')
-            ax4.set_xlabel('Thème')
-            ax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')
-            st.pyplot(fig4)
-
-            # 5. Nombre de questions par thème avec distinction OK/KO
-            st.header("Nombre de questions par thème avec distinction OK/KO")
-            questions_per_theme_result = df.groupby(
-                ['theme', 'event-type']).size().unstack().fillna(0)
-            fig5, ax5 = plt.subplots(figsize=(10, 6))
-            questions_per_theme_result.plot(kind='bar', stacked=True, ax=ax5)
-            ax5.set_title('Nombre de questions par thème avec distinction OK/KO')
-            ax5.set_ylabel('Nombre de questions')
-            ax5.set_xlabel('Thème')
-            ax5.set_xticklabels(ax5.get_xticklabels(), rotation=45, ha='right')
-            st.pyplot(fig5)
