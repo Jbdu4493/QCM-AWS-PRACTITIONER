@@ -18,12 +18,12 @@ def get_question_by_theme(theme):
         return []
 
 
-
 def post_event(id_question, event_type, theme):
     reponse = requests.post(api_url+"/event/", params={
                             "id-question": id_question, "event-type": event_type, "theme": theme})
 
     return reponse.json()
+
 
 def get_event(theme):
     reponse = requests.post(api_url+"/event", params={
@@ -55,14 +55,17 @@ def restart_quiz():
     st.session_state.selected_option = None
     st.session_state.answer_submitted = False
 
+
 def get_event(theme):
     try:
-        response = requests.get(f"{api_url}/event",params={'theme':theme})
+        response = requests.get(f"{api_url}/event", params={'theme': theme})
         response.raise_for_status()  # Raise an exception for non-2xx status codes
+
         return response.json()
     except RequestException as e:
         print(f"An error occurred: {e}")
         return []
+
 
 def main_page():
     pass
@@ -245,22 +248,122 @@ with qcm:
     else:
         st.write(f"### ◀︎ Aucun thème n'a été choisi ....")
 
+
 def load_event_data():
     for ts in st.session_state["theme_stat"]:
         if "event-"+ts not in st.session_state:
             json_data = get_event(ts)
+            json_data = json.dumps(json_data)
             df = pd.read_json(StringIO(json_data))
-            st.session_state["event-"+ts]
-            
+            st.session_state["event-"+ts] = df
+
+# concate all df of event in one df
+
+
+def concat_df_event():
+    df_all = pd.DataFrame()
+    for ts in st.session_state["theme_stat"]:
+        if "event-"+ts in st.session_state:
+            df = st.session_state["event-"+ts]
+            df_all = pd.concat([df_all, df])
+    return df_all
 
 
 with stat:
     import pandas as pd
     from io import StringIO
-    themes = get_all_theme()
-    themes.sort()
-    theme_selected_stat = st.multiselect(
-        "Wich themes would you like to be choose?",
-        themes,key="stat-multi"
-    ) 
-    
+    import matplotlib.pyplot as plt
+    import matplotlib.dates as mdates
+
+    st.session_state['theme_stat'] = get_all_theme()
+    st.button("Analyser", key="stat-load", on_click=load_event_data)
+
+    st.session_state['theme_stat'] = get_all_theme()
+    if "theme_stat" in st.session_state and len(st.session_state.theme_stat) != 0:
+        # Charger les données
+        df = concat_df_event()
+        df['timestamp'] = pd.to_datetime(df['timestamp'])
+        df.reset_index(inplace=True, drop=True)
+
+        # Titre du tableau de bord
+        st.title("Tableau de Bord des Résultats")
+
+        # 1. Proportion de OK/KO par thème
+        st.header("Proportion de OK/KO par thème")
+        proportion_ok_ko = df.groupby(
+            'theme')['event-type'].value_counts(normalize=True).unstack().fillna(0)
+        fig1, ax1 = plt.subplots(figsize=(10, 6))
+        proportion_ok_ko.plot(kind='bar', stacked=True, ax=ax1)
+        ax1.set_title('Proportion de OK/KO par thème')
+        ax1.set_ylabel('Proportion')
+        ax1.set_xlabel('Thème')
+        ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45, ha='right')
+        st.pyplot(fig1)
+
+        # 2. Pourcentage de OK par jour
+        st.header("Pourcentage de OK par jour")
+        df_unique = df.drop_duplicates(subset=['timestamp', 'event-type'])
+        ok_counts = df_unique[df_unique['event-type'] ==
+                              'OK'].groupby(df_unique['timestamp'].dt.date).size()
+        total_counts = df_unique.groupby(df_unique['timestamp'].dt.date).size()
+        percentage_ok_per_day = (ok_counts / total_counts) * 100
+
+        # Convertir l'index en datetime si nécessaire
+        percentage_ok_per_day.index = pd.to_datetime(
+            percentage_ok_per_day.index)
+
+        fig2, ax2 = plt.subplots(figsize=(10, 6))
+        percentage_ok_per_day.plot(kind='line', ax=ax2)
+        ax2.set_title('Pourcentage de OK par jour')
+        ax2.set_ylabel('Pourcentage de OK')
+        ax2.set_xlabel('Date')
+
+        # Utiliser Matplotlib Dates pour améliorer l'affichage des dates
+        ax2.xaxis.set_major_locator(mdates.DayLocator(interval=1))
+        ax2.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+
+        fig2.autofmt_xdate()  # Pour améliorer la lisibilité des dates
+        plt.tight_layout()  # Pour éviter les chevauchements
+        st.pyplot(fig2)
+
+        # 3. Nombre de questions par jour
+        st.header("Nombre de questions par jour")
+        questions_per_day = df_unique.groupby(
+            df_unique['timestamp'].dt.date).size()
+        # Convertir l'index en datetime si nécessaire
+        questions_per_day.index = pd.to_datetime(questions_per_day.index)
+
+        fig3, ax3 = plt.subplots(figsize=(10, 6))
+        questions_per_day.plot(kind='bar', ax=ax3)
+        ax3.set_title('Nombre de questions par jour')
+        ax3.set_ylabel('Nombre de questions')
+        ax3.set_xlabel('Date')
+        # Convertir les dates en chaînes de caractères au format souhaité
+        formatted_dates_qpd = questions_per_day.index.strftime('%Y-%m-%d')
+        # Configurer les ticks pour chaque point de données
+        ax3.set_xticks(range(len(formatted_dates_qpd)))
+        ax3.set_xticklabels(formatted_dates_qpd, rotation=45, ha='right')
+        st.pyplot(fig3)
+
+        # 4. Nombre de questions par thème
+        st.header("Nombre de questions par thème")
+        questions_per_theme = df['theme'].value_counts()
+        fig4, ax4 = plt.subplots(figsize=(10, 6))
+        questions_per_theme.plot(kind='bar', ax=ax4)
+        ax4.set_title('Nombre de questions par thème')
+        ax4.set_ylabel('Nombre de questions')
+        ax4.set_xlabel('Thème')
+        ax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')
+        st.pyplot(fig4)
+
+        # 5. Nombre de questions par thème avec distinction OK/KO
+        st.header("Nombre de questions par thème avec distinction OK/KO")
+        questions_per_theme_result = df.groupby(
+            ['theme', 'event-type']).size().unstack().fillna(0)
+        fig5, ax5 = plt.subplots(figsize=(10, 6))
+        questions_per_theme_result.plot(kind='bar', stacked=True, ax=ax5)
+        ax5.set_title('Nombre de questions par thème avec distinction OK/KO')
+        ax5.set_ylabel('Nombre de questions')
+        ax5.set_xlabel('Thème')
+        ax5.set_xticklabels(ax5.get_xticklabels(), rotation=45, ha='right')
+        st.pyplot(fig5)

@@ -8,3 +8,5 @@ pytesseract
 streamlit
 watchdog
 requests
+matplotlib
+pandas
