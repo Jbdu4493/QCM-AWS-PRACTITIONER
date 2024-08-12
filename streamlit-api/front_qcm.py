@@ -18,9 +18,16 @@ def get_question_by_theme(theme):
         return []
 
 
+
 def post_event(id_question, event_type, theme):
-    reponse = requests.post(api_url+"/add_event/", params={
+    reponse = requests.post(api_url+"/event/", params={
                             "id-question": id_question, "event-type": event_type, "theme": theme})
+
+    return reponse.json()
+
+def get_event(theme):
+    reponse = requests.post(api_url+"/event", params={
+                            "theme": theme})
 
     return reponse.json()
 
@@ -48,6 +55,14 @@ def restart_quiz():
     st.session_state.selected_option = None
     st.session_state.answer_submitted = False
 
+def get_event(theme):
+    try:
+        response = requests.get(f"{api_url}/event",params={'theme':theme})
+        response.raise_for_status()  # Raise an exception for non-2xx status codes
+        return response.json()
+    except RequestException as e:
+        print(f"An error occurred: {e}")
+        return []
 
 def main_page():
     pass
@@ -138,8 +153,8 @@ with col2:
     st.sidebar.button('Filtrer', on_click=filter_quizz)
 
 
-stats = st.sidebar.checkbox("Log statistique", value=True)
-st.session_state['stat'] = stats
+log = st.sidebar.checkbox("Log statistique", value=True)
+st.session_state['stat'] = log
 
 
 def submit_answer():
@@ -229,3 +244,23 @@ with qcm:
                 st.button('Submit', on_click=submit_answer)
     else:
         st.write(f"### ◀︎ Aucun thème n'a été choisi ....")
+
+def load_event_data():
+    for ts in st.session_state["theme_stat"]:
+        if "event-"+ts not in st.session_state:
+            json_data = get_event(ts)
+            df = pd.read_json(StringIO(json_data))
+            st.session_state["event-"+ts]
+            
+
+
+with stat:
+    import pandas as pd
+    from io import StringIO
+    themes = get_all_theme()
+    themes.sort()
+    theme_selected_stat = st.multiselect(
+        "Wich themes would you like to be choose?",
+        themes,key="stat-multi"
+    ) 
+    
