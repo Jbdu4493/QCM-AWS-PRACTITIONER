@@ -290,19 +290,7 @@ with stat:
             # Titre du tableau de bord
             st.title("Tableau de Bord des Résultats")
 
-            # 1. Proportion de OK/KO par thème
-            st.header("Proportion de OK/KO par thème")
-            proportion_ok_ko = df.groupby(
-                'theme')['event-type'].value_counts(normalize=True).unstack().fillna(0)
-            fig1, ax1 = plt.subplots(figsize=(10, 6))
-            proportion_ok_ko.plot(kind='bar', stacked=True, ax=ax1)
-            ax1.set_title('Proportion de OK/KO par thème')
-            ax1.set_ylabel('Proportion')
-            ax1.set_xlabel('Thème')
-            ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45, ha='right')
-            st.pyplot(fig1)
-
-            # Trier le dernier graphique en fonction du nombre total de questions
+           # Trier le dernier graphique en fonction du nombre total de questions
             st.header("Nombre de questions par thème (trié) avec distinction OK/KO")
 
             # Calculer le nombre de questions par thème avec distinction OK/KO
@@ -335,13 +323,13 @@ with stat:
             plt.tight_layout()  # Pour éviter les chevauchements
             st.pyplot(fig)
 
-
             # 2. Pourcentage de OK par jour
             st.header("Pourcentage de OK par jour")
             df_unique = df.drop_duplicates(subset=['timestamp', 'event-type'])
             ok_counts = df_unique[df_unique['event-type'] ==
-                                'OK'].groupby(df_unique['timestamp'].dt.date).size()
-            total_counts = df_unique.groupby(df_unique['timestamp'].dt.date).size()
+                                  'OK'].groupby(df_unique['timestamp'].dt.date).size()
+            total_counts = df_unique.groupby(
+                df_unique['timestamp'].dt.date).size()
             percentage_ok_per_day = (ok_counts / total_counts) * 100
 
             # Convertir l'index en datetime si nécessaire
@@ -380,3 +368,33 @@ with stat:
             ax3.set_xticks(range(len(formatted_dates_qpd)))
             ax3.set_xticklabels(formatted_dates_qpd, rotation=45, ha='right')
             st.pyplot(fig3)
+
+            # Trier le dernier graphique en fonction du nombre total de questions
+            st.header(
+                "Nombre de questions par thème (trié) avec distinction OK/KO")
+            # Calculer la proportion de OK/KO par thème
+            proportion_ok_ko = df.groupby(
+                'theme')['event-type'].value_counts(normalize=True).unstack().fillna(0)
+
+            # Trier les thèmes par proportion de KO décroissante
+            proportion_ok_ko = proportion_ok_ko.sort_values(
+                by='OK', ascending=False)
+
+            # Générer le graphique trié
+            fig4, ax4 = plt.subplots(figsize=(10, 6))
+
+            # Barres empilées pour OK/KO
+            proportion_ok_ko.plot(kind='bar', stacked=True, ax=ax4)
+
+            # Titre et labels
+            ax4.set_title(
+                'Proportion de OK/KO par thème (trié par proportion de KO)')
+            ax4.set_ylabel('Proportion')
+            ax4.set_xlabel('Thème')
+            ax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')
+
+            # Légende
+            ax4.legend(['KO',"OK" ], loc='upper right')
+
+            plt.tight_layout()
+            st.pyplot(fig4)
