@@ -286,9 +286,39 @@ with stat:
             # Convertir la colonne 'timestamp' en objet datetime
             df['timestamp'] = pd.to_datetime(df['timestamp'])
             df.reset_index(inplace=True, drop=True)
-
-            # Titre du tableau de bord
+                        # Titre du tableau de bord
             st.title("Tableau de Bord des Résultats")
+
+
+            st.header(
+                "Nombre de questions par thème (trié) avec distinction OK/KO")
+            # Calculer la proportion de OK/KO par thème
+            proportion_ok_ko = df.groupby(
+                'theme')['event-type'].value_counts(normalize=True).unstack().fillna(0)
+
+            # Trier les thèmes par proportion de KO décroissante
+            proportion_ok_ko = proportion_ok_ko.sort_values(
+                by='OK', ascending=False)
+
+            # Générer le graphique trié
+            fig4, ax4 = plt.subplots(figsize=(10, 6))
+
+            # Barres empilées pour OK/KO
+            proportion_ok_ko.plot(kind='bar', stacked=True, ax=ax4)
+
+            # Titre et labels
+            ax4.set_title(
+                'Proportion de OK/KO par thème (trié par proportion de KO)')
+            ax4.set_ylabel('Proportion')
+            ax4.set_xlabel('Thème')
+            ax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')
+
+            # Légende
+            ax4.legend(['KO',"OK" ], loc='upper right')
+
+            plt.tight_layout()
+            st.pyplot(fig4)
+
 
            # Trier le dernier graphique en fonction du nombre total de questions
             st.header("Nombre de questions par thème (trié) avec distinction OK/KO")
@@ -370,31 +400,4 @@ with stat:
             st.pyplot(fig3)
 
             # Trier le dernier graphique en fonction du nombre total de questions
-            st.header(
-                "Nombre de questions par thème (trié) avec distinction OK/KO")
-            # Calculer la proportion de OK/KO par thème
-            proportion_ok_ko = df.groupby(
-                'theme')['event-type'].value_counts(normalize=True).unstack().fillna(0)
 
-            # Trier les thèmes par proportion de KO décroissante
-            proportion_ok_ko = proportion_ok_ko.sort_values(
-                by='OK', ascending=False)
-
-            # Générer le graphique trié
-            fig4, ax4 = plt.subplots(figsize=(10, 6))
-
-            # Barres empilées pour OK/KO
-            proportion_ok_ko.plot(kind='bar', stacked=True, ax=ax4)
-
-            # Titre et labels
-            ax4.set_title(
-                'Proportion de OK/KO par thème (trié par proportion de KO)')
-            ax4.set_ylabel('Proportion')
-            ax4.set_xlabel('Thème')
-            ax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')
-
-            # Légende
-            ax4.legend(['KO',"OK" ], loc='upper right')
-
-            plt.tight_layout()
-            st.pyplot(fig4)
