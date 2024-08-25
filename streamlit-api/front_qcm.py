@@ -12,6 +12,13 @@ def get_question_by_theme(theme):
     try:
         response = requests.get(f"{api_url}/theme/{theme}")
         response.raise_for_status()  # Raise an exception for non-2xx status codes
+        data = list()
+        if theme == "TYPE-EXAMEN":
+            for q in response.json():
+                print(q.keys())
+                if "&&" not in  q["answer"] :
+                    data.append(q)
+            return data
         return response.json()
     except RequestException as e:
         print(f"An error occurred: {e}")
@@ -118,8 +125,12 @@ def filter_quizz():
     st.session_state.answer_submitted = False
     if st.session_state.selected_theme:
 
-        st.session_state.quiz_data = get_question_filter()
-        random.shuffle(st.session_state.quiz_data)
+        question_data =  get_question_filter()
+        random.shuffle(question_data)
+        if len(question_data) > 65:
+            st.session_state.quiz_data = question_data[:65]
+        else:
+            st.session_state.quiz_data = question_data
 
     elif st.session_state.selected_theme == []:
         st.write(f"### ◀︎ Aucun thème n'a été choisi ....")
