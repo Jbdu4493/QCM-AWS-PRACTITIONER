@@ -8,17 +8,77 @@ import random
 api_url = "https://jv6gjfb6zh.execute-api.eu-west-3.amazonaws.com/v1"
 
 
-def get_question_by_theme(theme):
+def get_event(theme):
     try:
-        response = requests.get(f"{api_url}/theme/{theme}")
+        response = requests.get(f"{api_url}/event", params={'theme': theme})
         response.raise_for_status()  # Raise an exception for non-2xx status codes
+
+        return response.json()
+    except RequestException as e:
+        print(f"An error occurred: {e}")
+        return []
+
+
+def get_question_by_id(id_questions: list[str]):
+    print("get_question_by_id")
+    try:
+        list_question = list()
+        for id_question in id_questions:
+            print(id_question)
+            response = requests.get(f"{api_url}/question/{id_question}")
+            response.raise_for_status()  # Raise an exception for non-2xx status codes
+            list_question.append(response.json())
+        return list_question
+    except RequestException as e:
+        print(f"An error occurred: {e}")
+        return []
+
+
+def selection_type_examen():
+    print("selection_type_examen")
+    import pandas as pd
+    selected_id_question = list()
+    response = requests.get(f"{api_url}/theme/TYPE-EXAMEN")
+    question_examen = response.json()
+    question_examen_filter = list(filter(lambda q : "&&" not in q["answer"] , question_examen))
+    df_event = pd.DataFrame(get_event("TYPE-EXAMEN"))
+    df_event_ko = df_event[df_event['event-type'] == "KO"]
+    most_ko_question = df_event_ko.groupby(by='id-question')\
+        .count()[["id-event"]]\
+        .sort_values(by="id-event", ascending=False)\
+        .head(65).index.to_list()
+    
+    question = list(set(map(lambda x: x["id-question"], question_examen_filter)))
+    question_nerver_asked = list(
+        filter(lambda x: x not in set(df_event["id-question"]), question))
+    asked_question = df_event.sort_values(by=["timestamp"])[
+        'id-question'].to_list()
+    selected_id_question += question_nerver_asked
+    selected_id_question += most_ko_question
+    selected_id_question = list(set(selected_id_question))
+    if len(selected_id_question) > 65:
+        selected_id_question = selected_id_question[:65]
+    elif len(selected_id_question) < 65:
+        selected_id_question += asked_question[:65-len(selected_id_question)]
+    print(len(selected_id_question))
+    return list(filter(lambda x : x['id-question'] in selected_id_question,  question_examen_filter))
+
+
+def get_question_by_theme(theme):
+    print("get_question_by_theme")
+    response = requests.get(f"{api_url}/theme/{theme}")
+    response.raise_for_status()  # Raise an exception for non-2xx status codes
+    try:
         data = list()
         if theme == "TYPE-EXAMEN":
-            for q in response.json():
-                print(q.keys())
-                if "&&" not in  q["answer"] :
+            questions = selection_type_examen()
+            for q in questions:
+                if "&&" not in q["answer"]:
                     data.append(q)
+            random.shuffle(data)
+            shuffler_answer(data)
             return data
+
         return response.json()
     except RequestException as e:
         print(f"An error occurred: {e}")
@@ -28,13 +88,6 @@ def get_question_by_theme(theme):
 def post_event(id_question, event_type, theme):
     reponse = requests.post(api_url+"/event/", params={
                             "id-question": id_question, "event-type": event_type, "theme": theme})
-
-    return reponse.json()
-
-
-def get_event(theme):
-    reponse = requests.post(api_url+"/event", params={
-                            "theme": theme})
 
     return reponse.json()
 
@@ -61,17 +114,6 @@ def restart_quiz():
     st.session_state.score = 0
     st.session_state.selected_option = None
     st.session_state.answer_submitted = False
-
-
-def get_event(theme):
-    try:
-        response = requests.get(f"{api_url}/event", params={'theme': theme})
-        response.raise_for_status()  # Raise an exception for non-2xx status codes
-
-        return response.json()
-    except RequestException as e:
-        print(f"An error occurred: {e}")
-        return []
 
 
 def main_page():
@@ -125,7 +167,7 @@ def filter_quizz():
     st.session_state.answer_submitted = False
     if st.session_state.selected_theme:
 
-        question_data =  get_question_filter()
+        question_data = get_question_filter()
         random.shuffle(question_data)
         if len(question_data) > 65:
             st.session_state.quiz_data = question_data[:65]
@@ -297,9 +339,8 @@ with stat:
             # Convertir la colonne 'timestamp' en objet datetime
             df['timestamp'] = pd.to_datetime(df['timestamp'])
             df.reset_index(inplace=True, drop=True)
-                        # Titre du tableau de bord
+            # Titre du tableau de bord
             st.title("Tableau de Bord des Résultats")
-
 
             st.header(
                 "Nombre de questions par thème (trié) avec distinction OK/KO")
@@ -325,26 +366,30 @@ with stat:
             ax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')
 
             # Légende
-            ax4.legend(['KO',"OK" ], loc='upper right')
+            ax4.legend(['KO', "OK"], loc='upper right')
 
             plt.tight_layout()
             st.pyplot(fig4)
 
-
            # Trier le dernier graphique en fonction du nombre total de questions
-            st.header("Nombre de questions par thème (trié) avec distinction OK/KO")
+            st.header(
+                "Nombre de questions par thème (trié) avec distinction OK/KO")
 
             # Calculer le nombre de questions par thème avec distinction OK/KO
-            questions_per_theme_result = df.groupby(['theme', 'event-type']).size().unstack().fillna(0)
+            questions_per_theme_result = df.groupby(
+                ['theme', 'event-type']).size().unstack().fillna(0)
 
             # Calculer le total des questions par thème
-            questions_per_theme_result['Total'] = questions_per_theme_result.sum(axis=1)
+            questions_per_theme_result['Total'] = questions_per_theme_result.sum(
+                axis=1)
 
             # Trier les thèmes par le nombre total de questions en ordre décroissant
-            questions_per_theme_result = questions_per_theme_result.sort_values(by='Total', ascending=False)
+            questions_per_theme_result = questions_per_theme_result.sort_values(
+                by='Total', ascending=False)
 
             # Supprimer la colonne Total pour ne garder que OK/KO dans le graphique
-            questions_per_theme_result = questions_per_theme_result.drop(columns=['Total'])
+            questions_per_theme_result = questions_per_theme_result.drop(columns=[
+                                                                         'Total'])
 
             # Générer le graphique trié
             fig, ax = plt.subplots(figsize=(10, 6))
@@ -353,7 +398,8 @@ with stat:
             questions_per_theme_result.plot(kind='bar', stacked=True, ax=ax)
 
             # Titre et labels
-            ax.set_title('Nombre de questions par thème avec distinction OK/KO (trié par nombre total)')
+            ax.set_title(
+                'Nombre de questions par thème avec distinction OK/KO (trié par nombre total)')
             ax.set_ylabel('Nombre de questions')
             ax.set_xlabel('Thème')
             ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
@@ -411,4 +457,3 @@ with stat:
             st.pyplot(fig3)
 
             # Trier le dernier graphique en fonction du nombre total de questions
-
