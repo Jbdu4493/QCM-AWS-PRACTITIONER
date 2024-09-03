@@ -20,11 +20,9 @@ def get_event(theme):
 
 
 def get_question_by_id(id_questions: list[str]):
-    print("get_question_by_id")
     try:
         list_question = list()
         for id_question in id_questions:
-            print(id_question)
             response = requests.get(f"{api_url}/question/{id_question}")
             response.raise_for_status()  # Raise an exception for non-2xx status codes
             list_question.append(response.json())
@@ -35,20 +33,21 @@ def get_question_by_id(id_questions: list[str]):
 
 
 def selection_type_examen():
-    print("selection_type_examen")
     import pandas as pd
     selected_id_question = list()
     response = requests.get(f"{api_url}/theme/TYPE-EXAMEN")
     question_examen = response.json()
-    question_examen_filter = list(filter(lambda q : "&&" not in q["answer"] , question_examen))
+    question_examen_filter = list(
+        filter(lambda q: "&&" not in q["answer"], question_examen))
     df_event = pd.DataFrame(get_event("TYPE-EXAMEN"))
     df_event_ko = df_event[df_event['event-type'] == "KO"]
     most_ko_question = df_event_ko.groupby(by='id-question')\
         .count()[["id-event"]]\
         .sort_values(by="id-event", ascending=False)\
         .head(65).index.to_list()
-    
-    question = list(set(map(lambda x: x["id-question"], question_examen_filter)))
+
+    question = list(
+        set(map(lambda x: x["id-question"], question_examen_filter)))
     question_nerver_asked = list(
         filter(lambda x: x not in set(df_event["id-question"]), question))
     asked_question = df_event.sort_values(by=["timestamp"])[
@@ -60,12 +59,10 @@ def selection_type_examen():
         selected_id_question = selected_id_question[:65]
     elif len(selected_id_question) < 65:
         selected_id_question += asked_question[:65-len(selected_id_question)]
-    print(len(selected_id_question))
-    return list(filter(lambda x : x['id-question'] in selected_id_question,  question_examen_filter))
+    return list(filter(lambda x: x['id-question'] in selected_id_question,  question_examen_filter))
 
 
 def get_question_by_theme(theme):
-    print("get_question_by_theme")
     response = requests.get(f"{api_url}/theme/{theme}")
     response.raise_for_status()  # Raise an exception for non-2xx status codes
     try:
@@ -93,8 +90,17 @@ def post_event(id_question, event_type, theme):
 
 
 def get_all_theme():
-    reponse = requests.get(api_url+"/theme/")
-    return reponse.json()
+    try:
+        if "all_theme" in st.session_state:
+            return st.session_state.all_theme
+        else:
+            reponse = requests.get(api_url+"/theme/")
+            reponse.raise_for_status()
+            st.session_state.all_theme = reponse.json()
+            return st.session_state.all_theme
+    except RequestException as e:
+        print(f"An error occurred: {e}")
+        return []
 
 
 def shuffler_answer(quiz):
